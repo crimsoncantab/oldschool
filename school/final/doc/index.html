@@ -1,0 +1,165 @@
+<html>
+	<head>
+		<title>Final Project Writeup</title>
+                <style type="text/css">
+                body
+                {
+                background-color:#b0c4de;
+                }
+                div.picl
+                {
+                    float: left;
+                    padding-right: 2px;
+                }
+                div.picr
+                {
+                    float: right;
+                    padding-right: 2px;
+                }
+                div.section
+                {
+                    clear: both;
+                }
+                .code
+                {
+                    font-family: monospace;
+                }
+                </style>
+	</head>
+	<body>
+            <h1>Reflection and Refraction</h1>
+            <h3>Using Environment Mapping in OpenGL</h3>
+            <h5>Loren McGinnis</h5>
+            <div class="section">
+                <hr/>
+                <h3>Setting up the environment map</h3>
+                <div class="picl">
+                    <img width ="256" alt="Environment Map Testing" src="./spherenormal.jpg"/>
+                    <div>Figure 1</div>
+                </div>
+                <div class="picl">
+                    <img width ="256" alt="Environment Map Testing" src="./bunnynormal.jpg"/>
+                    <div>Figure 2</div>
+                </div>
+                <p>I used the starter code from assignment 8 to begin my project.
+                I wanted to see the effects that reflection and refraction would have
+                on a model like the bunny, and I also wanted to utilize the
+                arcball interface.  I added a sphere as somewhat of a control
+                shape to test the mapping and shading code.</p>
+                <p>My first efforts were to get an environment map working.  I
+                mostly referred to the OpenGL Programming Guide
+                for help on this.  I used a cube map texture to stores the environment
+                of the sphere/bunny.  This required me to make six calls to
+                <span class="code">glTexImage2D</span> for the positive/negative x, y and z directions.
+                I first just used an image file, mountain.ppm, as the pixel data for each call,
+                resulting in these two images.  The fragment shader that I used
+                directly sets <span class="code">gl_FragColor</span> to a call to
+                <span class="code">textureCube()</span>, passing in the
+                <span class="code">samplerCube</span> and the normal vector.  GL
+                does the hard work, using the vector to lookup the correct spot 
+                on the cube.  Here, since I just passed in the normal, the texture is
+                basically "pasted" right on to the object.</p>
+            </div>
+            <div class="section">
+                <hr/>
+                <h3>Environment snapshots</h3>
+                <div class="picr">
+                    <img width ="256" alt="Environment Map Testing" src="./mapbad.jpg"/>
+                    <div>Figure 4</div>
+                </div>
+                <div class="picr">
+                    <img width ="256" alt="Environment Map Testing" src="./mapgood.jpg"/>
+                    <div>Figure 3</div>
+                </div>
+                <p>Next, I wanted the environment map to actually contain a snapshot
+                of the environment, so I set about writing code to draw the scene
+                six times, using the object as the camera.  I also did not want the
+                map to be static, so I called the snapshot code on every redisplay.
+                I was worried that it would cause a significant performance hit, but
+                didn't notice any slowdown unless I made the texture size really large.
+                The book mentioned that each snapsnot had to be a 90-degree field-of-view,
+                so I got my projection matrix from
+                <span class="code">Matrix4::makeProjection(90.0,1, frust_near, frust_far)</span>.
+                I also changed the viewport size to match the dimensions of the 
+                texture cube.  I drew the scene, then read the color buffer into
+                a pointer with <span class="code">glReadPixels()</span> which I 
+                passed to <span class="code">glTexImage2D()</span>.
+                The tricky part was making sure I had all sides of the cube
+                oriented correctly (see fig. 4), which took a little bit of
+                experimenting.  Also, I decided to use specular shading
+                when drawing the environment, but kept the fragment shader for the
+                sphere/bunny the same to help with orienting each side correctly.</p>
+            </div>
+            <div class="footnotes section">
+            </div>
+            <div class="section">
+                <hr/>
+                <h3>Reflection</h3>
+                <div class="picr">
+                    <img width ="256" alt="Environment Map Testing" src="./reflection.jpg"/>
+                    <div>Figure 5</div>
+                </div>
+                <p>After getting the environment mapping correctly set up, most
+                of my remaining code changes happened in the shaders.  Getting
+                reflection to work was relatively easy. I added
+                the location of the camera as a uniform variable, and calculated
+                the bounce vector using a vector to the camera and the normal
+                with the same equation that we implemented in the raytracer.
+                This is what I passed to <span class="code">textureCube()</span>.
+                Figure 5 shows the bunny using this shader (part specular shading,
+                part reflection-This allows the edges of the bunny to be visible,
+                and opposed to Figs. 3 and 4).  One thing to note about
+                this image is that, since <span class="code">textureCube()</span>
+                acts like the vector is coming straight from the center of the object,
+                some of the points on the bunny don't match up with real life or
+                a raytracer.  This leads to artifacts like the repetion of the cubes over the bunny's,
+                surface; any points on the bunny with the same normal will reflect
+                the same point in the environment. Also, especially around the front
+                paws of the bunny, it becomes apparent that there is only one level
+                of reflection.  The bunny doesn't block light from itself, so concave
+                sections will seem less realistic.  On the bright side, it renders
+                quite easily in real time.
+                </p>
+            </div>
+            <div class="section">
+                <hr/>
+                <h3>Refraction</h3>
+                <div class="picl">
+                    <img width ="256" alt="Environment Map Testing" src="./refraction.jpg"/>
+                    <div>Figure 6</div>
+                </div>
+                <p>Refraction, also, took only a bit of coding in the fragment
+                shader.  I used <a href="http://en.wikipedia.org/wiki/Snell's_law">Wikipedia</a>
+                as a reference to write my code.  The most difficult part here was
+                deriving the math needed to get the refraction vector using Snell's
+                Law, and the Wikipedia article gave me the information I needed.  I only
+                use one level of refraction, so with the sphere, for example, it acts
+                more as a convex lense than an actual clear marble would look like.</p>
+
+            </div>
+
+            <div class="section">
+                <hr/>
+                <h3>Running the Program</h3>
+                <p>I did my development on a 64-bit Windows 7 under Visual Studio.
+                When running the program, these are the controls:
+                <br/>Left Mouse - Rotate (uses invisible arcball)
+                <br/>Right Mouse - Translate X and Y
+                <br/>Left+Right/Middle Mouse - Translate Z
+                <br/>o - switch between moving camera and object
+                <br/>space - switch between bunny and sphere
+                <br/>s - cycle through shading programs
+                <br/>w - take a snapshot
+                <br/>m - switch world/skycam mode
+                </p>
+
+            </div>
+            <div class="footnotes section">
+                <hr/>
+                Sources:
+                <br/>Dave Shreiner, et al.  OpenGL Programming Guide, 6th ed. Upper Saddle River, NJ : Addison-Wesley, c2008.
+                <br/>Wikipedia article on <a href="http://en.wikipedia.org/wiki/Snell's_law">Snell's Law</a>
+            </div>
+	</body>
+
+</html>

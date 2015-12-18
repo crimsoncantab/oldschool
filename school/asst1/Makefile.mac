@@ -1,0 +1,17 @@
+
+BASE = HelloWorld2D
+
+all: ${BASE}
+
+CPPFLAGS += -D__MAC__
+LDFLAGS += -framework GLUT -framework OpenGL
+
+
+${BASE}: ${BASE}.o ppm.o
+	${LINK.cpp} -o $@ ppm.o $< -lGLEW
+
+${BASE}.o: ppm.cpp ${BASE}.cpp 
+
+clean:
+	-rm -f *.o ${BASE}
+
