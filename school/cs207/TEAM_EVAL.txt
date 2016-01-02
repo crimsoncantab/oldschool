@@ -1,0 +1,8 @@
+Code Review
+Generalizing the idea of forces to Triangles seems pretty well executed.  Right now, however, propogating those forces to the nodes (in order for the triangle forces to actually do anything) is an explicit process that requires adding a node force that simply averages the triangle forces; this probably could be done automatically in the euler_step so the user doesn't have to worry about the propogation.
+The interface for calculating normals is pretty straightforward; however the current implementation seems a little expensive if your iterating over all nodes; one could memoize the normal at each face so that it wasn't calculated 3 times.  Using the normal() functions was great, for example, for doing lighting in the visualizer because OpenGL requires normals for lighting to work.
+
+
+Interaction
+The interaction between the two teams was simply one time meeting between the two teams.  While the specifications from both teams was helpful, actually conversing and explaining the purpose of certain points in each others code was far more beneficial.  Additionally, specifications do not really include a fully implemented example which often is necessary to fully understand how to use the other teams code. Moreover, when merging code from unexplained examples (in our case, we had implemented our viewer for shallow_water), the other team had trouble understanding errors particular to the implementation between simulator and shallow water (they would get confused if it was a problem on our or their part).  While they could figure out the error by extensively reading the examples and understanding how everything works, being able to explain immediately on the spot the source of error greatly reduces the difficulty associated with merging.
+
