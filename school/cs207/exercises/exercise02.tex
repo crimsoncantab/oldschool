@@ -1,0 +1,107 @@
+\documentclass{article}
+\usepackage{alltt}
+\usepackage{color}
+\usepackage[hmargin=1in,vmargin=.5in,letterpaper]{geometry}
+\renewcommand{\rmdefault}{Sabon}
+\newcommand{\tab}{\hspace*{2em}}
+
+
+\def\allttfont{}
+\newenvironment{xalltt}{\begingroup\def\{{\char`\{}\def\}{\char`\}}%
+\def\_{\char`\_}\def\\{\char`\\}\begin{alltt}\allttfont}{\end{alltt}\endgroup}
+\newenvironment{smalltt}{\begin{small}\begin{xalltt}}{\end{xalltt}\end{small}}
+\def\_{\texttt{\char`\_}}
+\frenchspacing
+\pagestyle{empty}
+
+\begin{document}
+
+\begin{center}
+\large CS 207 Paper Exercises 2 // Due F 3/9 in class or via email to kohler@seas\\
+{\color{blue}
+Solutions by Loren McGinnis
+}
+\end{center}
+
+\paragraph{(1)} Solution:\\
+{\color{blue}
+AF(SubChooser) = $<S>$ where:\\
+$|S| = \texttt{size\_}$,\\
+$S = [s_0,\dots,s_{n-1}]$ where $\forall 0 \leq i < |S|, s_i == \textsc{TRUE} \iff  \texttt{value\_ \& (1 << i)}$\\
+RI(SubChooser) = $0 \leq \texttt{size\_} < 64$
+}
+\paragraph{(2)} Solution:
+{\color{blue}
+\begin{xalltt}
+/** Returns the value of s_\{@a i\}
+ * @pre 0 <= @a i < |S| */
+BitwiseSubsetChooser::operator[](int i) const;
+\end{xalltt}
+}
+
+\paragraph{(3)} Solution:
+{\color{blue}
+\begin{xalltt}
+BitwiseSubsetChooser * subset_; //the subset that this iterator belongs to;
+uint64_t mask_; //the iterator points to s_i <==> mask_ == 1 << i
+\end{xalltt}
+}
+\paragraph{(4)} Solution:
+{\color{blue}
+\begin{xalltt}
+std::vector<uint64_t> value_;
+int size_;
+\end{xalltt}
+}
+\paragraph{(5)} Solution:
+{\color{blue}
+\begin{xalltt}
+/** Erase the element pointed to by @a it
+ * @pre @a it is in position i, where 0 <= i < size()
+ * @param it an iterator for this vector
+ * @post new size() == old size() - 1
+ * @post for all 0 <= j < i, new (*this)[j] == old (*this)[j]
+ * @post for all i <= j < new size(), new (*this)[j] == old (*this)[j+1]
+ * @return valid iterator for position i of new (*this)
+ */
+iterator vector<T>::erase(iterator it);
+\end{xalltt}
+}
+
+\paragraph{(6)} Solution:
+{\color{blue}
+\begin{xalltt}
+template <typename C, typename P>
+void erase_if(C &x, P pred) \{
+  C::iterator it = x.begin();
+  while (it != x.end()) \{
+    if (pred(*it)) \{
+      it = x.erase(it);
+    \} else \{
+      ++it;
+    \}
+  \}
+\}
+\end{xalltt}
+}
+
+\paragraph{(7)}  Solution:\\
+{\color{blue}
+The assumption here is that the only non-constant work that \texttt{T::erase()} does is call \texttt{value\_.erase()}, which is \texttt{O(value\_.size())}, and probably \texttt{O(T.size())}, assuming such a function exists.
+}
+
+\paragraph{(8)}  Solution:
+{\color{blue}
+\begin{xalltt}
+U::iterator U::erase(U::iterator it) \{
+  assert(it.i\_ < value\_.size());
+  int last = value\_.back();
+  value\_.pop\_back();
+  if (value\_.size() > it.i\_) \{
+    *it = last;
+  \}
+  //else it now points past-the-end
+  return it;
+\}
+\end{xalltt}
+\end{document}

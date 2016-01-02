@@ -1,0 +1,130 @@
+\documentclass{article}
+\usepackage{alltt}
+\usepackage{color}
+\usepackage[hmargin=1in,vmargin=.5in,letterpaper]{geometry}
+\renewcommand{\rmdefault}{Sabon}
+
+\def\allttfont{}
+\newenvironment{xalltt}{\begingroup\def\{{\char`\{}\def\}{\char`\}}%
+\def\_{\char`\_}\def\\{\char`\\}\begin{alltt}\allttfont}{\end{alltt}\endgroup}
+\newenvironment{smalltt}{\begin{small}\begin{xalltt}}{\end{xalltt}\end{small}}
+\def\_{\texttt{\char`\_}}
+\frenchspacing
+\pagestyle{empty}
+
+\begin{document}
+
+\begin{center}
+\large CS 207 Paper Exercises 1 // Due W 2/15 in class or via email to kohler@seas
+{\color{blue}
+Solutions by Loren McGinnis
+}
+\end{center}
+
+\paragraph{(1)} Design an interface to binary search that takes \emph{only} a comparator, rather than a comparator and an item to find. Write out a doxygen specification comment for the search. Pay special attention to the comparator's signature.
+
+{\color{blue}
+\begin{xalltt}
+/** Binary search of @a a using comparator @a c
+ * @pre for all indices 0<=i<j<n,
+ *     @a c[@a a[i]] == 0 iff @a c[@a a[j]] >= 0
+ *     @a c[@a a[i]] > 0 iff @a c[@a a[j]] > 0
+ * i.e. there is a total ordering of @a a w.r.t @a c
+ * @param a input array of length @a n
+ * @param c comparator fuction
+ *
+ * @return index i into @a a where @a c(@a a[i])==0, or -1 if no such i exists
+ * Complexity: O(log n) */
+template <typename T, typename COMP> int binary_search(T * a, int n, int (*c) (T));
+\end{xalltt}
+}
+
+\paragraph{(2)} Why might the C++ standard library have implemented the version with item and comparator, rather than the version with only a comparator?
+
+{\color{blue}
+A new comparator would have to be implemented for every value that we wanted to search for in the array, since the value to be searched for would be baked into the comparator's implementation.
+}
+
+\paragraph{(3)} Here's an incorrect comparator.
+
+\begin{xalltt}
+template <typename T> bool bad_comparator(T a, T b) \{
+    return true;
+\}
+\end{xalltt}
+
+It is incorrect because it returns true for both ``\texttt{bad\_comparator(a, b)}'' and ``\texttt{bad\_comparator(b, a)}'', and thus does not totally order objects of type T.
+
+What will happen if you pass \texttt{bad\_comparator} to a binary search function?
+
+{\color{blue}
+The binary search function will always return -1 (assuming -1 means "the item was not found"), because according to the comparator, all items are both greater than and less than the search value.
+}
+
+
+\paragraph{(4)} What will happen if you pass \texttt{bad\_comparator} to the following \texttt{quick\_sort} function?
+
+{\color{blue}
+partition will always return last, since it puts all elements in [first, last) for which comparator returns true before all elements for which it returns false, and returns the first element for which it returns false (none of them), meaning the first recursive call in the else statement is identical to the current call.   It will recurse infinitely.
+}
+
+\begin{xalltt}
+template <typename T, typename COMP> struct bound\_comparator \{
+    T a_; COMP comparator_;
+    bound_comparator(T a, COMP comparator)
+        : a\_(a), comparator\_(comparator) \{
+    \}
+    bool operator()(T x) \{
+        return comparator\_(x, a\_);
+    \}
+\};
+
+template <typename T, typename COMP>
+void quick_sort(T* first, T* last, COMP comparator) \{
+    if (first != last) \{
+        bound_comparator<T, COMP> partitioner(*first, comparator);
+        T* midpoint = std::partition(first, last, partitioner);
+        if (midpoint == first)   // \textrm{\texttt{*first} was a minimum element; assume it hasn't moved}
+            quick_sort(midpoint + 1, last, comparator);
+        else \{
+            quick_sort(first, midpoint, comparator);
+            quick_sort(midpoint, last, comparator);
+        \}
+    \}
+\}
+\end{xalltt}
+
+\paragraph{(5)} Write an assertion that, if inserted into \texttt{quick\_sort}'s implementation, would turn the bad behavior you found in (4) into an assertion failure.
+
+{\color{blue}
+At the beginning of the \texttt{else\{\}} statement:
+\begin{xalltt}
+assert(midpoint != last);
+\end{xalltt}
+}
+
+\paragraph{(6)} Write the \emph{minimal} precondition for \texttt{quick\_sort} so that, if \texttt{quick\_sort}'s arguments obey the precondition, the assertion you added in (5) will never fail.
+
+By ``minimal,'' we mean that your precondition should \emph{only} prevent \emph{the assertion failure}.
+
+{\color{blue}
+\begin{xalltt}
+@pre \(\exists\) some pointer first\(\leq\)i<last s.t. !comparator(*i,*first)
+\end{xalltt}
+}
+
+\paragraph{(7)} Write a \emph{full} precondition for \texttt{quick\_sort} so that, if \texttt{quick\_sort}'s arguments obey the precondition, the output range \texttt{[first, last)} will be sorted according to \texttt{comparator}. This sort requirement is expressed precisely by this postcondition:
+
+\begin{xalltt}
+// Post: \(\forall\)i, j with first \(\leq\) i \(\leq\) j < last, !comparator(*j, *i).
+\end{xalltt}
+
+{\color{blue}
+\begin{xalltt}
+@pre  \(\forall\)i, j, k with first \(\leq\) i, j, k < last,
+    comparator(*i, *j) implies !comparator(*j, *i)
+    comparator(*i, *j) and comparator(*j, *k) implies comparator(*i, *k)
+\end{xalltt}
+}
+
+\end{document}
