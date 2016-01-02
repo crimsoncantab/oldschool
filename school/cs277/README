@@ -1,0 +1,23 @@
+
+
+
+* Usage:
+
+./main <mesh_file>
+
+
+* There are some meshes in the "data/" directory. 
+
+
+* Text explaining the UI is shown when executing ./main
+
+
+* the file "linear_algebra.h" has rutines for eigendecomposition (near the end)
+
+
+* happy coding!
+
+
+
+
+
