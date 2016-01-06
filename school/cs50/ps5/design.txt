@@ -1,0 +1,66 @@
+i. I am going to use a "Trie" style data structure.  Each node in the structure 
+is going to have a 27 element array (where every element represents a letter or 
+a "'") of pointers to other nodes. The first array represents the first 
+character of a word, and all pointers that are not null point to the next letter 
+in a word after the letter which that pointer represents.  Each node will also 
+contain a boolean that says whether this node represents the end of a word or 
+not.
+typedef struct _node {
+    bool isEnd;
+    struct _node * next[27];
+}
+node;
+
+ii.
+bool load(char *dict) {
+    string temp;
+    node *  letter = root node;
+    open filename dict;
+    if dict does not open return FALSE;
+    iterate until end of file
+        temp = fgets next string;
+        iterate through characters in temp
+            if temp[i] is a letter
+                index = temp[i - 97];
+            else
+                index = 26; //for apostrophe
+            if letter->next[index] is null
+                make new node at next[index]
+                letter = letter->next[index]
+            else
+                letter = letter->next[index]
+            if temp[i+1] == '/0'
+                letter->next[index]->isEnd = 1;
+                DICT_SIZE++;
+                break;
+    close file;
+    return TRUE;
+}            
+        
+iii.
+
+bool check(char *word) {
+    node * letter = root node;
+    make word lowercase;
+    iterate through word
+        if word[i] == '/0'
+            if letter->isEnd = 1;
+                return TRUE;
+            else
+                return FALSE;
+        if word[i] is letter;
+            index = word[i] - 97;
+        else
+            index = 26; //for apostrophe
+        if letter->node[index] != NULL
+            letter = node[index];
+        else
+            return FALSE;
+    return FALSE;
+}
+
+iv.
+
+int size() {
+    return DICT_SIZE;
+}

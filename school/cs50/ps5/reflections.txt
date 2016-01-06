@@ -1,0 +1,16 @@
+I used a trie data structure in completing this project.  I only differed from 
+my pseudocode where it was simply incorrect or did not work, and with small 
+details that would improve the running time of the program.  In my data 
+structure, each node of the trie had two elements: a boolean that explained if 
+this try was the end of a word or not, and an array of pointers to other nodes.  
+The array was 27 in length, representing each letter and the apostrophe.  When 
+loading the dictionary, each of these pointers were null to start.  When adding 
+a word to the dictionary, it would check if the corresponding pointer for the 
+next letter in the word was null, create a new node if so, then traverse to that 
+node.  When it reached the end of the word, the last node would have a value of 
+1 for the boolean.  The load() function incremented a integer with every new 
+word, which the size() function could return later.  The check() function 
+worked by checking each letter of the string sent to it with the corresponding 
+pointer in each successive node, and returned TRUE only when there was a pointer 
+to a new node for every letter and the last node had a value of 1 for its 
+boolean.

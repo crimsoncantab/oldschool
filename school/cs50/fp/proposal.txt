@@ -1,0 +1,15 @@
+TITLE: Crew Practice Calculator
+
+AUTHOR: Loren McGinnis
+
+ABSTRACT:  My project automates the process of setting up crew practice times every day, and makes signing up for athletes much more convienient.
+
+WHAT:  The project will consist of a website which atheltes visit every day and submit their hours of availability.  The program then places each player in an appropriate time, accounting for boat sizes and other variables that may be required depending upon the type of practice that day.  It will then e-mail all of the atheltes with a breakdown of the practice time.
+
+WHY:  Right now, to sign up for practice, a crew athlete must write down his availability at the boathouse.  Additionally, the crew coach must spend a significant amount of time every day organizing the practice times for the next day.  This project will make it more convienient for crew athletes to sign up for daily practices, and it will unburden the coaches with work that can be done by a computer.
+
+TODO:  I should be able to complete my project using the infrastructer of nice.fas.harvard.edu.  However, since it is a website, I will certainly only be able to test my project using a browser.  I plan on doing most of the programming in PHP and some HTML, but I might also need to learn some SQL so I can maintain a database of the athletes.  Most of my research will involve asking my coach exactly what the program needs to be able to do for it to be useful to the crew team.
+
+QUESTIONS
+
+At this point, the things I'm not sure about is:  what do I need to do to be able to make the program e-mail the athletes?  On a related note, what is involved in having the program do it at a certain time of day, like every night at 8:00?

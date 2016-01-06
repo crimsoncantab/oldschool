@@ -1,0 +1,3 @@
+Having . in $PATH is a security risk because if someone was able to hack into 
+the shell, they would have access to and be able to manipulate one's working 
+directory.

@@ -1,0 +1,39 @@
+TITLE: PracticeProcessor 2000!
+AUTHOR: Loren McGinnis
+
+ABSTRACT:  My project automates the process of setting up crew practice
+times every day, and makes signing up for athletes much more
+convienient.
+
+WHAT:  The project will consist of a website which athletes visit every
+day and submit their hours of availability.  The program then places
+each player in an appropriate time, accounting for boat sizes and other
+variables that may be required depending upon the type of practice that
+day.  It will then e-mail all of the atheltes with a breakdown of the
+practice time.
+
+HOW:
+
+The basic framework of the website consists of a few pages in XHTML/PHP
+and a MySQL database.  The main page (index.php) will have a simple fo
+rm with drop downs for the players to select their names and availabili
+ty times, and a submit button to send the request to submit.php, which
+will simply add their availability to the MySQL database and then redir
+ect to index.php.  Additionally, there will be an administrator link on
+the bottom for the coach to change settings.  The link will require a
+login.  The page it links to (settings.php) will have a list of options
+the coach can select (see pseudocode) and a generate button to create
+practice times by submitting to generate.php.  generate.php will create
+practice times, then redirect to practice.php, which will print to the
+browser a list of practice times with each athlete in it, and a link t
+o e-mail it to the coach's mailing list.  practice.php will also have a
+link to edit.php to edit the list manually.  edit.php will have
+several editable selection lists for each practice time, with buttons to move
+athletes around, and a submit button.  It will then regenerate the
+list by redirecting to practice.php.
+
+Most of these files will make requests to a MySQL database.  The databa
+se will have one table that lists the athletes and their attributes (av
+ailability times and preferred side to row on).  It will also have dyna
+mically created tables that will store the generated practice times cre
+ated by generate.php.  See each file for pseudocode and details.

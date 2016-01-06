@@ -1,0 +1,9 @@
+The touchscreen of the iPhone is made up of thousands of little sensors that 
+act as switches.  When a group of sensors are switched by the touch of a finger,
+programming in the iPhone determines what pattern the "on" switches make.  For 
+example, if two separate groups of switches are pressed simultaneously and then 
+start moving toward each other (where some switches turn off, others turn on so 
+that the two groups of on switches are closer) , the iPhone recognizes this as 
+a "pinch" and performs the zooming operation at the location between the groups.
+More generally, the iPhone recognizes a finger's movement by the pattern of 
+switches being pressed and unpressed and acts accordingly.

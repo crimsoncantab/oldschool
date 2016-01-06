@@ -1,0 +1,21 @@
+i. Dell Latitude D600
+ii. Intel Pentium M processor 1600MHz
+iii. 32 KB L1 cache
+iv. 1 MB L2 cache
+v. 768 MB RAM
+vi. 37.2 GB HD
+vii. 87 keys
+
+I implemented an O(n) version of the sort for the hacker edition (and dropped 
+to regular), but for either version, the new algorithm is slower than the 
+original because any sort (in the regular version's case, O(n^2) will take at 
+least as long as just a linear search (O(n))
+through an entire list of items, and that is added upon by the time the binary 
+search (O(log(n))) takes.  Sorting before searching is useful when the list is 
+going to be searched many times for different values.
+
+i. The framework of this program allows for boards from 3x3 to 9x9 in size
+ii. The board is represented by a 2-d array
+iii. Unsurprisingly, greet() is called to greet the player
+iv. The functions to be implemented are init(), draw(), move(), and won()
+v.  Yes.  I can also solve the Rubik's cube in less than a minute.

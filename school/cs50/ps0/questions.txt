@@ -1,0 +1,49 @@
+
+i. Loren McGinnis
+ii. mcginn
+iii. mcginn@fas.harvard.edu
+iv. 2011
+v. Computer Science
+vi.  I love programming, and I heard a lot of good things about the class.
+vii. No questions/concerns
+viii. My Scratch project contains a bunch of cute, fluffy bunnies hopping around 
+a peacful landscape.  However, along came the mouse cursor and things got a 
+little twisted.  Clicking on a bunny is considered "poking" the bunny, and it 
+will wince and grow a little bigger.  Bunnies can only grow so much, so if one 
+clicks on a bunny too many times...well, let's just say that the bunny has 
+hopped its last hop.  Pop enough bunnies, and you get a "big" surprise.
+ix. The vast majority of the sprites in my program are bunnies with nearly 
+identical scripting.  Each bunny is programed to show itself after a random 
+amount of time, then "hop" at random intervals randomly left or right by 
+rotating one direction or the other, changing its 
+costume to look like it is hopping, moving a few paces, then reverting back to a 
+resting costume.  When a bunny is clicked on, it changes it's costume to a wince 
+for a fraction of a second, and it's size increases slightly.  A variable 
+keeps track of how many times the bunny has been clicked, and after five clicks 
+the bunny "explodes" by changing its costume again to an explosion and playing 
+both a exploding sound and an--interesting--laugh, which may be familiar to 
+hardcore Age of Empires gamers.  Each bunny hides itself then 
+shows up a few seconds later at a random x-location with its ordinary costume 
+on.
+Another sprite provides simple directions, checking to see if the user clicks on 
+the first bunny that appears, and if not, tells the user "Try Clicking a Bunny."  
+The last sprite is somewhat of an Easter Bunny/Egg: A bunny that is much 
+larger in size, and does not appear until the regular bunnies have been popped 
+cumulatively ten times.  It broadcasts and event that hides all other bunnies 
+and turns off their response to clicking, then shows itself and explodes after 
+20 clicks, ending the script.
+x.  Working on my project, I ran accross a few bugs, such as bunnies showing the 
+wrong costume at certain times or appearing when they shouldn't, and I was able 
+to add some variables that turned off those commands when innappropriate.  I 
+have only found one "bug" that was not fixed; a quirk similar to the Oscartime 
+bug where clicking on two overlapping bunnies would "poke" both of them.  I 
+didn't fix the bug because in this case I didn't see it too problematic to be 
+able to click two bunnies as once.  It just makes for more explosions!  That or 
+I'm just lazy.
+xi. CD-Rs or Compact Disc-Recordable are made with a spiral groove in their 
+polycarbonate disc that guides the laser from the CD drive around the CD.  The 
+laser stores information on the CD by litterally burning parts of a layer of 
+organic dye in the disc.  The burnt parts reflect light differently than the 
+unburnt sections, so each represents a "1" or "0" respectively.  The burning 
+permanently alters the dye, so once a CD is recorded on, it becomes read-only; 
+the information cannot be changed on it.

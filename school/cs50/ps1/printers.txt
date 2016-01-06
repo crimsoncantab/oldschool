@@ -1,0 +1,9 @@
+Laser printers work by melting a toner onto the paper.  A laser is guided by the 
+printer's hardware to excite toner molecules on a drum and make them fall with 
+precision onto the right spots of the paper to form the printed image.  The 
+toner is then heated so that it melts onto the paper.  With inkjet printers, A 
+printing cartridge full of ink (generally black or three colors: magenta, 
+yellow, cyan) 
+runs back and forth across the paper and "jets" out dots of ink (in the right 
+proportion of colors, for color printing) so that the ink forms the printed 
+image.

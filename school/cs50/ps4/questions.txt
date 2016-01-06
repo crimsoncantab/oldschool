@@ -1,0 +1,15 @@
+Qustion 1:
+i. The number of colors for each file type: BMP - 2^24, JPG - 2^24, GIF - 256
+ii. GIF supports animations
+iii. Lossless compression does not change the quality of an image at all.  Lossy 
+does to an extent, depending on how great of a compression is desired.  Lossy 
+trades quality for memory.
+iv. JPEGs use lossy format.
+
+Question 2:
+i. When a file is deleted, only the pointer to the file is removed, not the 
+actual data in the file.
+ii. The drive can either be destroyed or degaussed (the first of which obviously 
+makes the drive unusuable, the second of which will probably do so as well).  To 
+keep the drive usable, it can be rewritten over with random values for each 
+byte, but that doesn't guarantee that the data on the drive cannot be recovered
