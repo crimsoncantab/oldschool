@@ -1,0 +1,13 @@
+{{extend 'layout.html'}}
+<h2 style="text-align: center">{{=obj.title}}</h2>
+<img style="display: block; border: 1px solid; margin: 0 auto;" src="{{=URL('default','download', args=obj.image)}}"/>
+<div class="caption">{{=XML(obj.caption or '')}}</div>
+<div>{{=XML(obj.info)}}</div>
+{{if len(links):}}
+<h5>Continue Exploring:</h5>
+{{pass}}
+<div style="text-align: center;">
+{{for link in links:}}
+{{=A(db.olinks.linkee.represent(link.linkee), _href=URL('exhibit','plain',args=link.linkee), _class='magnifier pill button') }}
+{{pass}}
+</div>

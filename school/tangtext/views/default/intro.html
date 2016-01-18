@@ -1,0 +1,8 @@
+{{extend 'layout.html'}}
+<h2 style="text-align:center">Introduction</h2>
+{{for essay in essays:}}
+<p>
+{{=XML(essay.essay)}}
+</p>
+{{pass}}
+<h2 style="text-align:center">{{=A('Continue', _href=URL('exhibit', 'plain'))}}</h2>

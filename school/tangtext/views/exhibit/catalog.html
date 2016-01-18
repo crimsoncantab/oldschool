@@ -1,0 +1,4 @@
+{{extend 'layout.html'}}
+{{for obj in objects:}}
+{{=DIV(A(obj.title, _href=URL('exhibit', 'plain', args=obj.id)))}}
+{{pass}}
