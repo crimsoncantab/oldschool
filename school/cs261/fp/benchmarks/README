@@ -1,0 +1,26 @@
+
+main.c
+-benchmark code
+-'make' to build
+-./prog <bench> <size> <affin> <mem>
+	-consult scripts/shellgen.py for possible values of params
+
+data/
+-all of the datapoints from our benchmarks
+
+graphs/
+-graphs based upon above data
+
+Cache Effects.pdf
+-our paper
+
+scripts/plot.py
+-makes graphs
+-from base dir:
+	'python scripts/plot.py | gnuplot'
+
+scripts/shellgen.py
+-makes bash script for running benchmarks
+-from base dir:
+        'python scripts/shellgen.py > run.sh'
+
