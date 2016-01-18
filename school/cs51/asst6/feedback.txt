@@ -1,0 +1,4 @@
+Length:  Somewhat short, in terms of how much work it actually took me.
+Difficulty:  Coding itself was very easy, the difficulty came
+in reading the given code, which made it about right.
+Other Comments:  Maybe add a "create a shape of your own" section.

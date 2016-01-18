@@ -1,0 +1,18 @@
+boolean.o: boolean.cc value.h imports.h env.h
+lexer.o: lexer.cc lexer.h imports.h value.h env.h exn.h
+nil.o: nil.cc value.h imports.h env.h
+number.o: number.cc value.h imports.h env.h
+pair.o: pair.cc value.h imports.h env.h
+parser.o: parser.cc parser.h imports.h lexer.h value.h env.h exn.h
+procedure.o: procedure.cc value.h imports.h env.h util.h exn.h eval.h
+scheme51.o: scheme51.cc imports.h parser.h lexer.h value.h env.h exn.h \
+  interp.h
+symbol.o: symbol.cc value.h imports.h env.h interp.h
+value.o: value.cc value.h imports.h env.h exn.h interp.h
+env.o: env.cc env.h imports.h value.h exn.h
+interp.o: interp.cc interp.h imports.h env.h value.h prims.h exn.h \
+  parser.h lexer.h eval.h
+prims.o: prims.cc prims.h value.h imports.h env.h exn.h util.h interp.h \
+  parser.h lexer.h
+util.o: util.cc util.h imports.h value.h env.h exn.h
+eval.o: eval.cc value.h imports.h env.h util.h interp.h exn.h eval.h

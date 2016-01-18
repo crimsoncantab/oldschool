@@ -1,0 +1,79 @@
+PROBLEM STATEMENT
+To remove unwanted e-mails (spam) from a user's mailbox, using a set of
+user-specified rules.
+
+
+BEHAVIOR AND ASSUMPTIONS
+The program will be used as part of a larger system.  It will take in a user's
+mailbox, an output mailbox, and a file containing spam rules and filter the
+mailbox, removing all messages that match the rules and returning a filtered
+mailbox.  The rules file, rules.txt, will have the following format for spam
+rules:
+Subject Stockpick
+Body convallis pulvinar
+To darling
+The first word is a tag that determines whether the rule applies to the Subject,
+Body, or To fields, and the rest of the line is the string to filter.  It is
+assumed that the mailbox file is a list of unfragmented concatenated messages,
+where each messages starts with a blank line and "From ".  We assume that the
+mbox file was created so that any instance of "From " in the rest of the message
+is converted to something else, such as ">From ".
+
+
+ARCHITECTURAL DESIGN
+Rule system:
+Storage of spam rules: see "Behavior and Assumptions" section.
+When the spam filter runs, it will read the rules.txt file, and import each rule
+into a instance of a "Rule" object, which will have the following structure:
+-a constructor that takes a tag and a rule
+-a tag (string) with get functions
+-a rule (string) with get functions
+A RuleList object will contain a vector of Rules it will have:
+-a constructor that takes the rules.txt file and creates instances of Rule and
+stores each Rule in a vector depending upon that Rule's flag
+-a vector of "Rule"s for each flag
+-a function that returns a vector of rules depending upon the flag passed to it
+
+Mailbox:
+- "MailBox" will have a vector of "MailMessage"s, which have been extracted
+using the "mbox" class.
+- We will implement the getField and addField functions in the MailMessage
+class. We will use a dictionary to store the data, for greater extensibility.
+For example, we would have "Subject" associate with the message's subject.
+
+Filter:
+- Go through each MailMessage in the vector in MailBox.
+- If the subject/to/body has an offending phrase, we will just iterate to the
+next MailMessage.
+- Otherwise, we will concatenate this mail message (push_back) to a new MailBox
+object's vector of MailMessages.
+- To see if the rules match the appropriate data field, we might use the
+string.find function. 
+Filter will be part of the "MailBox" class, and after it is called, it returns a
+filtered MailBox. MailBox will also have an export function, which writes a
+MailBox instance to an output file.
+
+A feature that we might also want to add is exporting spam messages to a
+separate mailbox file. This is easy to implement, because all we would have to
+do is to create a new instance of MailBox, call it spam, and in the iterations
+through MailMessages, we would append any offending messages to this spam
+MailBox, and then iterate, rather than just iterating.
+
+Our format for rules is now fairly friendly for adding a rule, and adding
+different types of rule. Using a dictionary helps with this.
+
+
+IMPLEMENTATION STRATEGY
+- We will create a Makefile by Monday night.
+- We plan to start and finish Rule and RuleList by Tuesday evening.
+- We will start working on mailbox functions Wednesday afternoon, and finish it
+Wednesday night.
+- Finally, we will finish the filter function Thursday.
+- This gives us time on Friday to test, debug, and clean up code, as well as do
+the design review.
+
+
+TEST PLANS
+We will test it with empty mbox files, extremely large mbox files, and mbox'es
+with "From " in the body of a message. All of these should crash gracefully
+(i.e., throw errors), rather than causing segmentation faults.

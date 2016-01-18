@@ -1,0 +1,10 @@
+boolean.o: boolean.cc value.h imports.h exn.h
+lexer.o: lexer.cc lexer.h imports.h value.h exn.h
+nil.o: nil.cc value.h imports.h exn.h
+number.o: number.cc value.h imports.h exn.h
+pair.o: pair.cc value.h imports.h exn.h
+parser.o: parser.cc parser.h imports.h lexer.h value.h exn.h
+procedure.o: procedure.cc value.h imports.h exn.h
+rpl.o: rpl.cc imports.h parser.h lexer.h value.h exn.h
+symbol.o: symbol.cc value.h imports.h exn.h
+value.o: value.cc value.h imports.h exn.h

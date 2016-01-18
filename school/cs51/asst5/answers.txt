@@ -1,0 +1,109 @@
+Name: Loren McGinnis
+Username: mcginn
+TF: Ryan
+
+Exercise 1
+
+(a) The first set of functions is the same.  The second set is different.
+
+float quad(point_t &a, point_t b)
+{
+    a->x -= b.x;
+    a->y -= b.y;
+    return((a->x * a->x) + (a->y * a->y))
+}
+
+(b)
+
+cout << "Grades for student " << name << ": ";
+for (i = 0; i < n; i++) {
+    cout << i << "->" << grades[i];
+    if (i < n-1)
+        cout << ", ";
+    else
+        cout << "\n";
+}
+
+(c)
+
+Triangle(Point _a, Point _b, Point _c)
+
+Triangle::Triangle(Point _a, Point _b, Point _c)
+{
+    a = _a;
+    b = _b;
+    c = _c;
+}
+
+(d)
+
+Triangle tri = new Triangle(p1, p2, p3);
+
+(e)
+
+Usage of Point(s)
+float area();
+float perimeter();
+void translate(float dx, float dy);
+void resize(float multiplier);
+A constructer
+A destructer
+
+Exercise 2
+
+(a)
+
+&(a.x)
+
+(b)
+
+{{3,2},{3,4},{5,12}}
+
+(c)
+
+point_t *pa[2];
+
+(d)
+
+pa = pb means that the pointer pa now points to b, but the values
+for b and a do not change.  *pa = *pb actually modifies a so that
+it has the same value as b.
+
+Exercise 3
+
+(a)
+
+What is strange about the implementation of keys() is that it only
+returns a string, where it might be better to return an array or
+vector of strings, so that it can be more easily implemented in
+other code.
+
+(b)
+
+A better testing case would check to see if each key was in the
+string that keys() returned, regardless of their order.
+
+Exercise 4
+
+How did the partnership go overall? Pick one:
+very well    well    OK    poorly      badly
+
+Answer: well
+
+What percentage of the time on pair assignments was spent working together, 
+using the pair programming methodology as we described it? Pick one:
+80-100      60-79    40-59     20-39      0-19
+
+Answer: 80-100
+
+What were the most significant problems you encountered? Indicate any that 
+apply, or write in your own:
+
+    partner ability
+    scheduling
+    coordination during pair programming
+    partner didn't buy in to it
+    I didn't want to do it
+    partner had different expectations
+
+Answer: scheduling

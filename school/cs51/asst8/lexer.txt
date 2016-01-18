@@ -1,0 +1,25 @@
+The lexer.h file declares a struct token. This token contains a tag, which
+indicates parenthesis, dot, value, etc. There is a constructor, and a get_value
+function, which returns the value if the tag is a value, and otherwise raises
+an exception. The tag type and line and column are stored as public variables.
+
+In the constructor of lexer, it is given a stream, which is stored in a private
+variable, and sets line to 1, and column to 0 (beginning of stream). The
+get_next function returns the top-most token on the _pushed stack, if there are
+any tokens here. Otherwise, it just reads in a token from the stream. The _read
+function, which it calls, loops through the stream, and is removing white space.
+It checks if it has encountered ;, which is a comment, and if so, goes to the
+next newline. Otherwise, it checks if the char it has hit is a value token, and
+reads this value. If the char is not a value, it must be some other token, and
+is returned with that tag. 
+
+The lexer keeps track of push_back, by pushing the token onto the _pushed stack.
+
+_read_value is called when _read finds a value token, and this function reads
+till the entire value has been read in. _buf stores the entire value. If the
+_buf starts with a pound sign, the lexer realizes that the token is a bool.
+Otherwise, it attempts to turn the string into a long. If successful, it decides
+the token was a number, and finally, otherwise, it decides it was a symbol.
+
+Lexer.cc includes value.h, and uses the classes for each type of value - it has
+the functions to initialize each type of value.

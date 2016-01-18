@@ -1,0 +1,31 @@
+# Makefile for Scheme51
+# Jesse Tov <tov@eecs>
+
+REPSRC   = boolean.cc lexer.cc nil.cc number.cc pair.cc parser.cc \
+           procedure.cc scheme51.cc symbol.cc value.cc 
+EVALSRC  = env.cc interp.cc prims.cc util.cc eval.cc
+
+SRC      = $(REPSRC) $(EVALSRC)
+OBJ      = $(SRC:.cc=.o)
+
+TESTS    = tests.out
+EXE      = scheme51
+CLEAN    = $(OBJ) $(EXE)
+
+CXXFLAGS = -g -Wall -O0 -DEVAL
+LDFLAGS  =
+
+$(EXE): $(OBJ)
+	$(CXX) $(LDFLAGS) -o $@ $^
+
+%.o: %.cc
+	$(CXX) $(CXXFLAGS) -c $<
+
+tests.out: tests.scm $(EXE)
+	./$(EXE) < $< > $@
+
+Makefile.depend: Makefile $(SRC)
+	$(CXX) $(CXXFLAGS) -MM $(SRC) > $@
+
+include Makefile.depend
+

@@ -1,0 +1,6 @@
+Syntax error: dot unexpected at 24:3
+Syntax error: ')' unexpected at 26:3
+Syntax error: dot unexpected at 28:2
+Syntax error: dot unexpected at 30:6
+Lexical error: #a at 33:0
+Syntax error: ')' expected at 34:8

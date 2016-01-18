@@ -1,0 +1,65 @@
++------------------------------+
+| Garbage collection questions |
+| CS 51 Assignment 9           |
+|                              |
+| Vivek Sant                   |
+| Loren McGinnis               |
++------------------------------+
+
+Place your answers to our garbage collection questions here.
+
+See the assignment for the full text of each question.
+
+> What is the ``implementation overhead'' of garbage collection in this
+> design?  In other words, what work would you have to do (aside from the
+> implementation of the feature itself) to introduce a new kind of managed
+> object into the system?  
+
+Answer: First, we would have to overload the "new" operator of the object
+we are adding to the system.  If it is a complex class (like pair,
+for instance) we would have to write a mark function for the class.  For
+classes very simple (like symbol or number) we would not need a mark function.
+
+
+> How difficult would it be to move this garbage collector to a
+> different C++ program?
+
+Answer:  The simple part of moving this GC to another program is that it is
+separately implemented from the rest of the code in the new program, so
+nothing in the program itself would have to be changed.  However, the new
+operator overload functions and the mark functions would have to be 
+reimplemented for all of the classes in the new program.
+
+>  Where would you place a call or calls to gc_maybe() to allow the
+>  collector to run from time to time?
+
+Answer: We could call gc_maybe() just before we instantiate a new object.
+This way, with a maximum number of objects created, the collector would run
+and clean up what it could before a new object was created.
+
+>  Where would you have to add preserve() and release_n() calls given
+>  your decision for where to call gc_maybe()?
+
+Answer: We would add preserve calls just before collecting for the objects
+that we still need, then after each collect, release the objects. It's like
+trying to paint a room.  Suppose garbage collecting was analagous to doing
+the actual paint job.  However, the furniture in the room that we want to 
+"preserve" needs a protective cloth over it.  After painting, we then can
+"release" the cloth so that people may utilize the furniture.  You know you
+like it.
+
+>  Suggest a different, hopefully better, approach to deciding when to
+>  start collection than the one used.
+
+Answer: gc_maybe() could be implemented so that it compares the counter with the
+number of elements in the preserve list, and then calls the collector when the
+counter is much larger than the list.  When collecting, the counter would be
+reset to the value in the preserve list.  This would call the collector only
+when there was significant amount of objects to clean up.
+
+
+> How could you change this implementation so it is able to actually
+> release memory?
+
+Answer: Dealloc, instead of using a free list, would actually call delete
+on the object.  Alloc would simply not check the free list.

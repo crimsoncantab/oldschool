@@ -1,0 +1,94 @@
+PROBLEM STATEMENT
+To create a parser that takes in a line of scheme code and turns it into a
+parse tree. We will also implement a portion of the representation of different
+types of values that expressions can take on. 
+
+
+BEHAVIOR AND ASSUMPTIONS
+This program will be used as part of a larger system. It merely creates a parse
+tree of operations and expressions, from scheme code. So sample input might be
+something like (+ 1 2), and the program would generate a tree like
+	+
+   / \
+  1   2
+and at this point, before the implementation of evaluate, it will output the
+same string, assuming the code is legal scheme code. Otherwise, it should crash
+gracefully by throwing an error.
+
+Here are some sample "good parses": 
+Input: (+ 1 2) gives
+	+
+   / \
+  1   2
+
+Input: (+ (+ 1 2) (+ 3 4)) gives
+         +
+       /   \
+     +       +
+    / \     / \
+   1   2   3   4
+   
+Input: (and #f #t)
+		and
+	   /   \
+	  #f   #t
+
+Input: (+ (* 1 2) 3)
+         +
+       /   \
+     *      3
+    / \
+   1   2
+   
+Parse errors that can occur: 
+(these are basically just the read_error's - the other errors aren't parser
+errors)
+- Something like (+ + 3) should result in throwing a 
+syntax_error("+ operator expects two expressions, both of which
+should be type <number>",...) exception.
+- Something like (( 3)
+would throw syntax_error("expected a ')'",...) exception. 
+
+
+ARCHITECTURAL DESIGN
+We want an abstract class called Expression, and another abstract class called
+ListRest. For constructors, each class may be given a token, which innately has
+a type (say LPAREN, or VALUE), and the actual contents if it is a value.
+Depending upon the token, the instance of Expression will actually be one of its
+child classes like Lparen, Quote, Value etc. Class parser needs just one 
+Expression as private data, which will contain a pointer to the next Expression,
+and so on. Depending on the token, the parser will call a different private
+expression that is meant to handle that rule in the grammar. 
+Our grammar/private helper functions will be of the form:
+<expression> ::= LPAREN <list-rest>
+			 |	 QUOTE <expression>
+			 |	 VALUE[v]
+<list-rest>  ::= RPAREN
+			 |   <expression> DOT <expression> RPAREN
+			 |   <expression> <list-rest>
+
+Pseudocode for parsing algorithm:
+	1. Constructor for parser takes istream and tokenizes it with lexer, leaving
+	   the expression in private data.
+	2. Depending upon what kind of token it is, it instantiates the appropriate
+	   class and adds that to the expression.
+	3. Each private function it calls defines its own rules for what tokens it
+	   expects next.
+	4. When parser receives token::END from the lexer, it will return NULL.
+
+
+IMPLEMENTATION STRATEGY
+We will finish excercises 1-5 by Monday night.
+We will finish coding the entire skeleton for the parser, Expression, and
+ListRest classes by Tuesday night.
+We will finish actual implementation of these classes by Wednesday night.
+Thursday will be spent debugging and testing.
+Friday is an extra day for any more potential debugging/testing, and for
+cleaning up our code. 
+
+
+TEST PLANS
+We will first feed it simple expressions like (+ 1 2). Then we will have nested
+expressions like (+ (+ 1 2) (+ 1 2)), with more complicated operators than just
+addition. Finally, we will also feed it commands with syntactical errors to make
+sure it crashes gracefully (see above, in Behavior and Assumptions).

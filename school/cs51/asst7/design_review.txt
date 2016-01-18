@@ -1,0 +1,22 @@
+Loren McGinnis
+Parter: Vivek Sant
+CS51 Assignment 7 Design Review
+
+1. The filter functionality in our spam filter was coded in a class of it's own,
+called Filter. If we had implemented the filtering with our Rule class, it would
+make it possible to have one rule filter through the entire mailbox easily, by
+simply passing it the mailbox and having it remove the messages that violate
+that rule.  If the filter was implemented in the message objects, creating a new
+mbox file is more straitforward, as the mailbox simply has to apply the list
+of rules to its messages and remove the spam.  However, when the filter is
+implemented as a separate class, it becomes easy to extend it so that more than
+one mbox file can be created, such as a spam mbox.
+
+2. One primary weakness that I found in our design was the manner in which we
+stored the rules that the spamfilter imported every time it ran.  With the 
+system we used, it is hard to extend it to use more advanced rules that do more
+than pattern matching.  Another weakness came with the MailMessage class, where
+we had to store both the message itself and all of its fields in two separate
+objects.  If we had created more functions that allowed us to manipulate the
+data in a MailMessage better, we would have a more powerful and efficient
+implementation.

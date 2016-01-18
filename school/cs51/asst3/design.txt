@@ -1,0 +1,9 @@
+CS51 Assignment 3
+
+File:          design.txt
+Author:        YOUR-NAME <YOUR-EMAIL@fas.harvard.edu>
+Partner:       YOUR-PATNER'S-NAME <YOUR-PARTNER'S-EMAIL@fas.harvard.edu>
+Collaborators: None
+
+    Write your design in here.  Email it to your TF by Monday,
+    25 February 2008 at 5:00 PM.

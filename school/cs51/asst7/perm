@@ -1,0 +1,9 @@
+#! /bin/tcsh
+# Fixes permissions of files we are working on so that both have access
+# Purely internal, not vital to the problem set, and the spam filter program
+
+chmod 660 *.cpp *.h *.txt *.o *.mbox
+chmod 770 spamfilter
+
+echo ""
+echo "Perms on YOUR files have been fixed!"

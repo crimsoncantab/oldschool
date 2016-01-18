@@ -1,0 +1,48 @@
+6.
+a.) As soon as the function ends, the memory allocated for 
+array[] is removed from the stack, so it returns a pointer to 
+nothing.
+b.) 
+
+#define NUM_ELEMENTS 100
+
+int * createAndInitializeArray() {
+	
+	int * array = (int *) malloc(NUM_ELEMENTS);
+	
+	if (array == NULL)
+		printf("Could not allocate memory");
+	
+	for (int i = 0; i < NUM_ELEMENTS; i++) {
+		array[i] = 0;
+	}
+	return array;
+
+}
+
+c.)The new function uses malloc() to make memory for the array on 
+the heap, memory that is not deleted when the function ends.
+
+7.
+
+swap() makes copies of a and b and swaps them, leaving the 
+originals unchanged, whereas p_swap uses pointers to the original 
+variables to change them from outside of main().
+
+8.
+
+When *a is initialized as a pointer, it is not assigned any 
+particular memory to point to, so we have no idea what it is 
+pointing at, making changing memory at that spot unpredictable or 
+maybe impossible.
+
+9.
+a.) 13
+
+b.) 14
+
+10.
+
+sizeof() takes primitive names as parameters, not regular 
+variables.  Replacing sizeof(str) with ((strlen(str) + 1) * 
+sizeof(char)) would fix the code.

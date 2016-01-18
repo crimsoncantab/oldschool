@@ -1,0 +1,22 @@
+#!/bin/bash
+
+#This program will pipe tests to our version of rpl, and run a diff on the
+#output and what we say are the expected outputs.
+
+#delete actualoutput.txt, and pipe test results to it
+if [ -e file ]
+then
+    rm actual_out.txt
+    rm actual_err.txt
+fi
+echo "Performing tests..."
+rpl < tests.scm 1>actual_out.txt 2>actual_err.txt
+
+#check differences between actual and expected results
+echo "Checking differences..."
+diff actual_out.txt expected_out.txt
+diff actual_err.txt expected_err.txt
+
+echo ""
+echo "Whatever is listed above is the difference between the actual tests"
+echo "and what we claim are the expected values."

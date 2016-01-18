@@ -1,0 +1,5 @@
+#!/bin/tcsh
+
+chmod 660 *.cc *.h *.o *.scm *.txt
+chmod 660 Makefile Makefile.8 Makefile.depend
+chmod 770 SOLN rpl tests

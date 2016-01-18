@@ -1,0 +1,35 @@
+Welcome to Scheme51.  (Press Control-D to quit.)
+> 5
+> 89
+> -4
+> #f
+> ()
+> #<primproc:<>
+> #<primproc:load>
+> #<primproc:modulo>
+> 6
+> 1()
+> 2()
+> foo
+> (bar baz qux)
+> good
+> good
+> > #f
+> #<userproc:-anon->
+> #<userproc:identity>
+> 8
+> #t
+> hello
+> #<userproc:identity>
+> 8
+> #t
+> hello
+> #<userproc:identity>
+> (3 5 7 11)
+> 42
+> > ((lambda (z) (lambda (x) (cons x (cons y (cons z (quote ())))))) x)
+> (3 2 1)
+> (* x x)
+> 9
+> > (20)
+> > > > > > > > > > > > 

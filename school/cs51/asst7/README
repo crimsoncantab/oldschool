@@ -1,0 +1,26 @@
+------------------------------------------------------------------------------
+SPAM FILTER
+CS 51 PSet 7
+Loren Mcginnis and Vivek Sant
+------------------------------------------------------------------------------
+
+README
+
+How to specify rules
+- All rules must go in rules.txt
+- Have 1 rule per line
+- Format of a rule is: "Field" "Text"
+  so field can be Subject, Body, or To.
+  These rules should be specified with a capital first letter, and be all one
+  word (naturally, for these tags!).
+
+How to run the program - and test that it performs as expected
+- We have included the files in.mbox, out.mbox, and rules.txt
+- When you run the Makefile, the executable spamfilter is produced
+- in.mbox has 3 messages, the middle of which should be filtered out as spam
+  according to our rules.txt
+- So you can run "spamfilter in.mbox out.mbox rules.txt", and out.mbox will
+  contain a filtered version of in.mbox - it will only have the 2 clean
+  messages in it.
+  
+------------------------------------------------------------------------------
