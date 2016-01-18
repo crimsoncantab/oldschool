@@ -1,0 +1,137 @@
+################################################################################
+################################################################################
+Fix the Code
+################################################################################
+################################################################################
+
+0.
+If the master sends something to itself, and the MPI implementation blocks on 
+Send() until Recv() is called, then we have a deadlock. I would check that
+i != iMasterProc.
+
+The fixed code:
+
+void master(){
+
+    const int nProcs = MPI::COMM_WORLD.Get_size();
+    const int msgID = 123;
+
+    // send a random number to each worker
+    for(int i=0; i<nProcs; i++){
+        unsigned r = random();
+        if (i != iMasterProc) {
+            MPI::COMM_WORLD.Send(&r, 1,
+                MPI::BYTE, i, msgID);
+        }
+    }
+
+    //...
+    //...
+}
+
+################################################################################
+
+1.
+The size of the message is specified incorrectly.  MPI expects the second
+parameter of Bcast to be the number of elements, and determines the element
+length from the third parameter.
+
+The fixed code:
+
+const int iMasterProc = 0;
+
+void master(){
+
+    const int magic_number = 1234567;
+
+    // broadcast one random number to all the workers
+    MPI::COMM_WORLD.Bcast(&magic_number, 1, MPI::INT, iMasterProc);
+
+    //...
+    //...
+}
+
+void worker(){
+    int magic_number;
+    MPI::COMM_WORLD.Bcast(&magic_number, 1, MPI::INT, iMasterProc);
+
+    //...
+    //...
+}
+
+################################################################################
+
+2.
+After fixing a syntactic mistake, this code should work as intended.
+Send blocks until the MPI implementation has copied the buffer, so changing
+the value afterwards should not affect the reciever's value.
+
+The fixed code:
+
+const int iTag = 100;
+
+void master(){
+
+    float x =3.14159;
+
+    // send x to worker #1
+    MPI::COMM_WORLD.Send(&x, sizeof(float), MPI::BYTE, 1, iTag);
+
+    // now modify x
+    x = 10.0f;
+
+}
+
+################################################################################
+################################################################################
+Questions
+################################################################################
+################################################################################
+
+1.
+I could not figure out how to use the cuda profiler with mpi, so many of my
+assumptions about performance are guesses, based on the "little diversion".
+I assumed that the biggest bottleneck in this case would be copying data between
+the mpi nodes, since this is interprocess communication, the slowest data
+transfer in the whole program.  Thus, it
+would be best if all the data could be copied once on output and once on input.
+Thus, I decided to do horizontal striping as a tiling method, so that all of the
+data that a node needed would be contiguous, including overlap.  On top of that,
+I reused some of the ideas from asst2, implementing texture memory in the kernel
+so that reading the input data in the GPU was efficient (and it made dealing
+with boundaries easier).
+
+2.
+Small filters do have a significant performance boost over larger
+ones.  This is because the number amount of computation per pixel/thread is
+proportional to the square of the filter size.
+
+3.
+The scale is a bit less than a linear speedup.  As the number of nodes
+increases, the amount of communication overhead increases as well, so the
+benefit of partitioning the data wanes.  However, the aggregate amount of data
+that the master node had to transfer did not change significantly as more
+nodes were added, so the speedup continued to 8 nodes.
+
+4.
+The bottleneck is definitely the communication of data, not the computation.
+As mentioned in the little diversion, the slowest transfer point of memory
+is IPC.  For more than 2 nodes, this actually involves sending data over the
+network.  The amount of data that each node has to crunch decreases, but waiting
+for the data and sending it back is really slow.  Since I'm using synchronous
+Send() and Recv(), the master can only get/send data to/from one node at a time,
+so the entire cluster has to essentially wait the amount of time it takes to
+transfer all the data, no matter how many nodes there are.
+
+5.
+I haven't used 0mq, so I cannot base performance on actual data, but from what I
+hear 0mq has the potential to be much faster than MPI for this problem. The
+downside is that setting up 0mq requires a lot more code and thought than MPI,
+and getting it right may be trickier.
+
+6.
+a. True
+b. False (I claim because 0mq is not a "specification")
+c. False (It may be true for some implementations, but MPI doesn't *have* to be
+   based on sockets)
+d. True

@@ -1,0 +1,10 @@
+
+
+syntax: regexp
+\.out$
+\.in$
+obj/
+bin/
+(common|lib|shared)
+\.(bmp|cache|trc)$
+~$

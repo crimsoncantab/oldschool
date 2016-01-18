@@ -1,0 +1,3 @@
+http://developer.download.nvidia.com/compute/cuda/sdk/Projects/histogram.tar.gz
+
+http://en.wikipedia.org/wiki/Luminance_(relative)

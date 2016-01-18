@@ -1,0 +1,56 @@
+
+********************************************************************************
+********************************************************************************
+Answers
+********************************************************************************
+********************************************************************************
+Describe the details of your implementation. Explain any assumptions you made or
+shortcuts you took, such as links you ignored. What data types did you use for
+keys and values in the various MapReduce stages.
+
+1.
+See comments in .py files for key/value information in each step.  Basically, I
+used a regular expression to parse the raw data, ignoring anything that did not
+match.  I removed the text to the left of the pipe in a link, since that isn't
+part of the link name.  I also striped left and right whitespace and replaced
+any tabs that might have shown up in a link with spaces (I used tabs to
+delimit everything in my outputs).  In the iterative step, I ignored all links
+that did not show up from the first step (dead links).  However, the number of
+deadlinks on a page did affect the page's weight in determining outgoing
+pagerank values.  In other words, the deadlinks remained in the link graph are
+included in the page's link count.  Duplicates also count more than once (which
+is reasonable, in the random walk sense).
+
+********************************************************************************
+
+2. The formula is iterative, each step similar to a single click from a surfer.
+The idea is that if a surfer randomly clicked on pagelinks, we want to know how
+likely is a page is to be clicked on.  Thus, the likelihood that the surfer is
+on a certain page affects the likekihood that the surfer will be on any pages
+it links to.  This is modeled by evenly dividing a page's pagerank with all of
+it's outgoing links.  Eventually, the process converges, and, normalized, the
+pagerank of each link is the liklihood that a surfer will end on that page.
+
+********************************************************************************
+3. The dampening factor is the liklihood at each page that a surfer will
+continue surfing.  If it is 0, that means the surfer stops on the first page
+(which is picked randomly), so every page gets the same pagerank.
+
+
+********************************************************************************
+4.
+
+0.254	B
+0.206	F
+0.145	D
+0.128	A
+0.120	C
+0.074	G
+0.074	E
+
+********************************************************************************
+5.  It seems that hadoop does a pretty good job of scaling.  With replication,
+it seems pretty fault tolerant.  However, there is a big performance bottleneck:
+communication.  Each mapper will probably be sending data to each reducer, which
+causes a lot of network traffic.  If the data could be partitioned a priori in a
+way to minimize this, it would help combat the congestion.

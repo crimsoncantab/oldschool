@@ -1,0 +1,15 @@
+1:
+y : 10
+
+2:
+The first line in main() declares b as an int, not an int *
+Two ways of fixing that line:
+    int * a, * b;
+or
+    int * a;
+    int * b;
+    
+3:
+Due to floating point error, f is not exactly 1.0.
+It is more useful to see if f is within some epsilon of 1.0:
+    if (f < 1.01f && f > .99f)

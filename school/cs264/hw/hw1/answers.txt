@@ -1,0 +1,48 @@
+Note:  for the "extra credit" the code is in vector_reduction1/, and the usage
+is as such:
+vector_reduction [num_elements] [file_name]
+If the file_name is specified, num_elements must be specified.
+Without a file_name, numbers are generated randomly.
+Without a num_elements, 512 is used as default
+
+1.
+1 = (1-f + f / 1000)*500
+f = parallel fraction = 998/999
+
+2.
+T = 1/(.01 + .99 (.20)) = 0.208
+Speedup = 1/T = 4.8077
+
+3.
+10 synchronizations
+
+4.
+Using n threads:
+Min: 0
+Max: 9
+Average: 0.998
+
+5.
+GPUs have a maximum on the number of threads that can be inside of a block.
+The kernel call will not work if NUM_ELEMENTS is too large.
+
+6.
+Using shared memory gave about a 25% speedup.  Without Shared memory, the
+kernel ran for 12 us.  When shared memory was used, the runtime dropped
+to 9 us:
+
+with shared mem:
+memcpyHtoD	5.44
+reduction	9.152
+memcpyDtoH	4.544
+without:
+memcpyHtoD	5.44
+reduction	12
+memcpyDtoH	4.544
+
+7.
+If what the answer is saying is that the GPU can run a different program for
+each fragment/vertex, that is incorrect.  The GPU can (generally) only run
+one instruction set at a time. The benefit of GPU architecture comes with
+lots of data that needs to be run through the exact same process. Thus, the GPU
+can run one fragment/vertex program on many fragments/vertices at a time.
