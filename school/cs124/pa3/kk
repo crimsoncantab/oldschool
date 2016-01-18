@@ -1,0 +1,224 @@
+#!/usr/bin/python
+import math
+import sys
+
+import heapq
+import random
+
+#these are negative to work with the min-heap in run_kk
+RAND_MAX = 0L
+RAND_MIN = -1000000000000L
+NUM_ITER = 25000 #how long should the approx algs run
+NUM_INSTANCE = 50 #how many datasets to run on
+LIST_SIZE = 100 #size of each dataset
+DEBUG = False #if True prints more stuff during testing
+
+def read_nums(filename): #read nums (possibly large) separated by \n's
+	file = open(filename, "r")
+	list = []
+	for line in file:
+		list.append(-long(line.strip()))#again, vals are negative for min-heap handling
+	return list
+
+def rand_gen(): #rand number in our range
+	return random.randrange(RAND_MIN, RAND_MAX, 1)
+	
+def rand_gen_unit(): #returns -1 or 1 with p=.5 for both
+	val = random.random()
+	if val < .5:
+		return -1
+	return 1
+
+def make_prepartition(length):
+	prep_list = []
+	for i in range(length):
+		prep_list.append(random.randrange(length))
+	return prep_list #defines which bucket each value should go into (ranged [0...length-1])
+
+def apply_prepartition(my_list, prepartition): #prepartitions list into a new list, defined by the prepartition parameter
+	new_list = []
+	for i in range(len(my_list)):
+		new_list.append(0L)
+	for j in range(len(my_list)):
+		new_list[prepartition[j]] += my_list[j]
+	return new_list
+
+def get_residue_pre(my_list, pre): #given a list and a solution list, compute the residue
+	pre_list = apply_prepartition(my_list, pre)
+	res, dummy = run_kk(pre_list)
+	return res
+
+
+def get_sol_neighbor_pre(pre): #return a solution list that is close to given solution
+	pre_n = list(pre)
+	keep_going = True
+	while keep_going:
+		i = random.randrange(len(pre)) #from [0...n-1]
+		j = random.randrange(len(pre)) #from [0...n-1]
+		if pre_n[i] == j: #we want the change to do something, it won't in this case
+			continue
+		else:
+			pre_n[i] = j
+			keep_going = False
+	return pre_n
+
+def run_random_once_pre(my_list): #find a random solution, return it's residue
+	pre = make_prepartition(len(my_list))
+	res = get_residue_pre(my_list, pre)
+	return res, pre
+
+def run_random_pre(my_list): #see pseudocode in assignment
+	min_res, min_pre = run_random_once_pre(my_list)
+	for i in range(NUM_ITER):
+		new_res, new_pre = run_random_once_pre(my_list)
+		if min_res > new_res: #pick the best of NUM_ITER solutions
+			min_res, min_pre = new_res, new_pre
+	return min_res, min_pre
+
+def run_hill_climb_pre(my_list):#see pseudocode in assignment
+	res, pre = run_random_once_pre(my_list)
+	for i in range(NUM_ITER):
+		pre_n = get_sol_neighbor_pre(pre)
+		res_n = get_residue_pre(my_list, pre_n)
+		if (res_n < res):
+			res, pre = res_n, pre_n
+	return res, pre
+
+def run_sim_anneal_pre(my_list):#see pseudocode in assignment
+	res, pre = run_random_once_pre(my_list)
+	res_b, pre_b = res, pre
+	for i in range(NUM_ITER):
+		pre_n = get_sol_neighbor_pre(pre)
+		res_n = get_residue_pre(my_list, pre_n)
+		if (res_n < res) or (should_anneal_jump(res, res_n, i)):#jump, if it's smaller (of course), or if the probability function says to
+			res, pre = res_n, pre_n
+		if (res < res_b):#we want to keep the best answer we ever find
+			res_b, pre_b = res, pre
+	return res_b, pre_b
+
+def get_rand_sol(size): #get a random list of -1s and 1s of given size
+	sol = []
+	for i in range (size):
+		sol.append(rand_gen_unit())
+	return sol
+
+def get_residue(my_list, sol): #given a list and a solution list, compute the residue
+	residue = 0L
+	for i, val in enumerate(my_list):
+		residue += (val * sol[i])
+	return abs(residue)
+
+def get_sol_neighbor(sol): #return a solution list that is close to given solution
+	sol_n = list(sol)
+	i = random.randrange(len(sol)) #from [0...n-1]
+	sol_n[i] *= -1
+	if random.random() < .5: #maybe we want to move two elements
+		i2 = random.randrange(len(sol)-1) #we're picking without replacement, from [0...n-2]
+		if i2 == i: #if we get the same value, just make it the val we left out: n-1
+			i2 = len(sol)-1
+		sol_n[i2] *= -1
+	return sol_n
+
+def run_random_once(my_list): #find a random solution, return it's residue
+	sol = get_rand_sol(len(my_list))
+	res = get_residue(my_list, sol)
+	return res, sol
+
+def run_random(my_list): #see pseudocode in assignment
+	min_res, min_sol = run_random_once(my_list)
+	for i in range(NUM_ITER):
+		res, sol = run_random_once(my_list)
+		if min_res > res: #pick the best of NUM_ITER solutions
+			min_res, min_sol = res, sol
+	return min_res, min_sol
+
+def run_hill_climb(my_list):#see pseudocode in assignment
+	sol = get_rand_sol(len(my_list))
+	res = get_residue(my_list, sol)
+	for i in range(NUM_ITER):
+		sol_n = get_sol_neighbor(sol)
+		res_n = get_residue(my_list, sol_n)
+		if (res_n < res):
+			res, sol = res_n, sol_n
+	return res, sol
+
+def should_anneal_jump(res_o, res_n, iter): #using T function in assignment
+	t = 10000000000L * math.pow(0.8, math.floor(iter / 300))
+	return (random.random() < math.exp((res_o - res_n) / t))
+
+def run_sim_anneal(my_list):#see pseudocode in assignment
+	sol = get_rand_sol(len(my_list))
+	res = get_residue(my_list, sol)
+	res_b, sol_b = res, sol
+	for i in range(NUM_ITER):
+		sol_n = get_sol_neighbor(sol)
+		res_n = get_residue(my_list, sol_n)
+		if (res_n < res) or (should_anneal_jump(res, res_n, i)):#jump, if it's smaller (of course), or if the probability function says to
+			res, sol = res_n, sol_n
+		if (res < res_b):#we want to keep the best answer we ever find
+			res_b, sol_b = res, sol
+	return res_b, sol_b
+
+
+def run_kk(my_list): #we assume the list has all negative values
+	my_list = list(my_list) #we don't want to affect the passed in list, so copy it (taking O(n))
+	my_list.append(0L) #basically to pad the end of the pqueue, so that we are guaranteed to hit a 0
+	heapq.heapify(my_list)
+	while True: #with O(n) iterations, takes O(n log n)
+		max = heapq.heappop(my_list) #O(log n)
+		if max == 0L: #all that's left are 0s, so we have perfect partition (very unlikely with these large N)
+			return abs(max), [] #empty list is so function returns same as others
+		max2 = heapq.heappop(my_list)#O(log n)
+		if max2 == 0L:#all that's left are 0s, so max is the residue
+			return abs(max), []
+		heapq.heappush(my_list, max - max2)#O(log n)
+
+def run_tests():
+	#if given no cmd args,test all the different algs on different representations
+
+	#big-kahuna variable to hold all our results
+	results = {"run_random":[],
+		"run_hill_climb":[],
+		"run_sim_anneal":[],
+		"run_kk":[],
+		"run_random_pre":[],
+		"run_hill_climb_pre":[],
+		"run_sim_anneal_pre":[]}
+	for i in range(NUM_INSTANCE):
+		my_list = [] #an instance
+		for j in range(LIST_SIZE):  #populate
+			my_list.append(rand_gen()) #these will be negative
+		if DEBUG:
+			print "my_list", my_list
+		for func in results: #iterates over every function
+			if not DEBUG:
+				print ".", #it's annoying not to know how quicky it's going
+				sys.stdout.flush() #apparently dots don't show up immediately w/o this
+			res, sol = eval(func + "(my_list)") #i am so clever
+			if DEBUG:
+				print func, res, sol
+			results[func].append(res)
+		if DEBUG:
+			print "my_list", my_list #sanity check - show that list hasn't changed
+		else:
+			print #line for every instance
+	#print all the data
+	for func in results:
+		print func
+		for val in results[func]:
+			print str(val)
+
+def partition_from_file(): #run normally, with usage kk [inputfile]
+	file = sys.argv[1]
+	my_vals = read_nums(file)
+	if DEBUG:
+		print my_vals
+	res, sol = run_kk(my_vals)
+	print res
+
+if __name__ == "__main__":
+	random.seed()
+	if len(sys.argv) == 2: #run on file input
+		partition_from_file()
+	else:
+		run_tests()
