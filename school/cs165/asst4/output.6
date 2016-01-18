@@ -1,0 +1,43 @@
+Set up environment.
+Initial database: 
+Commit transaction 80000001.
+80000002: Adding key 75 with data: strval1890169011/1890169011
+Commit transaction 80000002.
+80000003: Adding key 89 with data: strval1482026532/1482026532
+80000003: Adding key 118 with data: strval1646196966/1646196966
+Commit transaction 80000003.
+80000004: Adding key 47 with data: strval1804518859/1804518859
+80000004: Adding key 7 with data: strval1172666421/1172666421
+80000004: Deleting key 118
+Commit transaction 80000004.
+80000005: Adding key 113 with data: strval2056434879/2056434879
+Aborting transaction 80000005.
+80000006: Deleting key 113
+Key 113 not in database
+80000006: Deleting key 89
+80000006: Deleting key 75
+Commit transaction 80000006.
+80000007: Modifying key 7 with data: strval1625105701/1625105701
+Aborting transaction 80000007.
+80000008: Deleting key 113
+Key 113 not in database
+Aborting transaction 80000008.
+80000009: Adding key 127 with data: strval1641999533/1641999533
+80000009: Adding key 69 with data: strval718620993/718620993
+80000009: Adding key 7 with data: strval1369471797/1369471797
+Commit transaction 80000009.
+8000000a: Deleting key 113
+Key 113 not in database
+8000000a: Deleting key 47
+8000000a: Deleting key 69
+Aborting transaction 8000000a.
+Final database
+Key:   7 Data:  strval1172666421  1172666421  LSN:	[1][420]
+Key:  47 Data:  strval1804518859  1804518859  LSN:	[1][344]
+Key:  69 Data:   strval718620993   718620993  LSN:	[1][1076]
+Key: 127 Data:  strval1641999533  1641999533  LSN:	[1][1000]
+Database after recovery
+Key:   7 Data:  strval1172666421  1172666421  LSN:	[1][420]
+Key:  47 Data:  strval1804518859  1804518859  LSN:	[1][344]
+Key:  69 Data:   strval718620993   718620993  LSN:	[1][1076]
+Key: 127 Data:  strval1641999533  1641999533  LSN:	[1][1000]

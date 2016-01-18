@@ -1,0 +1,78 @@
+/*-
+ * This file is derived from the file copyrighted below.
+ *
+ * See the file LICENSE for redistribution information.
+ *
+ * Copyright (c) 2002,2007 Oracle.  All rights reserved.
+ *
+ * $Id: ex_apprec.src,v 12.6 2007/05/17 15:15:13 bostic Exp $
+ */
+
+PREFIX	asst4
+
+/*
+ * This is the source file used to generate the application-specific recovery
+ * functions used by the asst4 example.  It should be turned into usable
+ * source code (including a template for the recovery function itself) by
+ * invoking changing to the dist directory of the DB distribution and
+ * running the gen_rec.awk script there as follows:
+ *
+ *     awk -f gen_rec.awk \
+ *         -v source_file=MYDIR/asst4_auto.c \
+ *         -v printfile=MYDIR/asst4_autop.c \
+ *	   -v header_file=MYDIR/asst4_auto.h \
+ *         -v template_file=MYDIR/asst4_template \
+ *         < MYDIR/asst4.src
+ * where MYDIR is the full path name of your asst4 directory.
+ */
+INCLUDE #include <ctype.h>
+INCLUDE #include <errno.h>
+INCLUDE #include <stdlib.h>
+INCLUDE #include <string.h>
+INCLUDE
+INCLUDE #include <db.h>
+INCLUDE
+INCLUDE #include "asst4.h"
+
+/*
+.* Describe your log records here.  You need not have separate log
+ * records for each operation; it's entirely up to you.
+ */
+
+/*
+ * add log record - for the add_item routine
+ * lsn:		the original lsn on the record
+ * key:		the key of the record
+ * new:		the value of the added record
+ */
+BEGIN	add		49			10001
+POINTER	lsn		DB_LSN *	lu
+ARG		key		u_int32_t	lu
+DBT		new		DBT			s
+END
+
+/*
+ * del log record - for the del_item routine
+ * lsn:		the original lsn on the record
+ * key:		the key of the record
+ * old:		the value of the removed record
+ */
+BEGIN	del		49			10002
+POINTER	lsn		DB_LSN *	lu
+ARG		key		u_int32_t	lu
+DBT		old		DBT			s
+END
+
+/*
+ * mod log record - for the mod_item routine
+ * lsn:		the original lsn on the record
+ * key:		the key of the record
+ * old:		the value of the old record
+ * new:		the value of the new record
+ */
+BEGIN	mod		49			10003
+POINTER	lsn		DB_LSN *	lu
+ARG		key		u_int32_t	lu
+DBT		old		DBT			s
+DBT		new		DBT			s
+END

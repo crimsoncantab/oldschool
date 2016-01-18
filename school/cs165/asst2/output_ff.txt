@@ -1,0 +1,58 @@
+a
+Turing,Alan,,,2 Warrington Crescent,London,,W9,England
+b
+Ashworth,Victoria ,,,Fauntleroy Circus,London,,,UK
+Brown,Elizabeth ,1715559199,,Berkeley Gardens 12  Brewery,London,,,UK
+Cooper,Charlotte ,1715552242,,49 Gilbert St.,London,,EC1 4SD,UK
+Crowther,Simon ,1715557733,1715552530,South House 300 Queensbridge,London,,,UK
+Devon,Ann ,1715550297,1715553373,35 King George,London,,,UK
+Hardy,Thomas ,1715557788,1715556750,120 Hanover Sq.,London,,,UK
+Kumar,Hari ,1715555646,,90 Wadhurst Rd.,London,,,UK
+Turing,Alan,,,2 Warrington Crescent,London,,W9,England
+c
+20
+d
+Saldana,Jeffrey,,,9 7th St,Chicago,IL,49568,
+Singh,Albert,,,505 7th St,Chicago,IL,,
+e
+Barman,Nancy
+Kirshy,Nick
+Petersen,Niels 
+Pugh,Nick
+f
+Davis,Barney,Suffolk,VA,23433
+Valdes,Doug,Virginia Beach,VA,23468
+Wheelan,Myra,Hampton,VA,23668
+g
+     27 Albany
+     20 Boston
+     19 Chicago
+     22 Dallas
+     18 Detroit
+     31 Houston
+     30 Las Vegas
+      8 London
+     23 Los Angeles
+      5 Mexico D.F.
+     20 Newton
+     27 New York
+     22 Portland
+     22 Providence
+     20 San Francisco
+      5 Sao Paulo
+     23 Seattle
+     17 Somerville
+     12 West Newton
+h
+5
+i
+Ali,Karl,9844561781,9844568285,877 7th St,Somerville,MA,,
+Derwent,Bruce,2208812169,2208815092,867 Page Dr,Newton,MA,26486,
+Karttunen,Matti ,902248858,902248858,Keskuskatu 45,Helsinki,,,Finland
+Marinaro,Michelle,2784829289,2784824888,,Newton,MA,,
+Miller,David,7818372219,7818376684,22 9th St,Newton,MA,29868,
+Ocampo,Liz,6184878701,6184876247,768 Main St,Portland,OR,,
+Swope,Josie,9848336239,9848338879,577 3rd St,Albany,NY,90465,
+j
+Ferguson,Craig,7116443773
+Smothermon,Grant,3992014114

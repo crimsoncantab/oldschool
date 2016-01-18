@@ -1,0 +1,2757 @@
+name
+Top Gun
+Rain Man
+A Few Good Men
+The Firm
+Interview with the Vampire: The Vampire Chronicles
+Jerry Maguire
+Mission: Impossible
+Mission: Impossible II
+Minority Report
+Vanilla Sky
+Mission: Impossible III
+The Last Samurai
+Collateral
+War of the Worlds
+year	avg_runtime
+1937	83.0000
+1939	238.0000
+1942	70.0000
+1961	79.0000
+1964	139.0000
+1965	185.5000
+1967	91.5000
+1969	110.0000
+1970	118.0000
+1972	175.0000
+1973	120.3333
+1974	129.0000
+1975	119.0000
+1976	119.0000
+1977	116.3333
+1978	117.6000
+1979	105.0000
+1980	117.2500
+1981	112.0000
+1982	109.6000
+1983	133.0000
+1984	108.5000
+1985	101.0000
+1986	111.0000
+1987	110.5000
+1988	111.6667
+1989	107.5000
+1990	121.8889
+1991	117.0000
+1992	118.3636
+1993	128.3750
+1994	119.0833
+1995	110.5000
+1996	118.0667
+1997	124.0000
+1998	113.8889
+1999	111.7143
+2000	117.3636
+2001	119.6000
+2002	116.2083
+2003	115.9655
+2004	118.6667
+2005	119.4211
+2006	118.2000
+2007	112.8571
+2008	111.9667
+2009	117.6667
+year
+1939
+1964
+1965
+1972
+1973
+1974
+1983
+1990
+1993
+1997
+avg_runtime
+137.8800
+name
+Sigourney Weaver
+Stephen Lang
+Joel Moore
+Zoe Saldana
+Sam Worthington
+James Cameron
+name
+Sam Worthington
+percent
+32.9457
+name
+James Cameron
+Clint Eastwood
+Jack Nicholson
+James L. Brooks
+Robert Wise
+name
+Avatar
+The Dark Knight
+Star Wars
+Shrek 2
+E.T.: The Extra-Terrestrial
+Star Wars: Episode I - The Phantom Menace
+Pirates of the Caribbean: Dead Man's Chest
+Spider-Man
+Transformers: Revenge of the Fallen
+Star Wars: Episode III - Revenge of the Sith
+Spider-Man 2
+The Passion of the Christ
+Jurassic Park
+The Lord of the Rings: The Two Towers
+Finding Nemo
+Spider-Man 3
+The Lion King
+name
+James Cameron
+George Lucas
+Steven Spielberg
+Sam Raimi
+Michael Bay
+Chris Columbus
+Peter Jackson
+Andrew Adamson
+Gore Verbinski
+David Yates
+name
+Russell Crowe
+name1	name2
+Ellen Hamilton Latzen	Taylor Momsen
+Kate Beckinsale	Taylor Momsen
+Jason Robards	Taylor Momsen
+Miguel Ferrer	David Dorfman
+Chris Rock	David Dorfman
+Patrick Kilpatrick	Jonathan Ke Quan
+Amy Adams	Jonathan Ke Quan
+Geoffrey Blake	Jonathan Ke Quan
+Drew Barrymore	Kyle MacLachlan
+Sterling Holloway	Dave Foley
+Denholm Elliott	Colin Farrell
+Kyle Secor	Colin Farrell
+Clint Eastwood	Colin Farrell
+Chris Elliott	Colin Farrell
+Anthony Daniels	Kelsey Grammer
+Natascha McElhone	Dee Wallace
+KaDee Strickland	Dee Wallace
+John Heard	Raquel Alessi
+Rachel Weisz	Raquel Alessi
+Nancy Cartwright	Mathieu Amalric
+Adam Goldberg	Mathieu Amalric
+Jason Isaacs	Max Casella
+Denis Arndt	David Warshofsky
+Neal McDonough	David Warshofsky
+Elizabeth Perkins	Romany Malco
+Owen Wilson	Romany Malco
+Kevin Nealon	Romany Malco
+Kevin Anderson	Patrick Dempsey
+Jerry Orbach	Katie Featherston
+Brad Pitt	Ossie Davis
+Ray Liotta	Ossie Davis
+Steve Zahn	Gerard Butler
+Julia Roberts	Joan Plowright
+Lauren Holly	Joan Plowright
+Ron Howard	Jack Davenport
+Edward Burns	Terry Kinney
+Michael Douglas	Clea DuVall
+Mark Hamill	Clea DuVall
+Kenneth Branagh	Harold Gould
+Ned Beatty	Sebastian Cabot
+Geoffrey Rush	Sebastian Cabot
+Daniel Craig	Bryce Dallas Howard
+Christine Anu	Roberts Blossom
+Miranda Richardson	Jessica Biel
+Helen Slater	Adam Brody
+Brandon Routh	Nick Swardson
+Sean Connery	Anthony Heald
+Bruce Allpress	Anthony Heald
+William Shatner	Francesco Quinn
+Reese Witherspoon	Francesco Quinn
+Leonard Nimoy	James Caan
+Pernilla August	Oliver Reed
+Michael Gough	Salli Richardson-Whitfield
+Oded Fehr	Salli Richardson-Whitfield
+Alice Braga	Emma Watson
+Seth Rogen	Emma Watson
+Thomas F. Wilson	Emma Watson
+Zach Braff	Paul Rudd
+Richard Gere	James Coburn
+Joan Cusack	David Morse
+Willem Dafoe	Albert Brooks
+Terence Stamp	Albert Brooks
+John Leguizamo	Albert Brooks
+Ralph Fiennes	Hector Elizondo
+Thomas Ian Nicholas	Chiwetel Ejiofor
+Raul Julia	Brittany Snow
+Rodney A. Grant	Brittany Snow
+Jim Carrey	James Earl Jones
+Kate Beckinsale	Ellen Hamilton Latzen
+Jason Robards	Ellen Hamilton Latzen
+John Hannah	Dev Patel
+Bonnie Hunt	Paul Le Mat
+Jeff Goldblum	Valeria Golino
+Geraldine Chaplin	Ernie Dingo
+Scatman Crothers	Karen Duffy
+Robin Williams	Josh Hartnett
+Matt Dillon	George Kennedy
+Rose McGowan	Paddy Considine
+R. Lee Ermey	Steve McQueen
+Mathieu Amalric	Phil Daniels
+Nancy Cartwright	Phil Daniels
+Adam Goldberg	Phil Daniels
+William Fichtner	Sharlto Copley
+Alexandra Astin	Sharlto Copley
+Jeff Daniels	Benicio Del Toro
+Michelle Yeoh	Leland Orser
+Howard Duff	Michael Roof
+Scott Glenn	Walter Barnes
+Catherine Keener	Amanda Plummer
+Christian Bale	Eddie Collins
+Vanessa Redgrave	Eddie Collins
+Amy Adams	Patrick Kilpatrick
+Geoffrey Blake	Patrick Kilpatrick
+Karen Allen	Guy Pearce
+Jeff Conaway	Guy Pearce
+Kate Winslet	Guy Pearce
+Jordi Molla	Lisa Blount
+Josh Hartnett	Don Knotts
+Rory Culkin	Don Knotts
+Robin Williams	Don Knotts
+Maria Bello	David Tennant
+Eli Roth	David Tennant
+Adam Sandler	Goran Visnjic
+Jason Bateman	Carl Weathers
+Jean Reno	Christine Taylor
+William Atherton	Christine Taylor
+Lisa Kudrow	Christine Taylor
+Gina Gershon	Jeanne Tripplehorn
+Taylor Momsen	Olivia Williams
+Ellen Hamilton Latzen	Olivia Williams
+Kate Beckinsale	Olivia Williams
+Jason Robards	Olivia Williams
+Freddie Highmore	Valente Rodriguez
+John Goodman	Bonnie Bartlett
+Burt Reynolds	Lymari Nadal
+Taylor Lautner	Lymari Nadal
+Macaulay Culkin	Chris Pine
+Graham Greene	Bruce Campbell
+Timothy Hutton	Bob Balaban
+Hiroyuki Sanada	Josh Hutcherson
+Hugh Jackman	Josh Hutcherson
+Ned Beatty	Geoffrey Rush
+Julianne Moore	Bruno Campos
+Brendan Fraser	Bruno Campos
+Ned Beatty	William Lee Scott
+Sebastian Cabot	William Lee Scott
+Geoffrey Rush	William Lee Scott
+Salli Richardson-Whitfield	Miley Cyrus
+Michael Gough	Miley Cyrus
+Oded Fehr	Miley Cyrus
+Roberts Blossom	Derrick O'Connor
+Christine Anu	Derrick O'Connor
+Pat E. Johnson	Derrick O'Connor
+Eddie Marsan	Derrick O'Connor
+Jonathan Loughran	Derrick O'Connor
+Richard McCabe	Derrick O'Connor
+Kathryn Hunter	Derrick O'Connor
+Gerard Butler	John McConnell
+Steve Zahn	John McConnell
+Luenell	Tanveer K. Atwal
+Robert Duvall	Diane Keaton
+Christian Slater	Andy Samberg
+Carl Weathers	Holland Taylor
+Jason Bateman	Holland Taylor
+Robert Loggia	John Ales
+Ralph Bellamy	Thomas Haden Church
+Ewan McGregor	Lucille Bliss
+Christopher Walken	Lucille Bliss
+Roberts Blossom	Spencer Vrooman
+Christine Anu	Spencer Vrooman
+Derrick O'Connor	Spencer Vrooman
+Pat E. Johnson	Spencer Vrooman
+Eddie Marsan	Spencer Vrooman
+Jonathan Loughran	Spencer Vrooman
+Richard McCabe	Spencer Vrooman
+Kathryn Hunter	Spencer Vrooman
+Lisa Blount	David Gulpilil
+Jordi Molla	David Gulpilil
+Omar Sharif	Haley Joel Osment
+Max von Sydow	Haley Joel Osment
+Thomas F. Wilson	Alice Braga
+Kevin Kline	Mark Walton
+Cleavon Little	Teri Polo
+Jonathan Pryce	Teri Polo
+Morgan Freeman	Teri Polo
+William Shatner	Reese Witherspoon
+Billy Burke	Dougray Scott
+Joaquim de Almeida	Chris Sanders
+Frances Fisher	Tim Blake Nelson
+June Foray	James Marsden
+Bonnie Bartlett	Brawley Nolte
+John Goodman	Brawley Nolte
+Benjamin Bratt	Anna Popplewell
+Alice Braga	Seth Rogen
+Thomas F. Wilson	Seth Rogen
+Asia Argento	Moon Bloodgood
+Mary Elizabeth Mastrantonio	Justin Cooper
+Leslie Bibb	Justin Cooper
+Danny DeVito	Justin Cooper
+Sophie Marceau	Justin Cooper
+Karen Allen	Jeff Conaway
+Kate Winslet	Jeff Conaway
+Karen Duffy	John Ortiz
+Scatman Crothers	John Ortiz
+Holly Hunter	Linda Larkin
+Roberts Blossom	Pat E. Johnson
+Christine Anu	Pat E. Johnson
+Kathryn Hunter	Pat E. Johnson
+Cynthia Nixon	Kristen Stewart
+Paddy Considine	Skandar Keynes
+Rose McGowan	Skandar Keynes
+Penelope Cruz	Bruno Kirby
+James Baker III	Bruno Kirby
+Ali MacGraw	Don Steele
+Tyler Hoechlin	Cameron Richardson
+Ludacris	Cameron Richardson
+Pinto Colvig	Cameron Richardson
+Holly Hunter	Jerry Reed
+Linda Larkin	Jerry Reed
+Steve Martin	Andrew Kevin Walker
+Emmanuelle Beart	Andrew Kevin Walker
+Robert Carlyle	Abigail Breslin
+Julie Christie	Abigail Breslin
+Richard Jeni	Abigail Breslin
+Dermot Mulroney	David Ogden Stiers
+Robert Duvall	Bradley Cooper
+Diane Keaton	Bradley Cooper
+Pierfrancesco Favino	Chad Michael Murray
+Rupert Grint	Chad Michael Murray
+Josh Brolin	Arsenio Hall
+Bruno Campos	Amanda Seyfried
+Julianne Moore	Amanda Seyfried
+Steve Harris	Amanda Seyfried
+Brendan Fraser	Amanda Seyfried
+Mary Alice	Amanda Seyfried
+Jeff Daniels	Ray Winstone
+Benicio Del Toro	Ray Winstone
+Billy Zane	Barry Bostwick
+Roberts Blossom	Eddie Marsan
+Christine Anu	Eddie Marsan
+Pat E. Johnson	Eddie Marsan
+Jonathan Loughran	Eddie Marsan
+Kathryn Hunter	Eddie Marsan
+Nancy Travis	Maggie Grace
+Ray Walston	Lucy Liu
+Pinto Colvig	Tyler Hoechlin
+D.B. Sweeney	Josh Duhamel
+Michael Douglas	Mark Hamill
+David Ogden Stiers	Justin Chatwin
+Dermot Mulroney	Justin Chatwin
+James McAvoy	Toby Stephens
+Sean Connery	Bruce Allpress
+Patrick Bergin	Tony Haygarth
+D.B. Sweeney	Patrick Warburton
+Josh Duhamel	Patrick Warburton
+Tom Arnold	Eddie Deezen
+Steve Valentine	Jon Heder
+Roy Atwell	Dwayne Johnson
+Christine Baranski	Dwayne Johnson
+Sela Ward	Michael Saucedo
+Charlie Korsmo	Simon Rex
+Willem Dafoe	Terence Stamp
+John Leguizamo	Terence Stamp
+Macaulay Culkin	Mike Colter
+Chris Pine	Mike Colter
+Sacha Baron Cohen	Melinda Dillon
+Sela Ward	Rachael Taylor
+Michael Saucedo	Rachael Taylor
+Christian Bale	Vanessa Redgrave
+Thora Birch	Mark Metcalf
+Elias Koteas	Mark Metcalf
+Johnny Knoxville	Mark Metcalf
+Judge Reinhold	Jonathan Hyde
+Mark Harmon	Terry Bradshaw
+Keanu Reeves	Terry Bradshaw
+Dan Hedaya	Daveigh Chase
+Courteney Cox	Elizabeth Reaser
+Jim Varney	Elizabeth Reaser
+Lucille Bliss	William Daniels
+Ewan McGregor	William Daniels
+Christopher Walken	William Daniels
+Elizabeth Perkins	Owen Wilson
+Kevin Nealon	Owen Wilson
+Joe Pesci	Peggy Wood
+Tyler Hoechlin	Ludacris
+Pinto Colvig	Ludacris
+Ernie Dingo	Richard Griffiths
+Geraldine Chaplin	Richard Griffiths
+Ernie Dingo	Annie Parisse
+Richard Griffiths	Annie Parisse
+Geraldine Chaplin	Annie Parisse
+Geoffrey Lewis	Annie Parisse
+Bruce Campbell	Ralph Waite
+Graham Greene	Ralph Waite
+Timothy Hutton	Christine Cavanaugh
+Bob Balaban	Christine Cavanaugh
+Michael Gambon	Jon Favreau
+Will Arnett	Alexander Gould
+Richard Jenkins	Alexander Gould
+Kate Beckinsale	Jason Robards
+Stanley Tucci	Stubby Kaye
+Alison Doody	Stubby Kaye
+Michelle Pfeiffer	Uma Thurman
+Teri Polo	Rene Auberjonois
+Cleavon Little	Rene Auberjonois
+Jonathan Pryce	Rene Auberjonois
+Morgan Freeman	Rene Auberjonois
+Brian Cox	Rene Auberjonois
+John Heard	Rachel Weisz
+Sarah Jessica Parker	Richard O'Brien
+Bonnie Bedelia	Richard O'Brien
+Hoyt Axton	Richard O'Brien
+Sharon Stone	Richard Gant
+Maria Bello	Eli Roth
+Willem Dafoe	John Leguizamo
+Michael Gough	Oded Fehr
+Kevin Dillon	Peter Gallagher
+Crispin Glover	Jessica Lange
+Forest Whitaker	Diane Kruger
+Clint Eastwood	Denholm Elliott
+Keanu Reeves	Mark Harmon
+Edward Asner	Bob Gunton
+Gloria Foster	Bob Gunton
+Rowan Atkinson	Nicole DeHuff
+Simon Callow	Chris Evans
+Pierce Brosnan	Debra Winger
+Henry Fonda	Debra Winger
+Thora Birch	Elias Koteas
+William Holden	Jennifer Garner
+Patrick Bergin	Bruce Malmuth
+Tony Haygarth	Bruce Malmuth
+Heather Matarazzo	Josh Peck
+Roy Scheider	Josh Peck
+Christine Baranski	Roy Atwell
+Richard Pryor	Lombardo Boyar
+Raquel Alessi	Jenna Fischer
+John Heard	Jenna Fischer
+Rachel Weisz	Jenna Fischer
+Roberts Blossom	Jonathan Loughran
+Christine Anu	Jonathan Loughran
+Pat E. Johnson	Jonathan Loughran
+Kathryn Hunter	Jonathan Loughran
+David Arquette	Jonathan Taylor Thomas
+Rene Russo	Jerry O'Connell
+Kelsey Grammer	Ashley Greene
+Anthony Daniels	Ashley Greene
+Sarah Jessica Parker	Bonnie Bedelia
+Al Pacino	Renee Zellweger
+James Caan	Leslie Mann
+Leonard Nimoy	Leslie Mann
+Donald Sutherland	Katharine Towne
+Thomas Haden Church	Joshua Leonard
+Ralph Bellamy	Joshua Leonard
+Jon Gries	Joshua Leonard
+Michael Constantine	Ginnifer Goodwin
+Danny DeVito	Mary Elizabeth Mastrantonio
+Sophie Marceau	Mary Elizabeth Mastrantonio
+Omar Sharif	Max von Sydow
+Nancy Cartwright	Adam Goldberg
+Kathy Najimy	Rip Torn
+Alan Cumming	Patton Oswalt
+Jonathan Pryce	Cleavon Little
+Morgan Freeman	Cleavon Little
+Morgan Freeman	Jonathan Pryce
+Charlton Heston	Christoph Waltz
+Susan Sarandon	Christoph Waltz
+Alicia Silverstone	Christoph Waltz
+Bruno Campos	Steve Harris
+Julianne Moore	Steve Harris
+Brendan Fraser	Steve Harris
+Jean Reno	William Atherton
+Lisa Kudrow	William Atherton
+Hugh Jackman	Hiroyuki Sanada
+Cate Blanchett	Johnny A. Sanchez
+Sam Rockwell	Tilda Swinton
+Famke Janssen	Tilda Swinton
+Amanda Plummer	Keri Russell
+Catherine Keener	Keri Russell
+Heath Ledger	Robbie Rist
+David Cross	Robbie Rist
+Denis Arndt	Neal McDonough
+Geena Davis	Jacob Smith
+Courteney Cox	Jim Varney
+Liam Aiken	Linda Kozlowski
+Jean Reno	Lisa Kudrow
+Steve Martin	Emmanuelle Beart
+Julia Roberts	Lauren Holly
+Heath Ledger	David Cross
+Chris Evans	Mary Wickes
+Simon Callow	Mary Wickes
+Kyle MacLachlan	James Hong
+Drew Barrymore	James Hong
+Jamie Lee Curtis	Mark Ruffalo
+Denholm Elliott	Kyle Secor
+Clint Eastwood	Kyle Secor
+Joe Pantoliano	Emmy Rossum
+Joe Pantoliano	Jennifer Hudson
+Emmy Rossum	Jennifer Hudson
+Renee Zellweger	Jeffrey DeMunn
+Talia Shire	Jeffrey DeMunn
+Jason Lee	Jeffrey DeMunn
+Al Pacino	Jeffrey DeMunn
+Holly Hunter	Leif Tilden
+Linda Larkin	Leif Tilden
+Jerry Reed	Leif Tilden
+Charlton Heston	Susan Sarandon
+Oliver Reed	Mena Suvari
+Pernilla August	Mena Suvari
+Steve McQueen	Murray Hamilton
+R. Lee Ermey	Murray Hamilton
+Lara Flynn Boyle	Murray Hamilton
+Crispin Glover	Ryan O'Neal
+Jessica Lange	Ryan O'Neal
+Betty Lou Gerson	Ryan O'Neal
+George Takei	Ryan O'Neal
+Thomas Haden Church	Jon Gries
+Ralph Bellamy	Jon Gries
+Karen Allen	Kate Winslet
+Francesco Quinn	Cole Hauser
+William Shatner	Cole Hauser
+Reese Witherspoon	Cole Hauser
+Charlton Heston	Alicia Silverstone
+Susan Sarandon	Alicia Silverstone
+Mike Myers	Jamie Kennedy
+Gerard Butler	Ashley Palmer
+John McConnell	Ashley Palmer
+Steve Zahn	Ashley Palmer
+Eric Bana	Ashley Johnson
+Julianne Moore	Brendan Fraser
+Raul Julia	Rodney A. Grant
+Bruno Campos	Mary Alice
+Julianne Moore	Mary Alice
+Steve Harris	Mary Alice
+Brendan Fraser	Mary Alice
+Heather Matarazzo	Roy Scheider
+Lily Tomlin	Mary Louise Weller
+Crispin Glover	Betty Lou Gerson
+Jessica Lange	Betty Lou Gerson
+George Takei	Betty Lou Gerson
+Ted Levine	Anita Briem
+Steve Martin	Catherine Bell
+Andrew Kevin Walker	Catherine Bell
+Emmanuelle Beart	Catherine Bell
+Roberts Blossom	MacInTalk
+Christine Anu	MacInTalk
+Derrick O'Connor	MacInTalk
+Spencer Vrooman	MacInTalk
+Pat E. Johnson	MacInTalk
+Eddie Marsan	MacInTalk
+Jonathan Loughran	MacInTalk
+Richard McCabe	MacInTalk
+Kathryn Hunter	MacInTalk
+Mary Elizabeth Mastrantonio	Leslie Bibb
+Danny DeVito	Leslie Bibb
+Sophie Marceau	Leslie Bibb
+Burt Reynolds	Taylor Lautner
+Skeet Ulrich	Wyatt Knight
+Steve McQueen	Lara Flynn Boyle
+R. Lee Ermey	Lara Flynn Boyle
+William Fichtner	Alexandra Astin
+David Keith	Don Rickles
+Josh Hartnett	Rory Culkin
+Robin Williams	Rory Culkin
+Tommy Lee Jones	Jackie Cooper
+Robert Carlyle	Julie Christie
+Renee Zellweger	Talia Shire
+Al Pacino	Talia Shire
+Philip Seymour Hoffman	Daniel Radcliffe
+Jordana Brewster	Kevin James
+Denholm Elliott	Chris Elliott
+Kyle Secor	Chris Elliott
+Clint Eastwood	Chris Elliott
+Shirley MacLaine	Barbra Streisand
+Roberts Blossom	Richard McCabe
+Christine Anu	Richard McCabe
+Pat E. Johnson	Richard McCabe
+Eddie Marsan	Richard McCabe
+Jonathan Loughran	Richard McCabe
+Kathryn Hunter	Richard McCabe
+Pierfrancesco Favino	Rupert Grint
+Edward Asner	Kevin J. O'Connor
+Bob Gunton	Kevin J. O'Connor
+Gloria Foster	Kevin J. O'Connor
+Famke Janssen	Sam Rockwell
+Lisa Blount	Raini Rodriguez
+David Gulpilil	Raini Rodriguez
+Jordi Molla	Raini Rodriguez
+Jude Law	Ted Danson
+Ving Rhames	Malin Akerman
+Albert Brooks	Franka Potente
+Willem Dafoe	Franka Potente
+Terence Stamp	Franka Potente
+John Leguizamo	Franka Potente
+Cameron Diaz	Michael Chiklis
+Pete Postlethwaite	Christopher Eccleston
+Penelope Cruz	James Baker III
+Ernie Dingo	Geoffrey Lewis
+Richard Griffiths	Geoffrey Lewis
+Geraldine Chaplin	Geoffrey Lewis
+Albert Brooks	Irene Bedard
+Willem Dafoe	Irene Bedard
+Terence Stamp	Irene Bedard
+John Leguizamo	Irene Bedard
+Franka Potente	Irene Bedard
+David Spade	Irene Bedard
+Olivia Newton-John	Helmut Bakaitis
+Queen Latifah	Vanessa Williams
+Renee Zellweger	Jason Lee
+Talia Shire	Jason Lee
+Al Pacino	Jason Lee
+Queen Latifah	Stuart Buchanan
+Vanessa Williams	Stuart Buchanan
+Chiwetel Ejiofor	Fiona Shaw
+Thomas Ian Nicholas	Fiona Shaw
+Will Arnett	Richard Jenkins
+Robert Carlyle	Richard Jeni
+Julie Christie	Richard Jeni
+Mike Myers	Justin Henry
+Jamie Kennedy	Justin Henry
+Albert Finney	Wendy Crewson
+Henry Fonda	Pierce Brosnan
+Amy Adams	Geoffrey Blake
+Kevin Bacon	Jeffrey Tambor
+Sarah Jessica Parker	Hoyt Axton
+Bonnie Bedelia	Hoyt Axton
+Richard Gant	Richard Haydn
+Sharon Stone	Richard Haydn
+Stanley Tucci	Alison Doody
+Robert Carlyle	Graham Phillips
+Abigail Breslin	Graham Phillips
+Julie Christie	Graham Phillips
+Richard Jeni	Graham Phillips
+Ewan McGregor	Christopher Walken
+Adam Brody	Eunice Cho
+Helen Slater	Eunice Cho
+Harold Gould	Raven-Symone
+Kenneth Branagh	Raven-Symone
+Danny DeVito	Sophie Marceau
+Albert Brooks	David Spade
+Willem Dafoe	David Spade
+Terence Stamp	David Spade
+John Leguizamo	David Spade
+Franka Potente	David Spade
+Brad Pitt	Ray Liotta
+Roberts Blossom	Kathryn Hunter
+Christine Anu	Kathryn Hunter
+Elizabeth Perkins	Kevin Nealon
+Albert Brooks	Rhys Ifans
+Willem Dafoe	Rhys Ifans
+Terence Stamp	Rhys Ifans
+John Leguizamo	Rhys Ifans
+Franka Potente	Rhys Ifans
+Irene Bedard	Rhys Ifans
+David Spade	Rhys Ifans
+Ted Danson	Mekhi Phifer
+Jude Law	Mekhi Phifer
+Teri Polo	Brian Cox
+Cleavon Little	Brian Cox
+Jonathan Pryce	Brian Cox
+Morgan Freeman	Brian Cox
+Ned Beatty	George W. Bush
+Sebastian Cabot	George W. Bush
+Geoffrey Rush	George W. Bush
+William Lee Scott	George W. Bush
+Natascha McElhone	KaDee Strickland
+Miguel Ferrer	Chris Rock
+Crispin Glover	George Takei
+Jessica Lange	George Takei
+Jordana Brewster	Tom Welling
+Kevin James	Tom Welling
+Marisa Tomei	Patricia Wettig
+Thora Birch	Johnny Knoxville
+Elias Koteas	Johnny Knoxville
+Edward Asner	Gloria Foster
+Lauren Graham	Alan Tudyk
+Jerry O'Connell	Joseph Gordon-Levitt
+Rene Russo	Joseph Gordon-Levitt
+Amanda Plummer	Michelle Monaghan
+Catherine Keener	Michelle Monaghan
+Keri Russell	Michelle Monaghan
+Elizabeth Perkins	Nick Chinlund
+Owen Wilson	Nick Chinlund
+Kevin Nealon	Nick Chinlund
+Byung-hun Lee	Michelle Rodriguez
+Roberts Blossom	Richard Roxburgh
+Christine Anu	Richard Roxburgh
+Derrick O'Connor	Richard Roxburgh
+Pat E. Johnson	Richard Roxburgh
+Eddie Marsan	Richard Roxburgh
+Jonathan Loughran	Richard Roxburgh
+Richard McCabe	Richard Roxburgh
+Kathryn Hunter	Richard Roxburgh
+Georg Stanford Brown	Iain Glen
+Clea DuVall	Joel Moore
+Michael Douglas	Joel Moore
+Mark Hamill	Joel Moore
+James Earl Jones	Betty White
+Jim Carrey	Betty White
+Jeremy Irons	Rosemary Harris
+Roberts Blossom	Dean R. Brooks
+Christine Anu	Dean R. Brooks
+John Goodman	Olympia Dukakis
+Penelope Cruz	Madge Sinclair
+Bruno Kirby	Madge Sinclair
+James Baker III	Madge Sinclair
+Val Kilmer	James Remar
+Kathy Bates	Ayelet Zurer
+David Arquette	Thomas Kretschmann
+Jonathan Taylor Thomas	Thomas Kretschmann
+Eminem	John Marley
+Paul Hogan	Martin Henderson
+Michael Gough	Vincent Cassel
+Martin Sheen	John C. McGinley
+Philip Seymour Hoffman	Ronny Cox
+Monica Potter	Marton Csokas
+Ronald Lacey	Naomi Watts
+Richard Attenborough	Carla Gugino
+Hugh Jackman	Dave Legeno
+Christian Slater	Edward Norton
+Jessica Biel	Tomas Milian
+Miranda Richardson	Tomas Milian
+Tom Sizemore	Anna Faris
+Carl Weathers	LL Cool J
+Jason Bateman	LL Cool J
+Kevin Bacon	Billy Crudup
+Martin Sheen	Corey Burton
+Connie Nielsen	George Sanders
+Steve Zahn	Garry Marshall
+Richard S. Castellano	Noah Taylor
+Nick Swardson	Robert Wuhl
+Brandon Routh	Robert Wuhl
+Robert Carlyle	Sarah Michelle Gellar
+Julie Christie	Sarah Michelle Gellar
+Cate Blanchett	Danny Huston
+Sela Ward	David Kelly
+Michael Saucedo	David Kelly
+Kenneth Branagh	Michael Clarke Duncan
+George Dzundza	Pat Hingle
+Alfred Molina	John C. Reilly
+Bill Irwin	Peter Riegert
+Hayden Christensen	James Franco
+Joe Pantoliano	Paul Walker
+Emmy Rossum	Paul Walker
+Donald Sutherland	Barbara O'Neil
+Bruce Campbell	Donald Faison
+Graham Greene	Donald Faison
+Natalie Portman	Paul L. Nolan
+Roberts Blossom	Nancy Baldwin
+Christine Anu	Nancy Baldwin
+Derrick O'Connor	Nancy Baldwin
+Spencer Vrooman	Nancy Baldwin
+Pat E. Johnson	Nancy Baldwin
+Eddie Marsan	Nancy Baldwin
+Jonathan Loughran	Nancy Baldwin
+Richard McCabe	Nancy Baldwin
+Kathryn Hunter	Nancy Baldwin
+Denis Arndt	Dakota Fanning
+Jerry O'Connell	Larry The Cable Guy
+Rene Russo	Larry The Cable Guy
+Richard Attenborough	Elliott Gould
+David Ogden Stiers	Thelma Boardman
+Justin Chatwin	Thelma Boardman
+Dermot Mulroney	Thelma Boardman
+Paul Hogan	Kristanna Loken
+Alec Baldwin	Amanda Bynes
+Judy Kuhn	Timothy Olyphant
+Philip Seymour Hoffman	Kathryn Hahn
+Daniel Radcliffe	Kathryn Hahn
+Amy Poehler	Kyla Pratt
+Helena Bonham Carter	Margaret Colin
+Melinda Dillon	John Lone
+Sacha Baron Cohen	John Lone
+Clint Eastwood	Lea Thompson
+Jane Horrocks	Paul Freeman
+Julia Roberts	Joaquin Phoenix
+Lauren Holly	Joaquin Phoenix
+Simon Rex	Adoni Maropis
+Charlie Korsmo	Adoni Maropis
+Gerard Butler	Jean Seberg
+John McConnell	Jean Seberg
+Steve Zahn	Jean Seberg
+Matt Dillon	Christo Jivkov
+George Kennedy	Christo Jivkov
+Heath Ledger	Elizabeth Wilson
+Robbie Rist	Elizabeth Wilson
+David Cross	Elizabeth Wilson
+William Shatner	M. Emmet Walsh
+Reese Witherspoon	M. Emmet Walsh
+Arsenio Hall	Brian Haley
+Josh Brolin	Brian Haley
+Jeanne Tripplehorn	Frankie Faison
+Gina Gershon	Frankie Faison
+Giancarlo Giannini	Henry Jones
+Jerry Orbach	John Krasinski
+Steve Zahn	Hermione Baddeley
+Toni Collette	Chad Lindberg
+Brittany Snow	Matthew Gray Gubler
+Raul Julia	Matthew Gray Gubler
+Rodney A. Grant	Matthew Gray Gubler
+Julian Glover	Elizabeth Mitchell
+Toni Collette	Rachel Ticotin
+Eric Lloyd	Maile Flanagan
+David Ogden Stiers	Piper Perabo
+Dermot Mulroney	Piper Perabo
+Joe Pantoliano	Amy Yasbeck
+Kevin Bacon	Jaden Smith
+Jeffrey Tambor	Jaden Smith
+Jeanne Tripplehorn	Doug McKeon
+Gina Gershon	Doug McKeon
+Julia Roberts	Jack Murdock
+Lauren Holly	Jack Murdock
+Asia Argento	Gary Cole
+William Holden	Kristine Sutherland
+Jennifer Garner	Kristine Sutherland
+Chauncey Leopardi	Faizon Love
+Alfred Molina	Dash Mihok
+Roselyn Sanchez	Michael Fassbender
+Valeria Golino	Christopher Lloyd
+Jeff Goldblum	Christopher Lloyd
+Kathy Bates	Alessandro Nivola
+Jason Bateman	Faye Dunaway
+Jordana Brewster	Russell Nype
+Kevin James	Russell Nype
+Max Casella	Paul Giamatti
+Jason Isaacs	Paul Giamatti
+Michelle Pfeiffer	Jerry Seinfeld
+Uma Thurman	Jerry Seinfeld
+Tia Carrere	Kate Bosworth
+Heather Matarazzo	Brittany Murphy
+Roy Scheider	Brittany Murphy
+Paul Hogan	Peter Greene
+Christian Bale	Gene Hackman
+Kevin Kline	John Kassir
+Colin Farrell	Christopher Carley
+Denholm Elliott	Christopher Carley
+Kyle Secor	Christopher Carley
+Clint Eastwood	Christopher Carley
+Chris Elliott	Christopher Carley
+Eddie Deezen	Shuler Hensley
+Tom Arnold	Shuler Hensley
+Christian Slater	Patrick Swayze
+Heath Ledger	Craig T. Nelson
+Paul Le Mat	Sala Baker
+Bonnie Hunt	Sala Baker
+Adewale Akinnuoye-Agbaje	Rick Yune
+Jake Lloyd	Michael Irvin
+Ralph Macchio	Bee Vang
+Raquel Alessi	Wanda Sykes
+John Heard	Wanda Sykes
+Rachel Weisz	Wanda Sykes
+Jenna Fischer	Wanda Sykes
+Patrick Dempsey	Orlando Bloom
+Kevin Anderson	Orlando Bloom
+Benjamin Bratt	Miranda Otto
+Matthew Lillard	Ed Helms
+D.B. Sweeney	Olga Kurylenko
+Josh Duhamel	Olga Kurylenko
+Patrick Warburton	Olga Kurylenko
+Kenneth Branagh	Emmanuelle Chriqui
+Bonnie Bartlett	Christopher Mintz-Plasse
+Brawley Nolte	Christopher Mintz-Plasse
+John Goodman	Christopher Mintz-Plasse
+Helena Bonham Carter	Peter Cushing
+Roberts Blossom	Mark Strong
+Christine Anu	Mark Strong
+Derrick O'Connor	Mark Strong
+Pat E. Johnson	Mark Strong
+Eddie Marsan	Mark Strong
+Jonathan Loughran	Mark Strong
+Richard McCabe	Mark Strong
+Kathryn Hunter	Mark Strong
+David Ogden Stiers	Eddie Kaye Thomas
+Justin Chatwin	Eddie Kaye Thomas
+Dermot Mulroney	Eddie Kaye Thomas
+Sela Ward	Thomas Mitchell
+Michael Saucedo	Thomas Mitchell
+Eddie Deezen	Moira Kelly
+Tom Arnold	Moira Kelly
+Mark Rolston	Jeffrey Wright
+Timothy Hutton	Reginald VelJohnson
+Bob Balaban	Reginald VelJohnson
+Richard Gant	Dave Sheridan
+Sharon Stone	Dave Sheridan
+Richard Haydn	Dave Sheridan
+Thora Birch	Terrence Howard
+Elias Koteas	Terrence Howard
+James Caan	Keira Knightley
+Leonard Nimoy	Keira Knightley
+Leslie Mann	Keira Knightley
+Emma Watson	Elissa Knight
+Alice Braga	Elissa Knight
+Seth Rogen	Elissa Knight
+Thomas F. Wilson	Elissa Knight
+Sela Ward	Lil' Zane
+Michael Saucedo	Lil' Zane
+Steve Buscemi	Christopher Plummer
+Sondra Locke	Patricia Quinn
+Joe Pantoliano	Peter Scolari
+Emmy Rossum	Peter Scolari
+Christian Slater	Robert Redford
+Brad Pitt	Casper Van Dien
+Ray Liotta	Casper Van Dien
+Mike Myers	Ian McKellen
+Jamie Kennedy	Ian McKellen
+Dave Foley	Yvan Attal
+Sterling Holloway	Yvan Attal
+Famke Janssen	Robert Patrick
+Sacha Baron Cohen	Allen Covert
+Guy Pearce	Scott Weinger
+Karen Allen	Scott Weinger
+Jeff Conaway	Scott Weinger
+Kate Winslet	Scott Weinger
+Adewale Akinnuoye-Agbaje	Cindy Williams
+Kate Beckinsale	Helen Mirren
+Olivia Newton-John	James Caviezel
+Benjamin Bratt	Hardie Albright
+Ken Davitian	Ryan Hurst
+Geena Davis	Robby Benson
+Martin Lawrence	Jay O. Sanders
+Justin Long	Martha Wentworth
+Tommy Lee Jones	Josh Charles
+Timothy Hutton	Lorraine Gary
+Bob Balaban	Lorraine Gary
+Christine Cavanaugh	Lorraine Gary
+Stanley Tucci	Kristen Wilson
+Stubby Kaye	Kristen Wilson
+Alison Doody	Kristen Wilson
+Jonathan Ke Quan	Ben Barnes
+Patrick Kilpatrick	Ben Barnes
+Amy Adams	Ben Barnes
+Geoffrey Blake	Ben Barnes
+Pernilla August	Stockard Channing
+Michael Douglas	Will Smith
+David Schwimmer	Nelly
+James Caan	Strother Martin
+Leonard Nimoy	Strother Martin
+Paddy Considine	Bob Newhart
+Rose McGowan	Bob Newhart
+Thora Birch	Anton Yelchin
+Mark Metcalf	Anton Yelchin
+Elias Koteas	Anton Yelchin
+Johnny Knoxville	Anton Yelchin
+Christian Slater	Denis Leary
+Oliver Reed	George Segal
+Pernilla August	George Segal
+Holly Hunter	William Hurt
+Ralph Macchio	Anthony Ruivivar
+James Coburn	Chris Tucker
+Richard Gere	Chris Tucker
+Robert Carlyle	Adrien Brody
+Julie Christie	Adrien Brody
+Charlton Heston	Bill Fagerbakke
+Susan Sarandon	Bill Fagerbakke
+Alicia Silverstone	Bill Fagerbakke
+Robert Carlyle	Rod Steiger
+Julie Christie	Rod Steiger
+Tom Sizemore	Garry Shandling
+Madeline Kahn	Ian McShane
+Chris Sanders	Will i Am
+Joaquim de Almeida	Will i Am
+Esther Rolle	Keir O'Donnell
+Tyler Hoechlin	Julia Nickson
+Ludacris	Julia Nickson
+Pinto Colvig	Julia Nickson
+Skeet Ulrich	DeForest Kelley
+Heath Ledger	Hugo Weaving
+Robbie Rist	Hugo Weaving
+David Cross	Hugo Weaving
+Valeria Golino	Jonathan Lipnicki
+Jeff Goldblum	Jonathan Lipnicki
+Kelsey Grammer	Melanie Laurent
+Anthony Daniels	Melanie Laurent
+Miguel Angel Suarez	Eva Green
+Ving Rhames	Jason Biggs
+Guy Pearce	Glynis Johns
+Karen Allen	Glynis Johns
+Jeff Conaway	Glynis Johns
+Kate Winslet	Glynis Johns
+Jeanne Tripplehorn	Jurgen Prochnow
+Gina Gershon	Jurgen Prochnow
+Josh Hartnett	Justin Bartha
+Robin Williams	Justin Bartha
+Simon Rex	Dan Monahan
+Charlie Korsmo	Dan Monahan
+Jane Horrocks	Jason Segel
+Goldie Hawn	Jena Malone
+Jean Reno	Hilary Swank
+Lisa Kudrow	Hilary Swank
+Debra Winger	Janet Jackson
+Pierce Brosnan	Janet Jackson
+Henry Fonda	Janet Jackson
+Kate Capshaw	Jim Cummings
+Donald Sutherland	Phyllis Diller
+Teri Polo	Lynn Collins
+Rene Auberjonois	Lynn Collins
+Cleavon Little	Lynn Collins
+Jonathan Pryce	Lynn Collins
+Morgan Freeman	Lynn Collins
+Brian Cox	Lynn Collins
+Kevin Bacon	Anjelica Huston
+Olivia Newton-John	Philip Bosco
+Helmut Bakaitis	Philip Bosco
+Richard Harris	Zach Galifianakis
+Kelsey Grammer	Kitty Winn
+Anthony Daniels	Kitty Winn
+Steve McQueen	Lake Bell
+R. Lee Ermey	Lake Bell
+Murray Hamilton	Lake Bell
+Lara Flynn Boyle	Lake Bell
+Nancy Travis	David Wenham
+Chauncey Leopardi	Daryl Sabara
+Joe Pantoliano	Jason Statham
+Emmy Rossum	Jason Statham
+Hector Elizondo	Jay Brazeau
+Ralph Fiennes	Jay Brazeau
+Joey Lauren Adams	David Allen Brooks
+Debra Winger	Megan Fox
+Pierce Brosnan	Megan Fox
+Henry Fonda	Megan Fox
+Simon Callow	Stellan Skarsgard
+Rowan Atkinson	Gerald R. Molen
+Nicole DeHuff	Gerald R. Molen
+Ross Malinger	David McCullough
+Rene Russo	Hal Holbrook
+James Caan	Sterling Hayden
+Leonard Nimoy	Sterling Hayden
+Penelope Cruz	Marcia Strassman
+Bruno Kirby	Marcia Strassman
+James Baker III	Marcia Strassman
+Christian Slater	Madeleine Stowe
+David Keith	Stephen Furst
+Denholm Elliott	Susie Essman
+Kyle Secor	Susie Essman
+Clint Eastwood	Susie Essman
+Chris Elliott	Susie Essman
+Jessica Biel	Jared Rushton
+Miranda Richardson	Jared Rushton
+Alec Baldwin	Adam Scott
+Lisa Bonet	Maggie Gyllenhaal
+Roberts Blossom	Jake Johnson
+Christine Anu	Jake Johnson
+Derrick O'Connor	Jake Johnson
+Spencer Vrooman	Jake Johnson
+Pat E. Johnson	Jake Johnson
+Eddie Marsan	Jake Johnson
+Jonathan Loughran	Jake Johnson
+Richard McCabe	Jake Johnson
+Kathryn Hunter	Jake Johnson
+Kurt Russell	Gary Sinise
+Hector Elizondo	Heather Donahue
+Ralph Fiennes	Heather Donahue
+Jean Reno	Simon Baker
+William Atherton	Simon Baker
+Lisa Kudrow	Simon Baker
+Joe Pesci	Ziyi Zhang
+Peggy Wood	Ziyi Zhang
+Roberts Blossom	Steven O'Donnell
+Christine Anu	Steven O'Donnell
+Derrick O'Connor	Steven O'Donnell
+Pat E. Johnson	Steven O'Donnell
+Eddie Marsan	Steven O'Donnell
+Jonathan Loughran	Steven O'Donnell
+Richard McCabe	Steven O'Donnell
+Kathryn Hunter	Steven O'Donnell
+Alec Baldwin	Eddie Murphy
+Pinto Colvig	Elizabeth Daily
+Adam Sandler	Henry Thomas
+Richard S. Castellano	Nona Gaye
+Adam Sandler	Cliff Robertson
+Melinda Dillon	Jack MacGowran
+Sacha Baron Cohen	Jack MacGowran
+Val Kilmer	Andy Arness
+Martin Sheen	Steven Berkoff
+Simon Rex	Carlos Alazraqui
+Charlie Korsmo	Carlos Alazraqui
+Julia Roberts	Jami Gertz
+Dan Futterman	Cyril O'Reilly
+Thora Birch	Peter Berg
+Elias Koteas	Peter Berg
+Goldie Hawn	Cherry Jones
+Christian Slater	Jacob Vargas
+Jamie Lee Curtis	Mads Mikkelsen
+David Ogden Stiers	Brian Doyle-Murray
+Justin Chatwin	Brian Doyle-Murray
+Dermot Mulroney	Brian Doyle-Murray
+Julia Roberts	Jane Alexander
+Lauren Holly	Jane Alexander
+Madeline Kahn	Zachary Levi
+Omar Sharif	Mandy Moore
+Haley Joel Osment	Mandy Moore
+Max von Sydow	Mandy Moore
+Eric Bana	Audrey Tautou
+Ashley Johnson	Audrey Tautou
+Steve Martin	Halle Berry
+Emmanuelle Beart	Halle Berry
+Tia Carrere	Taye Diggs
+Donald Sutherland	David Hasselhoff
+John Meillon	Maia Morgenstern
+Charles Durning	John Turturro
+Michael Constantine	Maggie Q
+Ginnifer Goodwin	Maggie Q
+Joe Pesci	Amber Valletta
+Renee Zellweger	Hank Azaria
+Al Pacino	Hank Azaria
+Richard Pryor	Eddie Smith
+Lombardo Boyar	Eddie Smith
+Timothy Hutton	Steve Carell
+Bob Balaban	Steve Carell
+Christine Cavanaugh	Steve Carell
+Goldie Hawn	Harold Ramis
+Connie Nielsen	Yeardley Smith
+June Foray	Fred Willard
+James Marsden	Fred Willard
+Ralph Bellamy	Greg Kinnear
+Steve Buscemi	Jamie Foxx
+Alfred Molina	Jim Broadbent
+Jake Lloyd	Eva Mendes
+Luenell	Frank Welker
+Barry Bostwick	Abe Vigoda
+Billy Zane	Abe Vigoda
+Will Arnett	Eric Sykes
+Richard Jenkins	Eric Sykes
+Sela Ward	Stephen Lang
+Ken Davitian	Zoe Saldana
+Kathy Bates	Pat Morita
+Kelsey Grammer	Ellen Page
+Anthony Daniels	Ellen Page
+Michael Douglas	Catherine Zeta-Jones
+Mark Hamill	Catherine Zeta-Jones
+Bruce Campbell	Amrish Puri
+Graham Greene	Amrish Puri
+Albert Finney	Rosario Dawson
+Wendy Crewson	Rosario Dawson
+Jackie Earle Haley	Jane Lynch
+Joaquim de Almeida	J. Pat O'Malley
+Debra Winger	Adriana Caselotti
+Pierce Brosnan	Adriana Caselotti
+Henry Fonda	Adriana Caselotti
+Robert Carlyle	Jaimz Woolvett
+Julie Christie	Jaimz Woolvett
+Richard Jeni	Jaimz Woolvett
+Anthony Daniels	Alan Rickman
+Roberts Blossom	Maynard Eziashi
+Christine Anu	Maynard Eziashi
+Roselyn Sanchez	Roshan Seth
+Gerard Butler	Chris Noth
+John McConnell	Chris Noth
+Steve Zahn	Chris Noth
+William Holden	Sean Bean
+Tommy Lee Jones	Bruce Reitherman
+Jackie Cooper	Bruce Reitherman
+Elijah Wood	Rosamund Pike
+Jodie Foster	Meg Ryan
+Robert Carlyle	Brad Garrett
+Julie Christie	Brad Garrett
+James Karen	Johnny Simmons
+Christopher Daniel Barnes	Earl Boen
+Debra Winger	Vincent Regan
+Pierce Brosnan	Vincent Regan
+Henry Fonda	Vincent Regan
+Georg Stanford Brown	Phil Harris
+Timothy Hutton	John Louie
+Bob Balaban	John Louie
+Christine Cavanaugh	John Louie
+Barry Pearl	Amy Sedaris
+Sean Connery	Tom Skerritt
+Richard S. Castellano	Beyonce Knowles
+Roberts Blossom	Sihung Lung
+Christine Anu	Sihung Lung
+Pat E. Johnson	Sihung Lung
+Kathryn Hunter	Sihung Lung
+Steve Buscemi	Dick Van Dyke
+Jason Behr	Tyrese Gibson
+Ossie Davis	Katie Holmes
+Brad Pitt	Katie Holmes
+Ray Liotta	Katie Holmes
+Guy Pearce	Bernie Mac
+Karen Allen	Bernie Mac
+Jeff Conaway	Bernie Mac
+Kate Winslet	Bernie Mac
+Alice Braga	Lou Romano
+Seth Rogen	Lou Romano
+Thomas F. Wilson	Lou Romano
+Elizabeth Perkins	Delroy Lindo
+Mark Rolston	Emily Browning
+Lisa Bonet	Burgess Meredith
+Guy Pearce	Mary Gibbs
+Karen Allen	Mary Gibbs
+Jeff Conaway	Mary Gibbs
+Kate Winslet	Mary Gibbs
+Josh Hartnett	Jon Lovitz
+Robin Williams	Jon Lovitz
+David Warshofsky	Emily Blunt
+Denis Arndt	Emily Blunt
+Neal McDonough	Emily Blunt
+Roberts Blossom	Bob Peterson
+Christine Anu	Bob Peterson
+Derrick O'Connor	Bob Peterson
+Pat E. Johnson	Bob Peterson
+Eddie Marsan	Bob Peterson
+Jonathan Loughran	Bob Peterson
+Richard McCabe	Bob Peterson
+Kathryn Hunter	Bob Peterson
+Debra Winger	Kevin McDonald
+Pierce Brosnan	Kevin McDonald
+Henry Fonda	Kevin McDonald
+Steve McQueen	Alyson Hannigan
+R. Lee Ermey	Alyson Hannigan
+Lara Flynn Boyle	Alyson Hannigan
+Jeremy Irons	Paul Williams
+Oliver Reed	Michael Ensign
+Pernilla August	Michael Ensign
+Mena Suvari	Michael Ensign
+Howard Duff	Colin Hanks
+Justin Long	Zachary Quinto
+Willem Dafoe	Danny Glover
+Eminem	Wood Harris
+David Ogden Stiers	Willow Smith
+Justin Chatwin	Willow Smith
+Dermot Mulroney	Willow Smith
+Forest Whitaker	Jeffrey Kramer
+Macaulay Culkin	Brett Cullen
+Tia Carrere	Cuba Gooding Jr.
+William Holden	William Mapother
+Jennifer Garner	William Mapother
+Bonnie Bartlett	Josh Lucas
+John Goodman	Josh Lucas
+Penelope Cruz	Bridget Moynahan
+Queen Latifah	Lily Collins
+Vanessa Williams	Lily Collins
+Stuart Buchanan	Lily Collins
+Famke Janssen	Sam Shepard
+James Karen	Jon Stewart
+Roberts Blossom	Ricky Jay
+Christine Anu	Ricky Jay
+Kathryn Hunter	Ricky Jay
+Alec Baldwin	Matthew Goode
+Roberts Blossom	Pam Ferris
+Christine Anu	Pam Ferris
+Peter Gallagher	Kyra Sedgwick
+Kevin Dillon	Kyra Sedgwick
+Charlton Heston	Wendy Makkena
+Susan Sarandon	Wendy Makkena
+Alicia Silverstone	Wendy Makkena
+Charlton Heston	Liev Schreiber
+Susan Sarandon	Liev Schreiber
+Alicia Silverstone	Liev Schreiber
+Roberts Blossom	Roger Wilson
+Christine Anu	Roger Wilson
+Derrick O'Connor	Roger Wilson
+Spencer Vrooman	Roger Wilson
+Pat E. Johnson	Roger Wilson
+Eddie Marsan	Roger Wilson
+Jonathan Loughran	Roger Wilson
+Richard McCabe	Roger Wilson
+Kathryn Hunter	Roger Wilson
+Jude Law	Jon Voight
+Justin Cooper	Rachel McAdams
+Mary Elizabeth Mastrantonio	Rachel McAdams
+Leslie Bibb	Rachel McAdams
+Danny DeVito	Rachel McAdams
+Sophie Marceau	Rachel McAdams
+Dermot Mulroney	Rob Schneider
+Michael Douglas	Christopher Reeve
+Mark Hamill	Christopher Reeve
+Kyle MacLachlan	John Ashton
+Drew Barrymore	John Ashton
+Crispin Glover	Carmen Electra
+Jodie Foster	Allison Janney
+Kevin Spacey	Taylor Momsen
+Helen Mirren	Taylor Momsen
+Joan Allen	Jonathan Ke Quan
+Marlon Brando	Alec Baldwin
+Martha Smith	Gary Kemp
+Tim Robbins	Gary Kemp
+Julia Ormond	Dave Foley
+Matt Frewer	Dave Foley
+Lea Thompson	Colin Farrell
+Susie Essman	Colin Farrell
+Alan Rickman	Kelsey Grammer
+Harvey Fierstein	Max Casella
+Dakota Fanning	David Warshofsky
+Peter Fonda	David Warshofsky
+Kristin Davis	David Warshofsky
+Ken Jenkins	Daniel Stern
+Luis Guzman	Daniel Stern
+Nick Chinlund	Romany Malco
+Julia Louis-Dreyfus	Patrick Dempsey
+John Krasinski	Katie Featherston
+Casper Van Dien	Ossie Davis
+Garry Marshall	Gerard Butler
+Hermione Baddeley	Gerard Butler
+Whoopi Goldberg	Gerard Butler
+Jada Pinkett Smith	June Foray
+Laura San Giacomo	D.B. Sweeney
+Joaquin Phoenix	Joan Plowright
+Jack Murdock	Joan Plowright
+Jami Gertz	Joan Plowright
+Jane Alexander	Joan Plowright
+Jet Li	Jordana Brewster
+Carol Burnett	Jordana Brewster
+Katharine Ross	Terry Kinney
+Heather Graham	Terry Kinney
+Tom Selleck	Terry Kinney
+Sylvester Stallone	Ned Beatty
+Nathalie Baye	Ned Beatty
+Alan Alda	Elijah Wood
+Will Smith	Clea DuVall
+Catherine Zeta-Jones	Clea DuVall
+Michael Clarke Duncan	Harold Gould
+Emmanuelle Chriqui	Harold Gould
+Sylvester Stallone	Sebastian Cabot
+Nathalie Baye	Sebastian Cabot
+David Andrews	Roberts Blossom
+James Doohan	Jessica Biel
+James Dreyfus	Nick Swardson
+M. Emmet Walsh	Francesco Quinn
+John Travolta	Matt Dillon
+Alan Arkin	James Caan
+Stockard Channing	Oliver Reed
+Vincent Cassel	Salli Richardson-Whitfield
+Julie Andrews	Richard Harris
+Rupert Everett	Ted Levine
+Annette Bening	Ted Levine
+Billy Dee Williams	Paul Rudd
+David Strathairn	Scott Glenn
+Ellen DeGeneres	Scott Glenn
+Paul Newman	Scott Glenn
+James Cromwell	Alan Cumming
+Lynn Ferguson	Bill Irwin
+Demi Moore	Stanley Tucci
+Leonardo DiCaprio	Stanley Tucci
+Mary McDonnell	Penelope Cruz
+Jessica Alba	Penelope Cruz
+Linda Fiorentino	Brittany Snow
+Kevin Spacey	Ellen Hamilton Latzen
+Helen Mirren	Ellen Hamilton Latzen
+Tom Hulce	JoBeth Williams
+Shia LaBeouf	Hugh Laurie
+Tim McGraw	John Meillon
+John Travolta	George Kennedy
+Alan Arkin	Leonard Nimoy
+Joely Richardson	Joey Lauren Adams
+Dana Carvey	Justin Long
+Kevin Spacey	Kate Beckinsale
+Matthew McConaughey	Ralph Macchio
+Arnold Schwarzenegger	Jean Reno
+Laurence Fishburne	Jean Reno
+Lari White	Robert Pattinson
+Stevie Wonder	Robert Pattinson
+Rick Moranis	Maria Bello
+Richard Schiff	Michelan Sisti
+Christopher Lee	Michelan Sisti
+Paul Bettany	Michelan Sisti
+Joseph Fiennes	Michelan Sisti
+Linda Hamilton	Olivia Newton-John
+David Strathairn	Walter Barnes
+Ellen DeGeneres	Walter Barnes
+Paul Newman	Walter Barnes
+Gene Hackman	Eddie Collins
+Joan Allen	Patrick Kilpatrick
+Alfre Woodard	Esther Rolle
+Parker Posey	Esther Rolle
+Ian Holm	Joe Pantoliano
+Katharine Ross	Edward Burns
+Heather Graham	Edward Burns
+Tom Selleck	Edward Burns
+Liv Tyler	Lisa Blount
+Dan Aykroyd	Lisa Blount
+Pamela Anderson	Lisa Blount
+Justin Bartha	Don Knotts
+Rick Moranis	David Tennant
+Hugh Grant	Goran Visnjic
+Henry Thomas	Goran Visnjic
+Cliff Robertson	Goran Visnjic
+Faye Dunaway	Carl Weathers
+Hilary Swank	Christine Taylor
+Arnold Schwarzenegger	Christine Taylor
+Simon Baker	Christine Taylor
+Laurence Fishburne	Christine Taylor
+Madonna	Timothy Hutton
+Kevin Spacey	Olivia Williams
+Helen Mirren	Olivia Williams
+Olympia Dukakis	Bonnie Bartlett
+Nicole Kidman	Bonnie Bartlett
+Jennifer Aniston	Lymari Nadal
+Victor Garber	Lauren Graham
+David Andrews	Christine Anu
+Chris O'Donnell	Eleanor Parker
+David Brisbin	Eleanor Parker
+Mary Kay Place	Anthony Mackie
+Faune A. Chambers	Anthony Mackie
+Jason Alexander	Anthony Mackie
+Mickey Rooney	Anthony Mackie
+Jenny McCarthy	Toni Collette
+Meryl Streep	Bruce Campbell
+Madonna	Bob Balaban
+Meryl Streep	Graham Greene
+Dave Legeno	Josh Hutcherson
+Kate Beahan	Josh Hutcherson
+Sylvester Stallone	Geoffrey Rush
+Nathalie Baye	Geoffrey Rush
+Sylvester Stallone	William Lee Scott
+Nathalie Baye	William Lee Scott
+Polly Holliday	Lindsay Lohan
+Mark Wahlberg	Jeff Garlin
+Mary Kay Bergman	Jeff Garlin
+John Bach	Jeff Garlin
+Vincent Cassel	Miley Cyrus
+Steve Guttenberg	Pierfrancesco Favino
+Anne Archer	Pierfrancesco Favino
+Dean R. Brooks	Derrick O'Connor
+David Andrews	Derrick O'Connor
+Maynard Eziashi	Derrick O'Connor
+Cary Elwes	Steve Valentine
+Rita Wilson	Steve Valentine
+Dylan McDermott	Steve Valentine
+Bob Hoskins	Steve Valentine
+Bette Midler	Richard Pryor
+Garry Marshall	John McConnell
+Hermione Baddeley	John McConnell
+Whoopi Goldberg	John McConnell
+Frank Welker	Tanveer K. Atwal
+Edward Norton	Andy Samberg
+Patrick Swayze	Andy Samberg
+Robert Redford	Andy Samberg
+Denis Leary	Andy Samberg
+Madeleine Stowe	Andy Samberg
+Jacob Vargas	Andy Samberg
+LL Cool J	Holland Taylor
+Faye Dunaway	Holland Taylor
+Mel Gibson	John Ales
+Ray Milland	John Ales
+Dabney Coleman	John Ales
+Greg Kinnear	Thomas Haden Church
+Richard Roxburgh	Spencer Vrooman
+Dean R. Brooks	Spencer Vrooman
+David Andrews	Spencer Vrooman
+Mark Strong	Spencer Vrooman
+Steven O'Donnell	Spencer Vrooman
+Maynard Eziashi	Spencer Vrooman
+Liv Tyler	David Gulpilil
+Dan Aykroyd	David Gulpilil
+Pamela Anderson	David Gulpilil
+John Kassir	Mark Walton
+Ricardo Montalban	Dougray Scott
+Judd Hirsch	Chris Sanders
+J. Pat O'Malley	Chris Sanders
+Cole Sprouse	Richard White
+Billy Bob Thornton	Richard White
+Jada Pinkett Smith	James Marsden
+Olympia Dukakis	Brawley Nolte
+Nicole Kidman	Brawley Nolte
+Miranda Otto	Anna Popplewell
+Hardie Albright	Anna Popplewell
+Gary Cole	Moon Bloodgood
+William Hurt	Linda Larkin
+Robert Shaw	Eric Bana
+Whitney Houston	Eric Bana
+Dean R. Brooks	Pat E. Johnson
+David Andrews	Pat E. Johnson
+Maynard Eziashi	Pat E. Johnson
+Dennis Quaid	Kristen Stewart
+Jay Baruchel	Kristen Stewart
+Bob Newhart	Skandar Keynes
+Mary McDonnell	Bruno Kirby
+Jessica Alba	Bruno Kirby
+Lainie Kazan	David Krumholtz
+Chazz Palminteri	David Krumholtz
+Julia Nickson	Cameron Richardson
+Elizabeth Daily	Cameron Richardson
+William Hurt	Jerry Reed
+Will Patton	Chauncey Leopardi
+Halle Berry	Andrew Kevin Walker
+Sarah Michelle Gellar	Abigail Breslin
+Adrien Brody	Abigail Breslin
+Rod Steiger	Abigail Breslin
+Jaimz Woolvett	Abigail Breslin
+Brad Garrett	Abigail Breslin
+Robert Pastorelli	Jascha Washington
+Josh Pais	Jascha Washington
+Steve Guttenberg	Chad Michael Murray
+Anne Archer	Chad Michael Murray
+Tim Roth	Cate Blanchett
+Michael Ironside	Arsenio Hall
+Christina Ricci	Arsenio Hall
+Joe Don Baker	Arsenio Hall
+Dean R. Brooks	Eddie Marsan
+David Andrews	Eddie Marsan
+Maynard Eziashi	Eddie Marsan
+John Spencer	Jonah Hill
+Whoopi Goldberg	Steve Zahn
+Bill Murray	Maggie Grace
+David Wenham	Maggie Grace
+Jacqueline Bisset	Jean Smart
+Elizabeth Daily	Tyler Hoechlin
+Laura San Giacomo	Josh Duhamel
+Will Smith	Mark Hamill
+James Doohan	Miranda Richardson
+Piper Perabo	Justin Chatwin
+Dennis Quaid	Cynthia Nixon
+Jay Baruchel	Cynthia Nixon
+Patti LuPone	Toby Stephens
+Laura San Giacomo	Patrick Warburton
+Hugh Grant	Adam Sandler
+Cary Elwes	Jon Heder
+Rita Wilson	Jon Heder
+Dylan McDermott	Jon Heder
+Bob Hoskins	Jon Heder
+Ryan Reynolds	Bradley Pierce
+Stephen Lang	Michael Saucedo
+Nick Nolte	Mary Steenburgen
+Seth Green	Mary Steenburgen
+Henry Czerny	Mary Steenburgen
+Cliff Curtis	Julian McMahon
+Eric Stoltz	Monica Bellucci
+Burt Lancaster	David Schwimmer
+Allen Covert	Melinda Dillon
+Kelly Preston	Melinda Dillon
+David Kelly	Rachael Taylor
+Thomas Mitchell	Rachael Taylor
+Lil' Zane	Rachael Taylor
+Stephen Lang	Rachael Taylor
+Gene Hackman	Vanessa Redgrave
+Kate Hudson	Hayden Christensen
+Tim Curry	Hayden Christensen
+Ashley Judd	Hayden Christensen
+Kelly Preston	Sacha Baron Cohen
+Terrence Howard	Mark Metcalf
+Peter Berg	Mark Metcalf
+Bill Murray	Nancy Travis
+Fairuza Balk	Jonathan Hyde
+Topher Grace	Byung-hun Lee
+Helen Hunt	Elizabeth Reaser
+Brigitte Nielsen	Forest Whitaker
+Patti LuPone	James McAvoy
+Amber Valletta	Peggy Wood
+Elizabeth Daily	Ludacris
+Donald Faison	Ralph Waite
+Meryl Streep	Ralph Waite
+Amrish Puri	Ralph Waite
+Peter Fonda	Denis Arndt
+Kristin Davis	Denis Arndt
+Eric Idle	Barry Pearl
+Julia Louis-Dreyfus	Kevin Anderson
+Bill Cobbs	Arnold Vosloo
+Madonna	Christine Cavanaugh
+Reginald VelJohnson	Christine Cavanaugh
+Eric Sykes	Alexander Gould
+Woody Harrelson	Philip Seymour Hoffman
+Kevin Spacey	Jason Robards
+Helen Mirren	Jason Robards
+Demi Moore	Stubby Kaye
+Leonardo DiCaprio	Stubby Kaye
+Julia Ormond	Sterling Holloway
+Matt Frewer	Sterling Holloway
+Rick Moranis	Eli Roth
+Michael York	Julian Glover
+Vincent Cassel	Oded Fehr
+Brigitte Nielsen	Diane Kruger
+Lea Thompson	Denholm Elliott
+Linda Fiorentino	Raul Julia
+Tim Allen	Chris Evans
+Stellan Skarsgard	Chris Evans
+Jennifer Aniston	Burt Reynolds
+Anthony Edwards	George Dzundza
+Judd Hirsch	Joaquim de Almeida
+Sean Bean	Jennifer Garner
+Liam Neeson	Karl Urban
+Colleen Camp	Karl Urban
+Michael Cera	Karl Urban
+Dean Martin	Karl Urban
+Bill Hader	Karl Urban
+Anthony Hopkins	Val Kilmer
+Brittany Murphy	Josh Peck
+Helen Hunt	Courteney Cox
+Bette Midler	Lombardo Boyar
+Dean R. Brooks	Jonathan Loughran
+David Andrews	Jonathan Loughran
+Maynard Eziashi	Jonathan Loughran
+Jeff Bridges	Marisa Tomei
+Denise Richards	Jerry O'Connell
+Hal Holbrook	Jerry O'Connell
+Melanie Laurent	Ashley Greene
+Kitty Winn	Ashley Greene
+Ellen Page	Ashley Greene
+Alan Rickman	Ashley Greene
+Alan Arkin	Leslie Mann
+Strother Martin	Leslie Mann
+Sterling Hayden	Leslie Mann
+Barbara O'Neil	Katharine Towne
+Phyllis Diller	Katharine Towne
+David Hasselhoff	Katharine Towne
+Barry Pepper	Heath Ledger
+Greg Kinnear	Joshua Leonard
+Candice Bergen	Albert Finney
+Francois Truffaut	Rip Torn
+James Cromwell	Patton Oswalt
+Joan Allen	Amy Adams
+John Cusack	Kathy Bates
+Bill Fagerbakke	Christoph Waltz
+Liv Tyler	Jordi Molla
+Dan Aykroyd	Jordi Molla
+Pamela Anderson	Jordi Molla
+Nicole Kidman	John Goodman
+Hilary Swank	William Atherton
+Arnold Schwarzenegger	William Atherton
+Laurence Fishburne	William Atherton
+Dave Legeno	Hiroyuki Sanada
+Kate Beahan	Hiroyuki Sanada
+Danny Huston	Johnny A. Sanchez
+Tim Roth	Johnny A. Sanchez
+Robert Patrick	Tilda Swinton
+Vivien Leigh	Tilda Swinton
+Barry Pepper	Robbie Rist
+Craig T. Nelson	Robbie Rist
+Dakota Fanning	Neal McDonough
+Peter Fonda	Neal McDonough
+Kristin Davis	Neal McDonough
+Mel Gibson	Robert Loggia
+Ray Milland	Robert Loggia
+Dabney Coleman	Robert Loggia
+Robby Benson	Jacob Smith
+Helen Hunt	Jim Varney
+James Dreyfus	Brandon Routh
+Nicolas Cage	Linda Kozlowski
+Arnold Schwarzenegger	Lisa Kudrow
+Laurence Fishburne	Lisa Kudrow
+Jami Gertz	Lauren Holly
+Barry Pepper	David Cross
+Craig T. Nelson	David Cross
+Francois Truffaut	Kathy Najimy
+Tim Allen	Mary Wickes
+Stellan Skarsgard	Mary Wickes
+Mads Mikkelsen	Mark Ruffalo
+Lea Thompson	Kyle Secor
+Amy Yasbeck	Emmy Rossum
+Ian Holm	Emmy Rossum
+Paul Walker	Jennifer Hudson
+Amy Yasbeck	Jennifer Hudson
+Ian Holm	Jennifer Hudson
+Peter Scolari	Jennifer Hudson
+Jason Statham	Jennifer Hudson
+Harvey Fierstein	Jason Isaacs
+Michael J. Fox	Natalie Portman
+Johnny Depp	Natalie Portman
+Hank Azaria	Jeffrey DeMunn
+William Hurt	Leif Tilden
+Stockard Channing	Mena Suvari
+George Segal	Mena Suvari
+Tom Cruise	Connie Nielsen
+Greg Kinnear	Jon Gries
+Blythe Danner	Isla Fisher
+Nathan Lane	Isla Fisher
+M. Emmet Walsh	Cole Hauser
+Alec Guinness	Roselyn Sanchez
+Fairuza Balk	Judge Reinhold
+Garry Marshall	Ashley Palmer
+Jean Seberg	Ashley Palmer
+Hermione Baddeley	Ashley Palmer
+Whoopi Goldberg	Ashley Palmer
+Chris Noth	Ashley Palmer
+Robert Shaw	Ashley Johnson
+Whitney Houston	Ashley Johnson
+Linda Fiorentino	Rodney A. Grant
+Amanda Peet	Rod Taylor
+Kathleen Turner	Ken Davitian
+Paula Abdul	Ken Davitian
+Noah Emmerich	Timothy Spall
+Rupert Everett	Anita Briem
+Annette Bening	Anita Briem
+Halle Berry	Catherine Bell
+Richard Roxburgh	MacInTalk
+Dean R. Brooks	MacInTalk
+Nancy Baldwin	MacInTalk
+David Andrews	MacInTalk
+Mark Strong	MacInTalk
+Jake Johnson	MacInTalk
+Steven O'Donnell	MacInTalk
+Maynard Eziashi	MacInTalk
+Vincent D'Onofrio	Monica Potter
+Billy Dee Williams	Zach Braff
+Jennifer Aniston	Taylor Lautner
+DeForest Kelley	Wyatt Knight
+Stephen Furst	Don Rickles
+Justin Bartha	Rory Culkin
+Nicolas Cage	Liam Aiken
+Josh Charles	Jackie Cooper
+Hank Azaria	Talia Shire
+Ronny Cox	Daniel Radcliffe
+Woody Harrelson	Daniel Radcliffe
+Ricardo Montalban	Billy Burke
+Jet Li	Kevin James
+Carol Burnett	Kevin James
+Jackie Chan	James Garner
+Matthew Broderick	Rosie O'Donnell
+Lea Thompson	Chris Elliott
+Katharine Hepburn	Ving Rhames
+Dean R. Brooks	Richard McCabe
+David Andrews	Richard McCabe
+Maynard Eziashi	Richard McCabe
+Steve Guttenberg	Rupert Grint
+Anne Archer	Rupert Grint
+Robert Patrick	Sam Rockwell
+Vivien Leigh	Sam Rockwell
+Liv Tyler	Raini Rodriguez
+Dan Aykroyd	Raini Rodriguez
+Pamela Anderson	Raini Rodriguez
+Katharine Hepburn	Malin Akerman
+Jason Biggs	Malin Akerman
+Wes Bentley	Richard S. Castellano
+Kevin Costner	Jane Horrocks
+Mary McDonnell	James Baker III
+Jessica Alba	James Baker III
+Rob Lowe	Kurt Russell
+Vivien Leigh	Famke Janssen
+Linda Hamilton	Helmut Bakaitis
+James Caviezel	Helmut Bakaitis
+Hank Azaria	Jason Lee
+Sarah Michelle Gellar	Richard Jeni
+Adrien Brody	Richard Jeni
+Rod Steiger	Richard Jeni
+Brad Garrett	Richard Jeni
+Ian McKellen	Justin Henry
+Candice Bergen	Wendy Crewson
+Cathy Moriarty	Tom Sizemore
+Larry Miller	Dominic West
+Joan Allen	Geoffrey Blake
+Billy Crudup	Jeffrey Tambor
+Anjelica Huston	Jeffrey Tambor
+Carrie Fisher	Ken Watanabe
+Demi Moore	Alison Doody
+Leonardo DiCaprio	Alison Doody
+Sarah Michelle Gellar	Graham Phillips
+Adrien Brody	Graham Phillips
+Rod Steiger	Graham Phillips
+Jaimz Woolvett	Graham Phillips
+Brad Garrett	Graham Phillips
+John Amos	Thomas Wilson Brown
+Michael Clarke Duncan	Raven-Symone
+Emmanuelle Chriqui	Raven-Symone
+Tim Allen	Simon Callow
+Edward Furlong	Kara Hoffman
+Joanna Cassidy	Kara Hoffman
+Sam Worthington	Kara Hoffman
+Shelby Hoffman	Kara Hoffman
+Antonio Banderas	Angie Harmon
+Kate Beahan	Hugh Jackman
+Dean R. Brooks	Kathryn Hunter
+David Andrews	Kathryn Hunter
+Maynard Eziashi	Kathryn Hunter
+Sylvester Stallone	George W. Bush
+Nathalie Baye	George W. Bush
+Jet Li	Tom Welling
+Russell Nype	Tom Welling
+Carol Burnett	Tom Welling
+Jeff Bridges	Patricia Wettig
+Terrence Howard	Johnny Knoxville
+Peter Berg	Johnny Knoxville
+Denise Richards	Rene Russo
+Michael Ironside	Josh Brolin
+Christina Ricci	Josh Brolin
+Joe Don Baker	Josh Brolin
+Victor Garber	Alan Tudyk
+Denise Richards	Joseph Gordon-Levitt
+Hal Holbrook	Joseph Gordon-Levitt
+Topher Grace	Michelle Rodriguez
+Kim Cattrall	Carrie-Anne Moss
+Dean R. Brooks	Richard Roxburgh
+David Andrews	Richard Roxburgh
+Steven O'Donnell	Richard Roxburgh
+Maynard Eziashi	Richard Roxburgh
+Judi Dench	Paddi Edwards
+John Malkovich	Paddi Edwards
+Will Smith	Joel Moore
+Catherine Zeta-Jones	Joel Moore
+Stevie Wonder	Lari White
+Dan Aykroyd	Liv Tyler
+Pamela Anderson	Liv Tyler
+Anne Archer	Steve Guttenberg
+David Andrews	Dean R. Brooks
+Nicole Kidman	Olympia Dukakis
+Jason Alexander	Mary Kay Place
+Mickey Rooney	Mary Kay Place
+Mary McDonnell	Madge Sinclair
+Jessica Alba	Madge Sinclair
+Anthony Hopkins	James Remar
+Billy Bob Thornton	Cole Sprouse
+Alessandro Nivola	Ayelet Zurer
+John Cusack	Ayelet Zurer
+Pat Morita	Ayelet Zurer
+Peter Greene	Martin Henderson
+Samuel L. Jackson	Jane Fonda
+Steven Berkoff	John C. McGinley
+Woody Harrelson	Ronny Cox
+Vincent D'Onofrio	Marton Csokas
+Tom Hanks	Chris Cooper
+Brian Dennehy	Chris Cooper
+Kelly McGillis	Chris Cooper
+Elliott Gould	Carla Gugino
+Kate Beahan	Dave Legeno
+Tim Curry	Kate Hudson
+Ashley Judd	Kate Hudson
+Peter Stormare	Charles Fleischer
+Patrick Swayze	Edward Norton
+Robert Redford	Edward Norton
+Denis Leary	Edward Norton
+Madeleine Stowe	Edward Norton
+James Doohan	Tomas Milian
+Sean Astin	Tea Leoni
+Cathy Moriarty	Anna Faris
+Paul Newman	David Strathairn
+Faye Dunaway	LL Cool J
+Whitney Houston	Robert Shaw
+John C. McGinley	Corey Burton
+Steven Berkoff	Corey Burton
+Tom Cruise	George Sanders
+Christopher Lee	Richard Schiff
+Paul Bettany	Richard Schiff
+Joseph Fiennes	Richard Schiff
+Josh Pais	Robert Pastorelli
+Whoopi Goldberg	Garry Marshall
+Mary Kay Place	Faune A. Chambers
+Jason Alexander	Faune A. Chambers
+Mickey Rooney	Faune A. Chambers
+Wes Bentley	Noah Taylor
+Nona Gaye	Noah Taylor
+James Dreyfus	Robert Wuhl
+Denzel Washington	Maggie Smith
+Julie Kavner	Shannon Elizabeth
+Wallace Shawn	Anne Hathaway
+Liam Neeson	Colleen Camp
+Dean Martin	Colleen Camp
+Tim Roth	Danny Huston
+Lil' Zane	David Kelly
+Stephen Lang	David Kelly
+Liam Neeson	Michael Cera
+Colleen Camp	Michael Cera
+Dean Martin	Michael Cera
+Anthony Edwards	Pat Hingle
+Lena Headey	Clive Owen
+Seann William Scott	Clive Owen
+Neve Campbell	Clive Owen
+Lynn Ferguson	Peter Riegert
+Kate Hudson	James Franco
+Tim Curry	James Franco
+Ashley Judd	James Franco
+Amy Yasbeck	Paul Walker
+Ian Holm	Paul Walker
+Peter Scolari	Paul Walker
+Jason Statham	Paul Walker
+Phyllis Diller	Barbara O'Neil
+David Hasselhoff	Barbara O'Neil
+Meryl Streep	Donald Faison
+Seann William Scott	Lena Headey
+Neve Campbell	Lena Headey
+Elisabeth Shue	Ioan Gruffudd
+Michael J. Fox	Paul L. Nolan
+Johnny Depp	Paul L. Nolan
+Richard Roxburgh	Nancy Baldwin
+Dean R. Brooks	Nancy Baldwin
+David Andrews	Nancy Baldwin
+Mark Strong	Nancy Baldwin
+Steven O'Donnell	Nancy Baldwin
+Maynard Eziashi	Nancy Baldwin
+Peter Fonda	Dakota Fanning
+Kristin Davis	Dakota Fanning
+Joseph Gordon-Levitt	Larry The Cable Guy
+Denise Richards	Larry The Cable Guy
+Hal Holbrook	Larry The Cable Guy
+Piper Perabo	Thelma Boardman
+Eddie Kaye Thomas	Thelma Boardman
+Brian Doyle-Murray	Thelma Boardman
+Neve Campbell	Seann William Scott
+Chris Cooper	Richard Roundtree
+Tom Hanks	Richard Roundtree
+Brian Dennehy	Richard Roundtree
+Kelly McGillis	Richard Roundtree
+Martin Henderson	Kristanna Loken
+Peter Greene	Kristanna Loken
+Richard Dreyfuss	Gabrielle Union
+Winona Ryder	Gabrielle Union
+Charles Fleischer	Alexa Vega
+Peter Stormare	Alexa Vega
+Marlon Brando	Amanda Bynes
+Adam Scott	Amanda Bynes
+Eddie Murphy	Amanda Bynes
+Mickey Rooney	Jason Alexander
+Ronny Cox	Kathryn Hahn
+Woody Harrelson	Kathryn Hahn
+Peter Cushing	Margaret Colin
+Michael Caine	Billy Crystal
+Tea Leoni	Lee Evans
+Sean Astin	Lee Evans
+Allen Covert	John Lone
+Kelly Preston	John Lone
+Carol Burnett	Jet Li
+Kevin Costner	Paul Freeman
+Jami Gertz	Joaquin Phoenix
+Jane Alexander	Joaquin Phoenix
+Carlos Alazraqui	Adoni Maropis
+Garry Marshall	Jean Seberg
+Hermione Baddeley	Jean Seberg
+Whoopi Goldberg	Jean Seberg
+Chris Noth	Jean Seberg
+John Travolta	Christo Jivkov
+Ben Affleck	Quinton Aaron
+Mike Henry	Quinton Aaron
+Mel Gibson	Ray Milland
+Dabney Coleman	Ray Milland
+Barry Pepper	Elizabeth Wilson
+Craig T. Nelson	Elizabeth Wilson
+Hugo Weaving	Elizabeth Wilson
+Lisa Eilbacher	John Rhys-Davies
+Pat Carroll	John Rhys-Davies
+Michael Ironside	Brian Haley
+Christina Ricci	Brian Haley
+Joe Don Baker	Brian Haley
+Jurgen Prochnow	Frankie Faison
+Bruce Willis	Glenn Close
+Parker Posey	Alfre Woodard
+Garry Marshall	Hermione Baddeley
+Whoopi Goldberg	Hermione Baddeley
+Jenny McCarthy	Chad Lindberg
+Rachel Ticotin	Chad Lindberg
+Harrison Ford	Cheech Marin
+Linda Fiorentino	Matthew Gray Gubler
+Chazz Palminteri	Lainie Kazan
+Tim Robbins	Martha Smith
+Michael York	Elizabeth Mitchell
+Jenny McCarthy	Rachel Ticotin
+Angelina Jolie	Izabella Scorupco
+Vince Vaughn	Julia Stiles
+Ian Holm	Amy Yasbeck
+Billy Crudup	Jaden Smith
+Anjelica Huston	Jaden Smith
+Frankie Faison	Doug McKeon
+Jurgen Prochnow	Doug McKeon
+Joaquin Phoenix	Jack Murdock
+Jami Gertz	Jack Murdock
+Jane Alexander	Jack Murdock
+Nia Long	Henry Winkler
+Charles Martin Smith	Henry Winkler
+Sean Bean	Kristine Sutherland
+Will Patton	Faizon Love
+John C. Reilly	Dash Mihok
+Jim Broadbent	Dash Mihok
+Alec Guinness	Michael Fassbender
+Roshan Seth	Michael Fassbender
+John Malkovich	Judi Dench
+John Cusack	Alessandro Nivola
+Pat Morita	Alessandro Nivola
+Johnny Depp	Michael J. Fox
+Jet Li	Russell Nype
+Carol Burnett	Russell Nype
+Harvey Fierstein	Paul Giamatti
+Leslie Stefanson	Dallas Roberts
+Paige O'Hara	Dallas Roberts
+Carrie-Anne Moss	Hayden Panettiere
+Kim Cattrall	Hayden Panettiere
+Nathan Jones	Hayden Panettiere
+Taye Diggs	Kate Bosworth
+Winona Ryder	Richard Dreyfuss
+Heather Graham	Katharine Ross
+Tom Selleck	Katharine Ross
+Lea Thompson	Christopher Carley
+Susie Essman	Christopher Carley
+Laura Linney	Jordan Nagai
+Jonathan Freeman	Jordan Nagai
+Robert Redford	Patrick Swayze
+Madeleine Stowe	Patrick Swayze
+Barry Pepper	Craig T. Nelson
+Cindy Williams	Rick Yune
+Denzel Washington	Seth Meyers
+Maggie Smith	Seth Meyers
+Eva Mendes	Michael Irvin
+Ben Affleck	Mike Henry
+Anthony Ruivivar	Bee Vang
+Matthew McConaughey	Bee Vang
+Nia Long	Charles Martin Smith
+Julia Louis-Dreyfus	Orlando Bloom
+Laura San Giacomo	Olga Kurylenko
+Michael Clarke Duncan	Emmanuelle Chriqui
+Nick Nolte	Seth Green
+Henry Czerny	Seth Green
+Olympia Dukakis	Christopher Mintz-Plasse
+Nicole Kidman	Christopher Mintz-Plasse
+Richard Roxburgh	Mark Strong
+Dean R. Brooks	Mark Strong
+David Andrews	Mark Strong
+Steven O'Donnell	Mark Strong
+Maynard Eziashi	Mark Strong
+Piper Perabo	Eddie Kaye Thomas
+Brian Doyle-Murray	Eddie Kaye Thomas
+David Kelly	Thomas Mitchell
+Lil' Zane	Thomas Mitchell
+Stephen Lang	Thomas Mitchell
+Shuler Hensley	Moira Kelly
+Leonardo DiCaprio	Demi Moore
+Edward Furlong	Joanna Cassidy
+Angelina Jolie	Russell Brand
+Izabella Scorupco	Russell Brand
+Madonna	Reginald VelJohnson
+Peter Berg	Terrence Howard
+Sally Field	Thandie Newton
+Jennifer Connelly	Tom Wilkinson
+Bill Nighy	Tom Wilkinson
+Sarah Douglas	Tom Wilkinson
+Alan Arkin	Keira Knightley
+Strother Martin	Keira Knightley
+Sterling Hayden	Keira Knightley
+Stephen Lang	Lil' Zane
+Amy Yasbeck	Peter Scolari
+Ian Holm	Peter Scolari
+Jason Statham	Peter Scolari
+Michael Caine	Liesel Matthews
+Billy Crystal	Liesel Matthews
+Chris Klein	Liesel Matthews
+Ashley Judd	Tim Curry
+Julia Ormond	Yvan Attal
+Matt Frewer	Yvan Attal
+Pamela Anderson	Dan Aykroyd
+Vivien Leigh	Robert Patrick
+Linda Cardellini	Chloe Webb
+Kelly Preston	Allen Covert
+Glynis Johns	Scott Weinger
+Kevin Spacey	Helen Mirren
+Catherine O'Hara	Anne Haney
+Edward Furlong	Sam Worthington
+Joanna Cassidy	Sam Worthington
+Linda Hamilton	James Caviezel
+Miranda Otto	Hardie Albright
+Kathleen Turner	Ryan Hurst
+Paula Abdul	Ryan Hurst
+Dana Carvey	Martha Wentworth
+Madonna	Lorraine Gary
+Reginald VelJohnson	Lorraine Gary
+Steve Carell	Lorraine Gary
+Demi Moore	Kristen Wilson
+Leonardo DiCaprio	Kristen Wilson
+Mark Wahlberg	Mary Kay Bergman
+John Bach	Mary Kay Bergman
+Joan Allen	Ben Barnes
+Yun-Fat Chow	Spencer Breslin
+Burt Lancaster	Nelly
+Alan Arkin	Strother Martin
+Sterling Hayden	Strother Martin
+Spencer Breslin	Matt Long
+Yun-Fat Chow	Matt Long
+Terrence Howard	Anton Yelchin
+Peter Berg	Anton Yelchin
+Patrick Swayze	Denis Leary
+Robert Redford	Denis Leary
+Madeleine Stowe	Denis Leary
+Stockard Channing	George Segal
+Tom Selleck	Heather Graham
+Matthew McConaughey	Anthony Ruivivar
+Luis Guzman	Ken Jenkins
+Mel Gibson	Dabney Coleman
+Lori Petty	Chen Chang
+Mary McDonnell	Jessica Alba
+Sarah Michelle Gellar	Adrien Brody
+Rod Steiger	Adrien Brody
+Jack Nicholson	Jeffrey Dean Morgan
+Sarah Michelle Gellar	Rod Steiger
+Anna Faris	Garry Shandling
+Cathy Moriarty	Garry Shandling
+Judd Hirsch	Will i Am
+J. Pat O'Malley	Will i Am
+Alfre Woodard	Keir O'Donnell
+Parker Posey	Keir O'Donnell
+Elizabeth Daily	Julia Nickson
+Kerry Washington	Richard Gephardt
+Minnie Driver	Richard Gephardt
+Tom Hanks	Brian Dennehy
+Kelly McGillis	Brian Dennehy
+Barry Pepper	Hugo Weaving
+Craig T. Nelson	Hugo Weaving
+Robert De Niro	Donnie Wahlberg
+Liam Neeson	Dean Martin
+Colin Firth	Philip Baker Hall
+Christopher Lloyd	Jonathan Lipnicki
+Alan Rickman	Melanie Laurent
+Katharine Hepburn	Jason Biggs
+Christina Ricci	Michael Ironside
+Adoni Maropis	Dan Monahan
+Carlos Alazraqui	Dan Monahan
+Paul Freeman	Jason Segel
+Kevin Costner	Jason Segel
+David Strathairn	Ellen DeGeneres
+Paul Newman	Ellen DeGeneres
+Christopher Lee	Paul Bettany
+Joseph Fiennes	Paul Bettany
+Laura Linney	Jonathan Freeman
+Jane Fonda	Kiefer Sutherland
+Samuel L. Jackson	Kiefer Sutherland
+Cherry Jones	Jena Malone
+Harold Ramis	Jena Malone
+Arnold Schwarzenegger	Hilary Swank
+Laurence Fishburne	Hilary Swank
+Michael Caine	Chris Klein
+Billy Crystal	Chris Klein
+Jennifer Connelly	Bill Nighy
+Sarah Douglas	Bill Nighy
+Kirstie Alley	Oliver Platt
+Mark Wahlberg	John Bach
+David Hasselhoff	Phyllis Diller
+Billy Crudup	Anjelica Huston
+Kathleen Turner	Paula Abdul
+Minnie Driver	Kerry Washington
+Linda Hamilton	Philip Bosco
+James Caviezel	Philip Bosco
+Julie Andrews	Zach Galifianakis
+Melanie Laurent	Kitty Winn
+Ellen Page	Kitty Winn
+Alan Rickman	Kitty Winn
+Teri Hatcher	Lee J. Cobb
+Nick Nolte	Henry Czerny
+Bill Murray	David Wenham
+Faizon Love	Daryl Sabara
+Will Patton	Daryl Sabara
+Amy Yasbeck	Jason Statham
+Ian Holm	Jason Statham
+Joely Richardson	David Allen Brooks
+Janet Jackson	Megan Fox
+Adriana Caselotti	Megan Fox
+Tim Allen	Stellan Skarsgard
+Laura Dern	Robert Wagner
+Denise Richards	Hal Holbrook
+Alan Arkin	Sterling Hayden
+Madge Sinclair	Marcia Strassman
+Mary McDonnell	Marcia Strassman
+Jessica Alba	Marcia Strassman
+Robert Redford	Madeleine Stowe
+Lea Thompson	Susie Essman
+Tomas Milian	Jared Rushton
+James Doohan	Jared Rushton
+Marlon Brando	Adam Scott
+Eddie Murphy	Adam Scott
+Richard Roxburgh	Jake Johnson
+Dean R. Brooks	Jake Johnson
+Nancy Baldwin	Jake Johnson
+David Andrews	Jake Johnson
+Mark Strong	Jake Johnson
+Steven O'Donnell	Jake Johnson
+Maynard Eziashi	Jake Johnson
+Rob Lowe	Gary Sinise
+Jay Brazeau	Heather Donahue
+Hilary Swank	Simon Baker
+Arnold Schwarzenegger	Simon Baker
+Laurence Fishburne	Simon Baker
+Denzel Washington	Sienna Miller
+Maggie Smith	Sienna Miller
+Seth Meyers	Sienna Miller
+Amber Valletta	Ziyi Zhang
+Dean R. Brooks	Steven O'Donnell
+David Andrews	Steven O'Donnell
+Maynard Eziashi	Steven O'Donnell
+Marlon Brando	Eddie Murphy
+Hugh Grant	Henry Thomas
+Blythe Danner	Nathan Lane
+Wes Bentley	Nona Gaye
+Hugh Grant	Cliff Robertson
+Henry Thomas	Cliff Robertson
+John Lone	Jack MacGowran
+Allen Covert	Jack MacGowran
+Kelly Preston	Jack MacGowran
+Julia Ormond	Matt Frewer
+James Remar	Andy Arness
+Anthony Hopkins	Andy Arness
+Harold Ramis	Cherry Jones
+Jennifer Connelly	Sarah Douglas
+Edward Norton	Jacob Vargas
+Patrick Swayze	Jacob Vargas
+Robert Redford	Jacob Vargas
+Denis Leary	Jacob Vargas
+Madeleine Stowe	Jacob Vargas
+Piper Perabo	Brian Doyle-Murray
+Jami Gertz	Jane Alexander
+Michael Ironside	Joe Don Baker
+Christina Ricci	Joe Don Baker
+Ioan Gruffudd	Mark Herrier
+Elisabeth Shue	Mark Herrier
+Tom Hanks	Kelly McGillis
+Cary Elwes	Rita Wilson
+Dylan McDermott	Rita Wilson
+Bob Hoskins	Rita Wilson
+Jane Fonda	Ray Romano
+Kiefer Sutherland	Ray Romano
+Samuel L. Jackson	Ray Romano
+Ian McShane	Zachary Levi
+Robert Shaw	Audrey Tautou
+Whitney Houston	Audrey Tautou
+Lisa Eilbacher	Pat Carroll
+Rupert Everett	Annette Bening
+Tim McGraw	Maia Morgenstern
+Richard Crenna	Ben Stiller
+Peter Coyote	Jodi Benson
+Peter Fonda	Kristin Davis
+Arnold Schwarzenegger	Laurence Fishburne
+Sylvester Stallone	Nathalie Baye
+Claire Danes	Charles Napier
+Bette Midler	Eddie Smith
+Madonna	Steve Carell
+Reginald VelJohnson	Steve Carell
+George Sanders	Yeardley Smith
+Tom Cruise	Yeardley Smith
+Jada Pinkett Smith	Fred Willard
+Robert De Niro	Floyd 'Red Crow' Westerman
+Donnie Wahlberg	Floyd 'Red Crow' Westerman
+Dennis Quaid	Jay Baruchel
+Cary Elwes	Dylan McDermott
+Bob Hoskins	Dylan McDermott
+Edward Furlong	Shelby Hoffman
+Joanna Cassidy	Shelby Hoffman
+Sam Worthington	Shelby Hoffman
+Cary Elwes	Bob Hoskins
+William H. Macy	Joseph Mascolo
+Christopher Plummer	Jamie Foxx
+John C. Reilly	Jim Broadbent
+Catherine O'Hara	Mykelti Williamson
+Anne Haney	Mykelti Williamson
+Christopher Lee	Joseph Fiennes
+Chris O'Donnell	David Brisbin
+Ryan Hurst	Zoe Saldana
+Kathleen Turner	Zoe Saldana
+Paula Abdul	Zoe Saldana
+Diane Lane	Seymour Cassel
+John Cusack	Pat Morita
+Melanie Laurent	Ellen Page
+Alan Rickman	Ellen Page
+Liam Neeson	Bill Hader
+Colleen Camp	Bill Hader
+Michael Cera	Bill Hader
+Dean Martin	Bill Hader
+Will Smith	Catherine Zeta-Jones
+Donald Faison	Amrish Puri
+Meryl Streep	Amrish Puri
+Candice Bergen	Rosario Dawson
+Judd Hirsch	J. Pat O'Malley
+Lisa Eilbacher	Ben Wright
+John Rhys-Davies	Ben Wright
+Pat Carroll	Ben Wright
+Janet Jackson	Adriana Caselotti
+Sarah Michelle Gellar	Jaimz Woolvett
+Adrien Brody	Jaimz Woolvett
+Rod Steiger	Jaimz Woolvett
+Brad Garrett	Jaimz Woolvett
+Dean R. Brooks	Maynard Eziashi
+David Andrews	Maynard Eziashi
+Alec Guinness	Roshan Seth
+Garry Marshall	Chris Noth
+Hermione Baddeley	Chris Noth
+Whoopi Goldberg	Chris Noth
+Josh Charles	Bruce Reitherman
+Leslie Stefanson	Paige O'Hara
+Alan Alda	Rosamund Pike
+Carrie-Anne Moss	Nathan Jones
+Kim Cattrall	Nathan Jones
+Sarah Michelle Gellar	Brad Garrett
+Adrien Brody	Brad Garrett
+Rod Steiger	Brad Garrett
+Peter Boyle	Joe Morton
+Cole Sprouse	Dylan Sprouse
+Billy Bob Thornton	Dylan Sprouse
+Steve Guttenberg	Dave Chappelle
+Anne Archer	Dave Chappelle
+Janet Jackson	Vincent Regan
+Adriana Caselotti	Vincent Regan
+Iain Glen	Phil Harris
+Carrie-Anne Moss	Elarica Gallacher
+Hayden Panettiere	Elarica Gallacher
+Kim Cattrall	Elarica Gallacher
+Nathan Jones	Elarica Gallacher
+Madonna	John Louie
+Reginald VelJohnson	John Louie
+Lorraine Gary	John Louie
+Steve Carell	John Louie
+Eric Idle	Amy Sedaris
+Blythe Danner	Maura Tierney
+Nathan Lane	Maura Tierney
+Gabrielle Union	Dan Castellaneta
+Richard Dreyfuss	Dan Castellaneta
+Winona Ryder	Dan Castellaneta
+Wes Bentley	Beyonce Knowles
+Nona Gaye	Beyonce Knowles
+Dean R. Brooks	Sihung Lung
+David Andrews	Sihung Lung
+Maynard Eziashi	Sihung Lung
+Christopher Plummer	Dick Van Dyke
+Casper Van Dien	Katie Holmes
+Maggie Gyllenhaal	Burgess Meredith
+Chris Cooper	Georgie Henley
+Tom Hanks	Georgie Henley
+Richard Roundtree	Georgie Henley
+Brian Dennehy	Georgie Henley
+Kelly McGillis	Georgie Henley
+Dakota Fanning	Emily Blunt
+Peter Fonda	Emily Blunt
+Kristin Davis	Emily Blunt
+Dean R. Brooks	Bob Peterson
+David Andrews	Bob Peterson
+Steven O'Donnell	Bob Peterson
+Maynard Eziashi	Bob Peterson
+Janet Jackson	Kevin McDonald
+Adriana Caselotti	Kevin McDonald
+Rosemary Harris	Paul Williams
+Lori Petty	Max Thieriot
+Chen Chang	Max Thieriot
+Stockard Channing	Michael Ensign
+George Segal	Michael Ensign
+Wes Bentley	Michael Berryman
+Liam Neeson	Jessica Tandy
+Dean Martin	Jessica Tandy
+Dana Carvey	Zachary Quinto
+Joseph Mascolo	Harry Melling
+William H. Macy	Harry Melling
+Matthew Broderick	Gary Oldman
+Kirsten Dunst	Burt Young
+Thelma Boardman	Willow Smith
+Piper Perabo	Willow Smith
+Eddie Kaye Thomas	Willow Smith
+Brian Doyle-Murray	Willow Smith
+Brigitte Nielsen	Jeffrey Kramer
+Sean Bean	William Mapother
+Olympia Dukakis	Josh Lucas
+Nicole Kidman	Josh Lucas
+Mary McDonnell	Bridget Moynahan
+Jessica Alba	Bridget Moynahan
+Robert Patrick	Sam Shepard
+Vivien Leigh	Sam Shepard
+Diane Lane	Chintara Sukapatana
+Seymour Cassel	Chintara Sukapatana
+Bill Pullman	Eugene Levy
+Cheech Marin	Patrick Stewart
+Harrison Ford	Patrick Stewart
+Dean R. Brooks	Ricky Jay
+David Andrews	Ricky Jay
+Maynard Eziashi	Ricky Jay
+Amanda Bynes	Matthew Goode
+Marlon Brando	Matthew Goode
+Adam Scott	Matthew Goode
+Eddie Murphy	Matthew Goode
+Dean R. Brooks	Pam Ferris
+David Andrews	Pam Ferris
+Maynard Eziashi	Pam Ferris
+Bill Fagerbakke	Wendy Makkena
+Vince Vaughn	Dianne Wiest
+Richard Roxburgh	Roger Wilson
+Dean R. Brooks	Roger Wilson
+David Andrews	Roger Wilson
+Mark Strong	Roger Wilson
+Steven O'Donnell	Roger Wilson
+Maynard Eziashi	Roger Wilson
+Angelina Jolie	Keith David
+Izabella Scorupco	Keith David
+Bill Paxton	Dennis Hopper
+Will Smith	Christopher Reeve
+Bill Pullman	Giovanni Ribisi
+Meg Ryan	Allison Janney
+Sandra Bullock	Taylor Momsen
+John Lithgow	Michael Gambon
+Jack Black	Daniel Stern
+Delroy Lindo	Romany Malco
+Christopher Reeve	Clea DuVall
+Brian Blessed	Nick Swardson
+Tom Skerritt	Anthony Heald
+Lou Romano	Emma Watson
+Danny Glover	Albert Brooks
+Sandra Bullock	Ellen Hamilton Latzen
+Hilary Duff	Ronald Lacey
+Beverly D'Angelo	Edward Asner
+Gene Wilder	Hugh Laurie
+Michael Keaton	Paddy Considine
+Sandra Bullock	Kate Beckinsale
+Colin Hanks	Michael Roof
+Katherine Heigl	Michael Roof
+Jon Lovitz	Don Knotts
+Sandra Bullock	Olivia Williams
+Brett Cullen	Chris Pine
+Ed Harris	James Karen
+Dave Chappelle	Pierfrancesco Favino
+Sihung Lung	Derrick O'Connor
+Ricky Jay	Derrick O'Connor
+Pam Ferris	Derrick O'Connor
+Trevor Morgan	Katie Sagona
+Peter Facinelli	Katie Sagona
+Aaron Eckhart	Tanveer K. Atwal
+Sihung Lung	Spencer Vrooman
+Bob Peterson	Spencer Vrooman
+Ricky Jay	Spencer Vrooman
+Pam Ferris	Spencer Vrooman
+Dylan Sprouse	Richard White
+Josh Lucas	Brawley Nolte
+Sam Elliott	Eric Bana
+Ricky Jay	Pat E. Johnson
+Pam Ferris	Pat E. Johnson
+Michael Keaton	Skandar Keynes
+Bridget Moynahan	Bruno Kirby
+Rob Schneider	David Ogden Stiers
+Dave Chappelle	Chad Michael Murray
+Sihung Lung	Eddie Marsan
+Ricky Jay	Eddie Marsan
+Pam Ferris	Eddie Marsan
+Shirley Knight	Miguel Angel Suarez
+Rob Schneider	Justin Chatwin
+Tom Skerritt	Bruce Allpress
+Danny Glover	Terence Stamp
+Brett Cullen	Mike Colter
+Salma Hayek	Terry Bradshaw
+Ben Burtt	Byung-hun Lee
+Delroy Lindo	Owen Wilson
+Michael Keaton	Rose McGowan
+Katherine Heigl	Howard Duff
+John Lithgow	Jon Favreau
+Sandra Bullock	Jason Robards
+Danny Glover	John Leguizamo
+Carmen Electra	Jessica Lange
+Jeffrey Kramer	Diane Kruger
+Salma Hayek	Mark Harmon
+Beverly D'Angelo	Bob Gunton
+Malcolm McDowell	Chris Evans
+Jessica Tandy	Karl Urban
+Sihung Lung	Jonathan Loughran
+Ricky Jay	Jonathan Loughran
+Pam Ferris	Jonathan Loughran
+Robert Downey Jr.	Heath Ledger
+Salma Hayek	Keanu Reeves
+Wendy Makkena	Christoph Waltz
+Liev Schreiber	Christoph Waltz
+Sam Shepard	Tilda Swinton
+Robert Downey Jr.	Robbie Rist
+Brian Blessed	Brandon Routh
+Robert Downey Jr.	David Cross
+Malcolm McDowell	Mary Wickes
+John Ashton	James Hong
+Alyson Hannigan	Murray Hamilton
+Carmen Electra	Ryan O'Neal
+Maura Tierney	Isla Fisher
+Sam Elliott	Ashley Johnson
+Carmen Electra	Betty Lou Gerson
+Sigourney Weaver	Paul Hogan
+Matt Damon	Paul Hogan
+Sihung Lung	MacInTalk
+Bob Peterson	MacInTalk
+Ricky Jay	MacInTalk
+Pam Ferris	MacInTalk
+Roger Wilson	MacInTalk
+Ellen Burstyn	Mark Rolston
+Jon Lovitz	Rory Culkin
+Russell Crowe	James Garner
+Gary Oldman	Rosie O'Donnell
+Sihung Lung	Richard McCabe
+Ricky Jay	Richard McCabe
+Pam Ferris	Richard McCabe
+Tony Goldwyn	Judy Kuhn
+Dave Chappelle	Rupert Grint
+Beverly D'Angelo	Kevin J. O'Connor
+Sam Shepard	Sam Rockwell
+Jon Voight	Ted Danson
+Warren Beatty	Robbie Coltrane
+Michael Berryman	Richard S. Castellano
+Danny Glover	Franka Potente
+Bridget Moynahan	James Baker III
+Danny Glover	Irene Bedard
+Malcolm McDowell	Simon Callow
+Danny Glover	David Spade
+Aaron Eckhart	Luenell
+Pam Ferris	Kathryn Hunter
+Delroy Lindo	Kevin Nealon
+Danny Glover	Rhys Ifans
+Jon Voight	Mekhi Phifer
+Carmen Electra	George Takei
+Beverly D'Angelo	Gloria Foster
+Delroy Lindo	Nick Chinlund
+Ben Burtt	Michelle Rodriguez
+Sihung Lung	Richard Roxburgh
+Bob Peterson	Richard Roxburgh
+Ricky Jay	Richard Roxburgh
+Pam Ferris	Richard Roxburgh
+Christopher Reeve	Joel Moore
+Gene Wilder	Shia LaBeouf
+Bridget Moynahan	Madge Sinclair
+Wood Harris	John Marley
+Sigourney Weaver	Martin Henderson
+Matt Damon	Martin Henderson
+Hilary Duff	Naomi Watts
+Sam Elliott	Robert Shaw
+Beyonce Knowles	Noah Taylor
+Michael Berryman	Noah Taylor
+Brian Blessed	Robert Wuhl
+Jessica Tandy	Colleen Camp
+Jessica Tandy	Michael Cera
+Sihung Lung	Nancy Baldwin
+Bob Peterson	Nancy Baldwin
+Ricky Jay	Nancy Baldwin
+Pam Ferris	Nancy Baldwin
+Roger Wilson	Nancy Baldwin
+Kim Basinger	Teri Hatcher
+Rob Schneider	Thelma Boardman
+Sigourney Weaver	Kristanna Loken
+Matt Damon	Kristanna Loken
+Malcolm McDowell	Tim Allen
+Tony Goldwyn	Timothy Olyphant
+Robert Downey Jr.	Elizabeth Wilson
+Robert Downey Jr.	Barry Pepper
+Sam Neill	Faith Ford
+Dianne Wiest	Julia Stiles
+Rob Schneider	Piper Perabo
+William Mapother	Kristine Sutherland
+Fred Astaire	Dallas Roberts
+Cuba Gooding Jr.	Kate Bosworth
+Sandra Bullock	Kevin Spacey
+Sigourney Weaver	Peter Greene
+Matt Damon	Peter Greene
+Russell Crowe	Jackie Chan
+Robert Downey Jr.	Craig T. Nelson
+Josh Lucas	Christopher Mintz-Plasse
+Sihung Lung	Mark Strong
+Bob Peterson	Mark Strong
+Ricky Jay	Mark Strong
+Pam Ferris	Mark Strong
+Rob Schneider	Eddie Kaye Thomas
+Ellen Burstyn	Jeffrey Wright
+Emily Browning	Jeffrey Wright
+Keith David	Russell Brand
+Lou Romano	Elissa Knight
+Bernie Mac	Scott Weinger
+Mary Gibbs	Scott Weinger
+Sandra Bullock	Helen Mirren
+Zachary Quinto	Martha Wentworth
+Michael Keaton	Bob Newhart
+Ben Burtt	Topher Grace
+Jack Black	Ken Jenkins
+Liev Schreiber	Bill Fagerbakke
+Sissy Spacek	Stuart Wilson
+Robert Downey Jr.	Hugo Weaving
+Shirley Knight	Eva Green
+Bernie Mac	Glynis Johns
+Mary Gibbs	Glynis Johns
+Jon Lovitz	Justin Bartha
+Fred Astaire	Leslie Stefanson
+Will Ferrell	Jayma Mays
+Brian Blessed	James Dreyfus
+Kim Basinger	Lee J. Cobb
+Alyson Hannigan	Lake Bell
+Vincent Regan	Megan Fox
+Kevin McDonald	Megan Fox
+Malcolm McDowell	Stellan Skarsgard
+Bridget Moynahan	Marcia Strassman
+Sihung Lung	Jake Johnson
+Bob Peterson	Jake Johnson
+Ricky Jay	Jake Johnson
+Pam Ferris	Jake Johnson
+Roger Wilson	Jake Johnson
+Sam Elliott	Whitney Houston
+Sihung Lung	Steven O'Donnell
+Ricky Jay	Steven O'Donnell
+Pam Ferris	Steven O'Donnell
+Michael Berryman	Nona Gaye
+Jack Black	Luis Guzman
+Rob Schneider	Brian Doyle-Murray
+Sam Elliott	Audrey Tautou
+Cuba Gooding Jr.	Taye Diggs
+Dick Van Dyke	Jamie Foxx
+Aaron Eckhart	Frank Welker
+Jessica Tandy	Bill Hader
+Robin Wright Penn	Stuart Pankin
+Christopher Reeve	Catherine Zeta-Jones
+Fred Astaire	Paige O'Hara
+Ed Harris	Johnny Simmons
+Jon Stewart	Johnny Simmons
+Kevin McDonald	Vincent Regan
+Jake Gyllenhaal	Robert MacNaughton
+Michael Berryman	Beyonce Knowles
+Ricky Jay	Sihung Lung
+Pam Ferris	Sihung Lung
+Sigourney Weaver	Matt Damon
+Ellen Burstyn	Emily Browning
+Bernie Mac	Mary Gibbs
+Sihung Lung	Bob Peterson
+Ricky Jay	Bob Peterson
+Pam Ferris	Bob Peterson
+Peter Facinelli	Trevor Morgan
+Katherine Heigl	Colin Hanks
+Rob Schneider	Willow Smith
+Ed Harris	Jon Stewart
+Giovanni Ribisi	Eugene Levy
+Pam Ferris	Ricky Jay
+Liev Schreiber	Wendy Makkena
+Sihung Lung	Roger Wilson
+Bob Peterson	Roger Wilson
+Ricky Jay	Roger Wilson
+Pam Ferris	Roger Wilson
+name
+The Sting
+The Godfather
+Rocky
+One Flew Over the Cuckoo's Nest
+Airport
+name
+Kelly McGillis
+Val Kilmer
+Anthony Edwards
+Tom Skerritt
+Dustin Hoffman
+Valeria Golino
+Gerald R. Molen
+Jack Murdock
+Jeanne Tripplehorn
+Gene Hackman
+Hal Holbrook
+Terry Kinney
+Brad Pitt
+Christian Slater
+Virginia McCollam
+John McConnell
+Cuba Gooding Jr.
+Renee Zellweger
+Kelly Preston
+Jerry O'Connell
+Jon Voight
+Emmanuelle Beart
+Henry Czerny
+Jean Reno
+Dougray Scott
+Thandie Newton
+Ving Rhames
+Richard Roxburgh
+Max von Sydow
+Steve Harris
+Neal McDonough
+Patrick Kilpatrick
+Penelope Cruz
+Cameron Diaz
+Kurt Russell
+Jason Lee
+Philip Seymour Hoffman
+Billy Crudup
+Michelle Monaghan
+Ken Watanabe
+William Atherton
+Chad Lindberg
+Ray Godshall Sr.
+Jamie Foxx
+Jada Pinkett Smith
+Mark Ruffalo
+Peter Berg
+Dakota Fanning
+Miranda Otto
+Justin Chatwin
+Tim Robbins
+Shirley MacLaine
+Debra Winger
+Danny DeVito
+Jeff Daniels
+Michael Keaton
+Kim Basinger
+Robert Wuhl
+Pat Hingle
+Helen Hunt
+Greg Kinnear
+Skeet Ulrich
+Adam Sandler
+Marisa Tomei
+Luis Guzman
+Jonathan Loughran
+Diane Keaton
+Keanu Reeves
+Frances McDormand
+Amanda Peet
+Leonardo DiCaprio
+Matt Damon
+Mark Wahlberg
+Martin Sheen
+Patrick Swayze
+Tony Goldwyn
+Stanley Lawrence
+Christopher J. Keene
+Robert Redford
+Woody Harrelson
+Seymour Cassel
+Oliver Platt
+Reese Witherspoon
+Seth Rogen
+Hugh Laurie
+Will Arnett
+Elizabeth Perkins
+Robert Loggia
+John Heard
+Jared Rushton
+Geena Davis
+Madonna
+Lori Petty
+Jon Lovitz
+Ross Malinger
+Rita Wilson
+Victor Garber
+Tom Riis Farrell
+Robin Wright Penn
+Mykelti Williamson
+Sally Field
+Tim Allen
+Don Rickles
+Jim Varney
+Wallace Shawn
+Joan Cusack
+Kelsey Grammer
+David Morse
+Bonnie Hunt
+Michael Clarke Duncan
+James Cromwell
+Tom Sizemore
+Edward Burns
+Barry Pepper
+Adam Goldberg
+Meg Ryan
+Katie Sagona
+Parker Posey
+Tyler Hoechlin
+Rob Maxey
+Paul Newman
+Liam Aiken
+Christopher Walken
+Nathalie Baye
+Leslie Zemeckis
+Eddie Deezen
+Nona Gaye
+Peter Scolari
+Audrey Tautou
+Ian McKellen
+Paul Bettany
+Ewan McGregor
+Ayelet Zurer
+Stellan Skarsgard
+Pierfrancesco Favino
+Arnold Schwarzenegger
+Jamie Lee Curtis
+Tom Arnold
+Charlton Heston
+Cary Elwes
+Jami Gertz
+Mel Gibson
+Rene Russo
+Brawley Nolte
+Delroy Lindo
+Sean Connery
+Nicolas Cage
+John Spencer
+Russell Crowe
+Jennifer Connelly
+Christopher Plummer

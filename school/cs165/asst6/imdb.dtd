@@ -1,0 +1,18 @@
+<!DOCTYPE movie [
+	<!ELEMENT movie  (id, title, runtime?, year?, genre?, rating?, director, actor+, oscar*)>
+		<!ELEMENT id (#PCDATA)>
+		<!ELEMENT title (#PCDATA)>
+		<!ELEMENT year (#PCDATA)>
+		<!ELEMENT genre (#PCDATA)>
+		<!ELEMENT runtime (#PCDATA)>
+		<!ELEMENT rating (#PCDATA)>
+		<!ELEMENT director (name, dob?, pob?)>
+		<!ELEMENT actor (name, dob?, pob?)>
+		<!ELEMENT person (name, dob?, pob?)>
+		<!ELEMENT oscar (best, year, person?)>
+		<!ELEMENT name (#PCDATA)>
+		<!ELEMENT dob (#PCDATA)>
+		<!ELEMENT pob (#PCDATA)>
+		<!ELEMENT best (#PCDATA)>
+
+]>

@@ -1,0 +1,41 @@
+#a
+SELECT * FROM data WHERE lastname='Turing' AND firstname='Alan';
+
+#b
+SELECT * FROM data WHERE city=
+	(SELECT city FROM data WHERE lastname='Turing' AND firstname='Alan');
+
+#c
+SELECT COUNT(*) AS sanfranciscans FROM data WHERE city='San Francisco';
+
+#d
+SELECT * FROM data WHERE city='Chicago' AND address LIKE '%7th St%';
+
+#e
+SELECT lastname, firstname FROM data WHERE firstname LIKE 'N%';
+
+#f
+SELECT lastname, firstname, city, state, zip FROM data WHERE zip LIKE '23%' AND NOT (firstname = 'Adrian' AND lastname = 'Bradford');
+
+#g
+SELECT city, count(*) AS contacts FROM data WHERE city!='' GROUP BY city HAVING COUNT(*) > 4;
+
+#h
+SELECT COUNT(*) AS filled_in FROM data WHERE lastname!='' AND firstname!='' AND home_phone!='' AND work_phone!='' AND address!='' AND city!='' AND state!='' AND zip!='' AND country!='';
+
+#i
+#this query is nearly impossible with standard sql.  Standard sql,
+#as far as I have been able to determine, does not offer any sort
+#of functionality to concatenate strings.  Therefore, it is very
+#difficult and impractical, using LIKE, to test every combination
+#of fields that adds up to having at least 6 8's.  The following
+#is a way to do it using MySQL's CONCAT function (which violates
+#the SQL standard):
+#SELECT lastname,firstname,home_phone,work_phone,address,city,state,zip,country FROM
+#	(SELECT *, CONCAT(home_phone, work_phone, address, zip) AS nums FROM data) AS q
+#	WHERE nums LIKE '%8%8%8%8%8%8%';
+
+#j
+SELECT lastname,firstname,home_phone FROM
+	(SELECT lastname,firstname,home_phone FROM data WHERE home_phone LIKE '%1__1' OR home_phone LIKE '%2__2' OR home_phone LIKE '%3__3' OR home_phone LIKE '%4__4' OR home_phone LIKE '%5__5' OR home_phone LIKE '%6__6' OR home_phone LIKE '%7__7' OR home_phone LIKE '%8__8' OR home_phone LIKE '%9__9' OR home_phone LIKE '%0__0') AS q
+	WHERE home_phone LIKE '%11_' OR home_phone LIKE '%22_' OR home_phone LIKE '%33_' OR home_phone LIKE '%44_'OR home_phone LIKE '%55_' OR home_phone LIKE '%66_' OR home_phone LIKE '%77_' OR home_phone LIKE '%88_' OR home_phone LIKE '%99_' OR home_phone LIKE '%00_';

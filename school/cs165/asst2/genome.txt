@@ -1,0 +1,23 @@
+In solving the genome problem, I would probably prefer
+a relational database over a flat file.  The main reason
+is size.  Having the entire genome of many species sitting
+in a flat file (or possibly more than one) makes the data
+extremely inaccessible.  It would take a very long time to
+iterate through the entire file, which would be necessary
+for any query that a unix command could do.  With a relational
+database, the data can be organized in a more efficient way
+and broken up into smaller pieces more easily (as opposed to hundreds
+or thousands or millions of flat files), and accessing any of these
+pieces can be done without processing the entire dataset.
+
+The downside to using a relational database is the limitations
+in SQL pattern matching.  This can be fixed by simply adding
+an application layer of processing, which could do more
+complicated data comparisons, along the capabilities
+of grep or awk.
+
+In other words, niether approach--flat file + UNIX or relational
+db + SQL--can by itself meet the requirements of this data
+management problem.  But a good portion of the problem, data storage
+and retrieval, is more manageable with a relational database
+approach.

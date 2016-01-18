@@ -1,0 +1,62 @@
+CREATE TABLE doctors(
+	id INT PRIMARY KEY,
+	first_name VARCHAR(128) NOT NULL,
+	last_name VARCHAR(128) NOT NULL,
+	office_num INT UNIQUE NOT NULL,
+	specialty VARCHAR(256) NOT NULL
+);
+CREATE TABLE insurance(
+	id INT PRIMARY KEY,
+	name VARCHAR(128) NOT NULL,
+	address VARCHAR(128) NOT NULL,
+	phone_num VARCHAR(128) NOT NULL
+);
+CREATE TABLE patients(
+	id INT PRIMARY KEY,
+	first_name VARCHAR(128),
+	last_name VARCHAR(128) NOT NULL,
+	address VARCHAR(128),
+	phone_num VARCHAR(128),
+	prime_doc INT NOT NULL,
+	insurance_id INT NOT NULL,
+	FOREIGN_KEY(prime_doc) REFERENCES doctors(id),
+	FOREIGN_KEY(insurance_id) REFERENCES insurance(id)
+);
+
+This schema assumes that only numbers are used in the office numbering,
+and each office has a different number.  I used varchar data types
+for many of the attributes, then mostly gave them a length of 128, 
+because the varchar will only take up as much space as the record
+requires.  This is useful since many of these attributes have varied
+length, and most of the values should be shorter that 128 bytes.
+
+One place where the schema could have been very different is
+with the specialty attribute on the doctors table.  I could
+have added another table that listed all of these specialties,
+and another table to map between the doctors and specialties.
+This would be useful if any given doctor could have an arbitrary
+number of specialties, but this schema makes it hard to ensure
+that every doctor has at least one.  My alternative uses a not null
+attribute on the doctors table, which solves the minimum requirement
+of one specialty.  The typing of the column, varchar(256), gives the
+flexibility to have more than one specialty fit in the column.  Since
+there's a real-life limit to how specialized a doctor can be, it is
+safe to assume that all of a doctor's specialties will fit in 256
+characters.  Although the office number could serve as the primary
+key on the doctors table, i decided against it; if a doctor moved
+to a different room then the primary index would have to be rebuilt.
+
+Also, I assume many to one relationships between the 
+patients and primary doctor/insurance provider
+, so I have collapsed both of those into a patients table.
+A schema where those relationships got their own tables would be
+better if a patient could have more than one primary care
+physician (which would not really make sense--that is the point
+of the term "primary") or insurance company (a patient may very
+well have more than one, but maybe the hospital only needs information
+on one).  Collapsing these relationships greatly simplifies the schema.
+
+Another point to bring up is that I allowed some of the fields in the
+patients table to be null, such as first name.  This takes care of
+possible issues like having mononyms, no phone or address, or if the
+patient wants certain information kept confidential.

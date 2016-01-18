@@ -1,0 +1,10 @@
+# Script to rebuild automatically generated files for asst4.
+
+E=`pwd`
+
+cd /home/c/s/cs165/db-4.8.26/dist
+awk -f gen_rec.awk \
+    -v source_file=$E/asst4_auto.c \
+    -v header_file=$E/asst4_auto.h \
+    -v print_file=$E/asst4_autop.c \
+    -v template_file=$E/asst4_template < $E/asst4.src

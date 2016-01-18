@@ -1,0 +1,135 @@
+A
+1.
+The phantom locking problem becomes apparent when a transaction needs to lock a
+set of tuples based on some predicate.  If another transaction adds a
+tuple such that it satisfies the predicate after the first transaction has
+already read the set, then upon reading the set again the first transaction
+would see different values, a violation of transactional isolation.  In short,
+phantom locking is a situation in which a transaction notices a change in data
+that it did not make.  To prevent this, locking can be done at a higher level
+(like on an entire table instead of the rows of interest), but this reduces
+performance.  Alternatively, if the appropriate indexes exist, a lock on an
+index that relies on the predicate can prevent the second transaction from
+writing the new tuple until the first transaction releases the lock.
+2.
+Good conditions for implementing optomistic concurrency in a DBMS are low
+levels of conflicting data access and short transaction lifetimes.  If there
+was a lot of conflict between transactions in accessing data, that would result
+in transactions aborting too often because they did not pass the validation
+phase.  If transactions had long lifetimes, they are first of all more likely
+to conflict with each other, but they also generate a lot of overhead, because
+optomistic concurrency requires keeping track of what transactions read and
+write.  With long transactions, this bookkeeping will consume a lot of
+resources.
+3.
+A latch is similar to a lock, in that it restricts resources to one transaction.
+Latches, however, are very low level--they are set on the pages themselves.
+Latches are used to ensure that I/Os happen atomically, and are supposed to be
+held for a much shorter time than locks.  Locks are done on database objects,
+and are used for higher level consistency of data.
+4. Note that "conflict-serializable" implies "view-serializable"
+a. a-c-a
+b. c-s.  Might be a-c-a, but only if T1 does not abort and T2 commits.
+c. a-c-a
+d. c-s, a-c-a
+e. Maybe a-c-a.  The result of this schedule behaves as if T2 never occurred,
+even though it committed.  It would seem that to maintain isolation, T1 or
+T2 would have to be aborted.  So if this schedule occured, there would not be
+a cascading abort, but the schedule is not serializable, which is 
+arguably worse.
+f. c-s, a-c-a
+g. a-c-a, although with similar results to (e).  The transactions were not
+isolated, so at least one of them probably should not have committed.
+h. None.
+i. c-s, a-c-a
+j. a-c-a
+B
+1.
+An abort is just a special case of recovery.  Doing an abort is similar to
+running just the undo portion of undo-redo recovery.  Additionally, We can
+assume that an abort is done on just one transaction (i.e. for cascading
+aborts, we assume the aborting subroutine is notified of every transaction
+to abort, and does not need to figure that out itself).  Thus, it will only
+be necessary when an abort is issued to undo the logs relating to just the one
+transaction.  To facilitate the abort, the logs each need to have a transaction
+id associated with them, and a begin log so that the aborting routine need only
+traverse the log backwards to this point.
+2.
+if (lsn == dlsn) //undo
+if (dlsn == olsn) //redo
+3.
+If this happens, something might be wrong.  If the transaction that wrote log
+900 committed, the recovery routine should have redone that write, and dlsn
+would be 900.  If the transaction did not commit, then because the transaction
+that wrote log 1000 had to be committed (or we wouldn't be redoing it), it
+would have touched the data after the 900 transaction.  This may be okay
+if there were blind writes involved, but since a committed transaction touched
+data after an aborted one, this may indicate a dependency, and the 1000
+transaction should not have committed.  Another alternative is simply that the
+data has become corrupted.
+4.
+When T5 is aborted, the record with key "cat" needs to be rewritten to the
+page.  However, if the abort comes after T6, then the page is already full, and
+the page needs to be split.  The page cannot be split, however, if there are
+transactions that have not released their locks.To avoid this concurrency
+control should have locks at a higher level, like on the page.  Coupled with
+strict two-phase locking, this ensures that no other transaction will get the
+lock to a page until the transaction that has it finishes.  If a page needs to
+be split, it can be done by the transaction that has a lock on it.  The
+recovery manager, then, also needs to have the capability of spliting pages.
+5.
+Logging provides better robustness for data.  With logging, the data is
+replicated in at least two (usually separate) locations, the log and the
+database. If the database fails, the log can easily restore it.  A downside to
+shadow paging is that it copies indexes frequently--if an I/O error occured
+while copying an index, especially if the error occurred at the root, a large
+portion of the data could be corrupted or lost.  With logging, I/O errors are
+less likely to affect the index structure.  Modifications are made in place, so
+these errors will have a much smaller scope of data that might get damaged.
+6.
+The static checkpoint must wait until after all active transactions have
+committed and all dirty data has been flushed.  The checkpoint record would
+go after point C but before LSN 350.  It would not need to contain any extra
+information.
+7.
+The dynamic checkpoint would force dirty data to disk and be written at point
+A, with an LSN of 225.  Updates like the one at LSN=250 would not be allowed
+to happen until after this checkpoint.  On recovery, the backward pass will end
+at LSN 100, the beginning of the earliest transaction that was active during
+the checkpoint.
+8.
+The fuzzy checkpoint would also be writting at point A with an LSN of 225.
+However, the pointer will not get updated until after point C, when all the
+dirty buffers have been written.  None of the other log records will be caused
+to be written at a different time.
+C
+1.
+800003fd
+2.
+The lsn value inside log 245060 is the same as the lsn inside the only log we
+see for Txn 800003f9, indicating that 3f9 was aborted, because it's changes
+did not appear in the database (log 245060 would have seen them otherwise)
+3.
+Page 2: 245186
+Page 5: 245666
+Page 11: 244946
+4.
+Page 2: 245186, 245060
+Page 5: 243298, 245584, 245666
+Page 11: 244946
+5.
+245796 - Add Txn 800003fc to Commit List
+245752 - Add Txn 800003fd to Commit List
+245666 - Do Nothing
+245584 - Do Nothing
+245528 - Checkpoint, remember to go back to 245186
+245186 - Do Nothing
+245528 - Jumped to Checkpoint
+245584 - Old lsn 243298 != Data lsn 245186
+245666 - Old lsn 245585 == Data lsn 245584, Redo put "new-entry" at index 99
+245752 - Do Nothing
+245796 - Do Nothing
+245927 - Reached end of Log, recovery finished
+6.
+After running recovery, we could write a new checkpoint entry at the end of the
+log, but it not necessary to write anything.

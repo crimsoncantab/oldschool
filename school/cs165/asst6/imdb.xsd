@@ -1,0 +1,220 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="movie">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="id" type="xs:integer" />
+				<xs:element name="title" type="xs:string" />
+				<xs:element name="runtime" type="xs:integer" minOccurs="0" />
+				<xs:element name="year" type="xs:gYear" minOccurs="0" />
+				<xs:element name="genre" type="genreType" minOccurs="0" />
+				<xs:element name="rating" type="ratingType" minOccurs="0" />
+				<xs:element name="director" type="personType" />
+				<xs:element name="actor" type="personType" maxOccurs="unbounded"/>
+				<xs:element name="oscar" >
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="best" type="bestType" />
+							<xs:element name="year" type="xs:gYear" />
+							<xs:element name="person" type="personType" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:complexType name="personType">
+		<xs:sequence>
+			<xs:element name="name" type="xs:string" />
+			<xs:element name="dob" type="xs:date" minOccurs="0" />
+			<xs:element name="pob" type="xs:string" minOccurs="0" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="genreType">
+		<xs:restriction>
+			<xs:enumeration value="ACDFT"/>
+			<xs:enumeration value="ACD"/>
+			<xs:enumeration value="ACDT"/>
+			<xs:enumeration value="ACF"/>
+			<xs:enumeration value="ACFRT"/>
+			<xs:enumeration value="AC"/>
+			<xs:enumeration value="ACR"/>
+			<xs:enumeration value="ACRT"/>
+			<xs:enumeration value="ACSE"/>
+			<xs:enumeration value="ACS"/>
+			<xs:enumeration value="ACT"/>
+			<xs:enumeration value="ACY"/>
+			<xs:enumeration value="ACYR"/>
+			<xs:enumeration value="AD"/>
+			<xs:enumeration value="ADMST"/>
+			<xs:enumeration value="ADMT"/>
+			<xs:enumeration value="ADR"/>
+			<xs:enumeration value="ADST"/>
+			<xs:enumeration value="ADT"/>
+			<xs:enumeration value="ADW"/>
+			<xs:enumeration value="A"/>
+			<xs:enumeration value="AHST"/>
+			<xs:enumeration value="AMST"/>
+			<xs:enumeration value="AMT"/>
+			<xs:enumeration value="ANCF"/>
+			<xs:enumeration value="ANCFS"/>
+			<xs:enumeration value="AR"/>
+			<xs:enumeration value="ARW"/>
+			<xs:enumeration value="AST"/>
+			<xs:enumeration value="AT"/>
+			<xs:enumeration value="AVCDFS"/>
+			<xs:enumeration value="AVCFR"/>
+			<xs:enumeration value="AVCFS"/>
+			<xs:enumeration value="AVCFST"/>
+			<xs:enumeration value="AVCFY"/>
+			<xs:enumeration value="AVC"/>
+			<xs:enumeration value="AVCM"/>
+			<xs:enumeration value="AVCMT"/>
+			<xs:enumeration value="AVCW"/>
+			<xs:enumeration value="AVCYHT"/>
+			<xs:enumeration value="AVCYS"/>
+			<xs:enumeration value="AVD"/>
+			<xs:enumeration value="AVDR"/>
+			<xs:enumeration value="AVDST"/>
+			<xs:enumeration value="AVDT"/>
+			<xs:enumeration value="AVDW"/>
+			<xs:enumeration value="AVDY"/>
+			<xs:enumeration value="AVDYHT"/>
+			<xs:enumeration value="AVDYR"/>
+			<xs:enumeration value="AVFST"/>
+			<xs:enumeration value="AVFY"/>
+			<xs:enumeration value="AVFYMR"/>
+			<xs:enumeration value="AV"/>
+			<xs:enumeration value="AVMT"/>
+			<xs:enumeration value="AVNCF"/>
+			<xs:enumeration value="AVNCFR"/>
+			<xs:enumeration value="AVRS"/>
+			<xs:enumeration value="AVRST"/>
+			<xs:enumeration value="AVS"/>
+			<xs:enumeration value="AVST"/>
+			<xs:enumeration value="AVT"/>
+			<xs:enumeration value="AVY"/>
+			<xs:enumeration value="AVYHT"/>
+			<xs:enumeration value="AVYS"/>
+			<xs:enumeration value="AVYST"/>
+			<xs:enumeration value="AYHT"/>
+			<xs:enumeration value="AYS"/>
+			<xs:enumeration value="AYST"/>
+			<xs:enumeration value="AYT"/>
+			<xs:enumeration value="AYW"/>
+			<xs:enumeration value="CDF"/>
+			<xs:enumeration value="CDFR"/>
+			<xs:enumeration value="CDFY"/>
+			<xs:enumeration value="CDFYR"/>
+			<xs:enumeration value="CD"/>
+			<xs:enumeration value="CDL"/>
+			<xs:enumeration value="CDR"/>
+			<xs:enumeration value="CDRW"/>
+			<xs:enumeration value="CDW"/>
+			<xs:enumeration value="CDY"/>
+			<xs:enumeration value="CDYMRT"/>
+			<xs:enumeration value="CE"/>
+			<xs:enumeration value="CF"/>
+			<xs:enumeration value="CFR"/>
+			<xs:enumeration value="CFRT"/>
+			<xs:enumeration value="CFY"/>
+			<xs:enumeration value="CFYL"/>
+			<xs:enumeration value="CFYT"/>
+			<xs:enumeration value="C"/>
+			<xs:enumeration value="CL"/>
+			<xs:enumeration value="CLR"/>
+			<xs:enumeration value="CR"/>
+			<xs:enumeration value="CRS"/>
+			<xs:enumeration value="CS"/>
+			<xs:enumeration value="CT"/>
+			<xs:enumeration value="CY"/>
+			<xs:enumeration value="CYH"/>
+			<xs:enumeration value="CYR"/>
+			<xs:enumeration value="DE"/>
+			<xs:enumeration value="DFL"/>
+			<xs:enumeration value="D"/>
+			<xs:enumeration value="DH"/>
+			<xs:enumeration value="DHMST"/>
+			<xs:enumeration value="DHST"/>
+			<xs:enumeration value="DHT"/>
+			<xs:enumeration value="DL"/>
+			<xs:enumeration value="DMRT"/>
+			<xs:enumeration value="DMST"/>
+			<xs:enumeration value="DMT"/>
+			<xs:enumeration value="DMTW"/>
+			<xs:enumeration value="DR"/>
+			<xs:enumeration value="DRT"/>
+			<xs:enumeration value="DRW"/>
+			<xs:enumeration value="DS"/>
+			<xs:enumeration value="DT"/>
+			<xs:enumeration value="DYHR"/>
+			<xs:enumeration value="DYM"/>
+			<xs:enumeration value="DYMR"/>
+			<xs:enumeration value="DYR"/>
+			<xs:enumeration value="HM"/>
+			<xs:enumeration value="HMT"/>
+			<xs:enumeration value="HT"/>
+			<xs:enumeration value="MRST"/>
+			<xs:enumeration value="MT"/>
+			<xs:enumeration value="NCF"/>
+			<xs:enumeration value="NCFR"/>
+			<xs:enumeration value="NCFY"/>
+			<xs:enumeration value="NCFYM"/>
+			<xs:enumeration value="NDF"/>
+			<xs:enumeration value="NDFLR"/>
+			<xs:enumeration value="NDFY"/>
+			<xs:enumeration value="NDFYLR"/>
+			<xs:enumeration value="NFYLR"/>
+			<xs:enumeration value="T"/>
+			<xs:enumeration value="VCE"/>
+			<xs:enumeration value="VCF"/>
+			<xs:enumeration value="VCFM"/>
+			<xs:enumeration value="VCFS"/>
+			<xs:enumeration value="VCFY"/>
+			<xs:enumeration value="VCFYLR"/>
+			<xs:enumeration value="VC"/>
+			<xs:enumeration value="VCS"/>
+			<xs:enumeration value="VDE"/>
+			<xs:enumeration value="VDFYS"/>
+			<xs:enumeration value="VD"/>
+			<xs:enumeration value="VDS"/>
+			<xs:enumeration value="VDT"/>
+			<xs:enumeration value="VFY"/>
+			<xs:enumeration value="VFYM"/>
+			<xs:enumeration value="VFYT"/>
+			<xs:enumeration value="VNCDF"/>
+			<xs:enumeration value="VNCF"/>
+			<xs:enumeration value="VNCFS"/>
+			<xs:enumeration value="VNCFY"/>
+			<xs:enumeration value="VNCFYR"/>
+			<xs:enumeration value="VNC"/>
+			<xs:enumeration value="VNDF"/>
+			<xs:enumeration value="VNDFL"/>
+			<xs:enumeration value="VNFL"/>
+			<xs:enumeration value="VNFRS"/>
+			<xs:enumeration value="VNFS"/>
+			<xs:enumeration value="VNFT"/>
+			<xs:enumeration value="VNFY"/>
+			<xs:enumeration value="VR"/>
+			<xs:enumeration value="VST"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="ratingType">
+		<xs:restriction>
+			<xs:enumeration value="G"/>
+			<xs:enumeration value="PG-13"/>
+			<xs:enumeration value="PG"/>
+			<xs:enumeration value="R"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="bestType">
+		<xs:restriction>
+			<xs:enumeration value="ACTOR"/>
+			<xs:enumeration value="ACTRESS"/>
+			<xs:enumeration value="DIRECTOR"/>
+			<xs:enumeration value="PICTURE"/>
+			<xs:enumeration value="SUPPORTING-ACTOR"/>
+			<xs:enumeration value="SUPPORTING-ACTRESS"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

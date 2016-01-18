@@ -1,0 +1,305 @@
+
+dbxml> 
+dbxml> 
+dbxml> 
+dbxml> 
+dbxml> 
+dbxml> 
+dbxml> 
+dbxml> 
+dbxml> 
+dbxml> 
+dbxml> 185 objects returned for eager expression 'for $m in collection("imdb.dbxml")/movie where $m/rating = "PG-13"
+	return $m/title'
+
+
+dbxml> <title>Doctor Zhivago</title>
+<title>Crocodile Dundee</title>
+<title>Batman</title>
+<title>Indiana Jones and the Last Crusade</title>
+<title>Look Who's Talking</title>
+<title>Parenthood</title>
+<title>Dances with Wolves</title>
+<title>Ghost</title>
+<title>The Addams Family</title>
+<title>City Slickers</title>
+<title>Robin Hood: Prince of Thieves</title>
+<title>Batman Returns</title>
+<title>Wayne's World</title>
+<title>The Fugitive</title>
+<title>Jurassic Park</title>
+<title>Mrs. Doubtfire</title>
+<title>The Pelican Brief</title>
+<title>Clear and Present Danger</title>
+<title>Dumb &amp; Dumber</title>
+<title>Forrest Gump</title>
+<title>The Mask</title>
+<title>Ace Ventura: When Nature Calls</title>
+<title>Batman Forever</title>
+<title>GoldenEye</title>
+<title>Independence Day</title>
+<title>Mission: Impossible</title>
+<title>The Nutty Professor</title>
+<title>Twister</title>
+<title>Batman &amp; Robin</title>
+<title>Doctor Dolittle</title>
+<title>Liar Liar</title>
+<title>The Lost World: Jurassic Park</title>
+<title>Men in Black</title>
+<title>My Best Friend's Wedding</title>
+<title>As Good as It Gets</title>
+<title>Titanic</title>
+<title>Tomorrow Never Dies</title>
+<title>The Waterboy</title>
+<title>Armageddon</title>
+<title>The Mummy</title>
+<title>Deep Impact</title>
+<title>Fantastic Four</title>
+<title>Godzilla</title>
+<title>The Lord of the Rings: The Fellowship of the Ring</title>
+<title>Mission: Impossible II</title>
+<title>Rush Hour</title>
+<title>Wild Wild West</title>
+<title>X-Men</title>
+<title>Men in Black II</title>
+<title>Star Wars: Episode III - Revenge of the Sith</title>
+<title>Notting Hill</title>
+<title>Patch Adams</title>
+<title>Planet of the Apes</title>
+<title>Big Daddy</title>
+<title>The World Is Not Enough</title>
+<title>Nutty Professor II: The Klumps</title>
+<title>Spider-Man</title>
+<title>Austin Powers: The Spy Who Shagged Me</title>
+<title>Lara Croft: Tomb Raider</title>
+<title>Charlie's Angels</title>
+<title>What Lies Beneath</title>
+<title>Cast Away</title>
+<title>Jurassic Park III</title>
+<title>The Sum of All Fears</title>
+<title>The Lord of the Rings: The Return of the King</title>
+<title>The Lord of the Rings: The Two Towers</title>
+<title>The Sixth Sense</title>
+<title>The Perfect Storm</title>
+<title>Minority Report</title>
+<title>Gone in Sixty Seconds</title>
+<title>Wo hu cang long</title>
+<title>What Women Want</title>
+<title>Big Momma's House</title>
+<title>The Mummy Returns</title>
+<title>Meet the Parents</title>
+<title>Miss Congeniality</title>
+<title>Pearl Harbor</title>
+<title>The Fast and the Furious</title>
+<title>Ocean's Eleven</title>
+<title>Die Another Day</title>
+<title>How to Lose a Guy in 10 Days</title>
+<title>Sweet Home Alabama</title>
+<title>S.W.A.T.</title>
+<title>The Bourne Identity</title>
+<title>Ghost Rider</title>
+<title>Catch Me If You Can</title>
+<title>Rush Hour 2</title>
+<title>A Beautiful Mind</title>
+<title>Mr. Deeds</title>
+<title>Signs</title>
+<title>Hulk</title>
+<title>Daredevil</title>
+<title>Meet the Fockers</title>
+<title>X2</title>
+<title>Rush Hour 3</title>
+<title>Austin Powers in Goldmember</title>
+<title>xXx</title>
+<title>The Ring</title>
+<title>Chicago</title>
+<title>Anger Management</title>
+<title>Charlie's Angels: Full Throttle</title>
+<title>Bringing Down the House</title>
+<title>Scary Movie 3</title>
+<title>Bruce Almighty</title>
+<title>Spider-Man 2</title>
+<title>The Italian Job</title>
+<title>Mission: Impossible III</title>
+<title>The Day After Tomorrow</title>
+<title>2 Fast 2 Furious</title>
+<title>Pirates of the Caribbean: The Curse of the Black Pearl</title>
+<title>Seabiscuit</title>
+<title>Harry Potter and the Goblet of Fire</title>
+<title>Something's Gotta Give</title>
+<title>Live Free or Die Hard</title>
+<title>Van Helsing</title>
+<title>The Aviator</title>
+<title>50 First Dates</title>
+<title>I, Robot</title>
+<title>Superman Returns</title>
+<title>Ocean's Twelve</title>
+<title>Mr. &amp; Mrs. Smith</title>
+<title>Walk the Line</title>
+<title>King Kong</title>
+<title>Dodgeball: A True Underdog Story</title>
+<title>Indiana Jones and the Kingdom of the Crystal Skull</title>
+<title>The Village</title>
+<title>Four Christmases</title>
+<title>Fun with Dick and Jane</title>
+<title>Iron Man</title>
+<title>The Bourne Supremacy</title>
+<title>Batman Begins</title>
+<title>Harry Potter and the Order of the Phoenix</title>
+<title>X-Men: The Last Stand</title>
+<title>Casino Royale</title>
+<title>The Da Vinci Code</title>
+<title>Pirates of the Caribbean: Dead Man's Chest</title>
+<title>Hitch</title>
+<title>Click</title>
+<title>The Grudge</title>
+<title>The Longest Yard</title>
+<title>Million Dollar Baby</title>
+<title>War of the Worlds</title>
+<title>Spider-Man 3</title>
+<title>Talladega Nights: The Ballad of Ricky Bobby</title>
+<title>Transformers</title>
+<title>The Curious Case of Benjamin Button</title>
+<title>Get Smart</title>
+<title>Terminator Salvation</title>
+<title>The Bourne Ultimatum</title>
+<title>Dreamgirls</title>
+<title>Blades of Glory</title>
+<title>Hancock</title>
+<title>Pirates of the Caribbean: At World's End</title>
+<title>The Break-Up</title>
+<title>The Pursuit of Happyness</title>
+<title>The Devil Wears Prada</title>
+<title>X-Men Origins: Wolverine</title>
+<title>The Simpsons Movie</title>
+<title>Juno</title>
+<title>The Dark Knight</title>
+<title>I Am Legend</title>
+<title>Wild Hogs</title>
+<title>Ocean's Thirteen</title>
+<title>Avatar</title>
+<title>I Now Pronounce You Chuck &amp; Larry</title>
+<title>Mamma Mia!</title>
+<title>Star Trek</title>
+<title>The Incredible Hulk</title>
+<title>Clash of the Titans</title>
+<title>Angels &amp; Demons</title>
+<title>Valentine's Day</title>
+<title>Quantum of Solace</title>
+<title>The Mummy: Tomb of the Dragon Emperor</title>
+<title>The Blind Side</title>
+<title>Taken</title>
+<title>You Don't Mess with the Zohan</title>
+<title>Sherlock Holmes</title>
+<title>Fast &amp; Furious</title>
+<title>The Proposal</title>
+<title>G.I. Joe: The Rise of Cobra</title>
+<title>Transformers: Revenge of the Fallen</title>
+<title>Eagle Eye</title>
+<title>Twilight</title>
+<title>2012</title>
+<title>New Moon</title>
+
+dbxml> 
+dbxml> 
+dbxml> 25 objects returned for eager expression 'for $m in collection("imdb.dbxml")/movie where $m/oscar/best = "PICTURE"
+	return <result>{$m/title}{$m/director/name}</result>'
+
+
+dbxml> <result><title>The Sound of Music</title><name>Robert Wise</name></result>
+<result><title>Butch Cassidy and the Sundance Kid</title><name>George Roy Hill</name></result>
+<result><title>The Godfather</title><name>Francis Ford Coppola</name></result>
+<result><title>The Sting</title><name>George Roy Hill</name></result>
+<result><title>One Flew Over the Cuckoo's Nest</title><name>Milos Forman</name></result>
+<result><title>Rocky</title><name>John G. Avildsen</name></result>
+<result><title>Kramer vs. Kramer</title><name>Robert Benton</name></result>
+<result><title>Terms of Endearment</title><name>James L. Brooks</name></result>
+<result><title>Platoon</title><name>Oliver Stone</name></result>
+<result><title>Rain Man</title><name>Barry Levinson</name></result>
+<result><title>Driving Miss Daisy</title><name>Bruce Beresford</name></result>
+<result><title>Dances with Wolves</title><name>Kevin Costner</name></result>
+<result><title>The Silence of the Lambs</title><name>Jonathan Demme</name></result>
+<result><title>Unforgiven</title><name>Clint Eastwood</name></result>
+<result><title>Forrest Gump</title><name>Robert Zemeckis</name></result>
+<result><title>Titanic</title><name>James Cameron</name></result>
+<result><title>Shakespeare in Love</title><name>John Madden</name></result>
+<result><title>The Lord of the Rings: The Return of the King</title><name>Peter Jackson</name></result>
+<result><title>American Beauty</title><name>Sam Mendes</name></result>
+<result><title>Gladiator</title><name>Ridley Scott</name></result>
+<result><title>A Beautiful Mind</title><name>Ron Howard</name></result>
+<result><title>Chicago</title><name>Rob Marshall</name></result>
+<result><title>Million Dollar Baby</title><name>Clint Eastwood</name></result>
+<result><title>The Departed</title><name>Martin Scorsese</name></result>
+<result><title>Slumdog Millionaire</title><name>Danny Boyle</name></result>
+
+dbxml> 
+dbxml> 
+dbxml> 3 objects returned for eager expression 'for $m in collection("imdb.dbxml")/movie where empty($m/oscar) and $m/year < 1970 and $m/year >= 1960
+	return $m/title'
+
+
+dbxml> <title>One Hundred and One Dalmatians</title>
+<title>Doctor Zhivago</title>
+<title>The Jungle Book</title>
+
+dbxml> 
+dbxml> 
+dbxml> 48 objects returned for eager expression 'for $y in
+	distinct-values(for $m in collection("imdb.dbxml")/movie order by $m/year
+	return $m/year)
+	return <result>
+	<year>{$y}</year>
+	<count>{count(for $m in collection("imdb.dbxml")/movie
+	where $m/rating="PG" and $m/year=$y return $m)}</count></result>'
+
+
+dbxml> <result><year>1937</year><count>0</count></result>
+<result><year>1939</year><count>0</count></result>
+<result><year>1942</year><count>0</count></result>
+<result><year>1961</year><count>0</count></result>
+<result><year>1964</year><count>0</count></result>
+<result><year>1965</year><count>0</count></result>
+<result><year>1967</year><count>1</count></result>
+<result><year>1969</year><count>1</count></result>
+<result><year>1970</year><count>1</count></result>
+<result><year>1972</year><count>0</count></result>
+<result><year>1973</year><count>2</count></result>
+<result><year>1974</year><count>1</count></result>
+<result><year>1975</year><count>1</count></result>
+<result><year>1976</year><count>1</count></result>
+<result><year>1977</year><count>3</count></result>
+<result><year>1978</year><count>4</count></result>
+<result><year>1979</year><count>1</count></result>
+<result><year>1980</year><count>3</count></result>
+<result><year>1981</year><count>2</count></result>
+<result><year>1982</year><count>3</count></result>
+<result><year>1983</year><count>2</count></result>
+<result><year>1984</year><count>3</count></result>
+<result><year>1985</year><count>2</count></result>
+<result><year>1986</year><count>3</count></result>
+<result><year>1987</year><count>1</count></result>
+<result><year>1988</year><count>4</count></result>
+<result><year>1989</year><count>4</count></result>
+<result><year>1990</year><count>4</count></result>
+<result><year>1991</year><count>1</count></result>
+<result><year>1992</year><count>3</count></result>
+<result><year>1993</year><count>1</count></result>
+<result><year>1994</year><count>3</count></result>
+<result><year>1995</year><count>3</count></result>
+<result><year>1996</year><count>2</count></result>
+<result><year>1997</year><count>2</count></result>
+<result><year>1998</year><count>3</count></result>
+<result><year>1999</year><count>3</count></result>
+<result><year>2000</year><count>3</count></result>
+<result><year>2001</year><count>4</count></result>
+<result><year>2002</year><count>6</count></result>
+<result><year>2003</year><count>6</count></result>
+<result><year>2004</year><count>7</count></result>
+<result><year>2005</year><count>5</count></result>
+<result><year>2006</year><count>4</count></result>
+<result><year>2007</year><count>8</count></result>
+<result><year>2008</year><count>7</count></result>
+<result><year>2009</year><count>10</count></result>
+<result><year>2010</year><count>2</count></result>
+
+dbxml> 
+dbxml> 

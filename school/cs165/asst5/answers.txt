@@ -1,0 +1,326 @@
+1
+There are several reasons why this approach to full text search is
+problematic.  First, according to this indexing method, there is a row in the
+ftIndex table for EVERY word in the corpus.  Indexing a large corpus, like the
+web, would generate quadrillions of rows in this table.  A simple enhancement that
+would reduce this number would be to contract the number of rows per word per
+document to 1, adding a column to mark the frequency of a word in a document.
+Effectively, this reduces the amount of processing needed to execute a search
+(here, running a SQL query) by pre-computing a count().  Another enhancement that
+might make queries run faster and decrease the row count would to change the
+doc-id column to be a blob containing a list of all document-frequency pairs for
+that word, and maybe some other columns specifying  global parameters about each
+word.  The downside to this setup is that for common words, most
+documents that are in English will show up in the blob, making tuple sizes
+very large.  Having massive result sets like this, however, seems like it would
+cause problems for a relational database--the data is large and unstructured. If
+I were to pick a technology that we have looked at, I would choose key-data
+pairs.  With key data pairs, the word would be a key, and the data the global 
+attributes and list of document ids.  This is certainly similar to the layout in
+the relational database, but avoids the unnecessary complexities of a query
+language.  Since Professor Seltzer's solution would have to rely a lot on
+querying to organize the data, presumably at search-time, the overhead from
+processing the entire corpus just to do one search is ridiculous.  I would
+expect key-data pairs to behave much better than this.  Searching for a
+particular word would simply require a single get operation.  Further
+optimizations may include preprocessing each pair to find documents with larger
+frequencies, etc.  Still, this fails to address multi-word searches, and
+indicates that database systems of these types are poorly designed for full text
+search.
+
+2
+After running the query "sorting speed record" (without quotes) in Google
+search, I determined that the precision of the results was 2/10.  Only those two
+relevant links had information that directly related to "sorting."  The other
+results had the word "sort" in them, but in the context of meaning "kind" or
+"type." Figuring out the recall of the query is difficult, although I would
+guess that it is also 2/10, since there should be at least ten documents on the
+web related to speed records for sorting 1 TB datasets.  To improve the search,
+I ran the same query, but added the word "terabyte" at the beginning.  The
+precision and recall were much higher, although I had a harder time pinning them
+down exactly.  The reason is that while essentially all of the top ten results
+talked about sorting terabyte datasets (one said "terabyte or larger"), some of
+them did not directly mention the record, past or present, for sorting a
+terabyte.  Thus, I did not add them to the score.  In this case, I would
+score precision at 7/10, recall at about 5/10.  Again, since I do not know
+what the top ten documents for this search are, it is hard to give a confident
+answer for the recall, because there may be more of the best results in the top
+ten than I think there are.  The issue with these scores is that what I think
+is "relevant" results is very subjective, and, like the "oranges" example in
+class, the search engine may give good results for a literal translation of the
+query, but it certainly cannot read my mind to know if I am thinking about fruit
+or colors.
+
+3
+Business concerns, for companies that aren't processing petabytes and petabytes
+of data, are probably best solved with the DBMS approach.  The query optimizer
+makes it much easier for developers to get the system running efficiently, and the
+relational databases are designed to handle the sizes of data that the average
+company has.  Of course, the same argument can be made for other non-business
+data problems that have similar parameters.  However, if a system requires a lot
+of extract-transform-load operations, MR is much more suitable for this task,
+since it has fast load times and applies well to problems that fit into a
+streaming representation, or that are hard to pin down with a relational
+representation (such as full text indexing).  While both systems have scalability,
+MR seems to be easier to use for large data.  The drawback for DBMS is the
+complexity in setting up a distributed environment.  This also tends to make
+MR ideal for highly parallelizable problems.  It allows distributed environments
+to behave with more isolation, whereas DBMS tends to have a lot of
+interdependancy (e.g. MR handles system crashes better than DBMS).
+
+B
+
+Problem 1
+Since the sort occurs between the mapper and the reducer, both functions
+are simply identity functions, printing out the input.
+
+Mapper, Reducer (henceforth, I refer to this code as the "identity function")
+
+for line in sys.stdin:
+	print line,
+
+Output:
+01
+1
+10
+2
+20
+3
+A
+AA
+B
+C
+
+3.2 GB Runtime:
+15 min
+
+Problem 2
+The first value in each cell is the wall-clocked time, the second the
+normalized-instance hours.
+
+sortBig		S		L		XL
+1			51m,1	18m,4	17m,8
+2			56m,2	17m,8	15m,16
+
+sortLarge	XL
+8			1h54m,128
+16			50m,128
+
+It seems that "horizontally" the runtime is greatly reduced by moving to a
+large instance for the 3.2 GB input, but the runtime benefits of going to the
+extra large are marginal, probably because the 3.2GB fit in memory on the large,
+so any added benefit from the extra large is less noticable than going from
+small, which cannot hold all the input in memory, to large.  Interestingly, the
+3.2 GB input did not show much difference in scaling "vertically," again,
+because this seems kind of overkill for data of this size, since the >=large
+instances can hold everything with one node.  However, vertical scaling is
+necessary for the 128 GB dataset, because there is no single node in the Amazon
+cloud that can hold all of it in memory.  Eight nodes still falls short by 8GB,
+so scaling to 16 nodes allows the entire dataset to sit in memory comfortably.
+In terms of cost, the small dataset was cheapest to run on 1 large node:  going
+right or down increased the normalized-instance hours exponentially, but the
+runtime was not an exponential decrease.  For the 128GB dataset, 16 nodes was
+half the price of 8, but I expect extending that to 32 nodes probably would not
+be as effective at making the computation cheaper, for the same argument that
+once the 3.2GB set could fit in memory, increasing the computation power/size
+did not decrease the cost.
+
+Problem 3
+I agree with Ryan.  My results derive from problems 1 and 2.  Using identity
+functions, I get 50m on 16 XL machines.  I think that any additional computation
+done in the mapper or reducer could only slow down the entire stream, i.e, the
+built-in sort is the bottleneck, and probably will not be significantly faster
+for any ordering of the input.	
+
+Problem 4
+The mapper is the identity function.  The reducer checks if the substring is in
+the line, and only prints the line if that is the case.
+
+Reducer:
+
+substr = "Alas, poor Yorick!"
+for line in sys.stdin:
+	if string.find(line, substr) != -1:
+		print line,
+
+Output:
+Alas, poor Yorick! I knew him, Horatio, a fellow of infinite jest, of most excellent fancy.
+
+3.2 GB Runtime:
+11 min
+
+Problem 5
+The mapper generates a key-value pair for every word, making the word the pair
+and the document id the value.  The reducer aggregates all of these values
+together.
+
+Mapper:
+
+for line in sys.stdin:
+	k, v = line.strip().split("\t")
+	ws = v.split(" ")
+	for w in ws:
+		print w + "\t" + k
+
+Reducer:
+
+kprev = None
+vprev = None
+list = ""
+for line in sys.stdin:
+	k,v = line.strip().split("\t")
+	if k != kprev and kprev:
+		print kprev + "\t" + list
+		list = ""
+		vprev = None
+	if vprev == None or v != vprev:
+		list += v + " "
+	vprev = v
+	kprev = k
+if kprev != None:
+	print kprev + "\t" + list
+
+Output:
+
+a	5 4 3 9 8 7 
+b	8 7 6 5 4 3 
+bar	1 
+c	5 3 4 8 6 
+can	0 
+d	6 3 4 
+document	0 
+e	3 4 
+f	9 
+foo	1 
+foobar	2 
+for	0 
+go	0 
+here	0 
+in	0 
+more	0 
+same	0 
+the	0 
+words	0 
+
+3.2 GB Runtime:
+>1 hour
+
+Problem 6
+I decided to make the reducer be the identity fuction.
+The reason being is that with the current
+format of the data, all of the sells and buys will be separated, which is the
+worst case scenario for a naive greedy algorithm (It takes the first order
+and finds a match for it, throwing away everything in between).  If this was
+done after the sort in the reducer, the sort would generate the worst-case
+every time, with only one match. Thus, the reduction step is done in the
+mapper.  Note:  when running locally (ensuring the file is not split) the output
+is only one pair.  However, the cloud returned two pairs, probably because the
+data was processed differently.  Either way, the pairs are still valid trades.
+
+Mapper:
+
+id_prev = None
+sb_prev = None
+stock_prev = None
+share_prev = None
+price_prev = None
+
+for line in sys.stdin:
+	try:
+		id,v = line.strip().split("\t")
+		sb,stock,share,price = v.split(" ")
+		share,price = float(share),float(price)
+	except:
+		continue
+	if sb != "buy":
+		share *= -1.0
+		price *= -1.0
+	if id_prev:
+		if sb_prev != sb and stock_prev == stock and share + share_prev <= 0 and price + price_prev >= 0:
+			print id_prev + "\t" + id
+			id_prev = None
+	else:
+		id_prev = id
+		sb_prev = sb
+		stock_prev = stock
+		share_prev = share
+		price_prev = price
+
+Output:
+1	2
+7	8
+
+3.2 GB Runtime:
+8 minutes
+
+Problem 8
+Uses three MR steps:
+The first runs on the two datsets separately, and simply inputs a 'c' or 's'
+into the data (format: personid c|s cityid|salary) so that they are
+differentiable in the merge (I do not rely on the datatypes of the input, so it
+is indistinguishable otherwise).  The reducer in this step is the identity.
+The second step runs on both datasets, sorting them so personid's are together,
+(mapper is identity) and the reducer collapses the 2 pairs for each personid
+into a city.
+The 3rd step sorts the data by city (mapper is id. again), then runs the reducer
+from the section notes to output the average per city.
+
+This operation as a whole can be modeled as a join in relational algebra.
+If these datasets were in relationships "location" and "pay", the expression
+would be: (city_G_avg(salary) (pi_city,salary (location_NAT_JOIN_pay)))
+
+Mapper 1:
+
+char = "c" # "s" for the salary file
+
+for line in sys.stdin:
+	id,v = line.strip().split("\t")
+	print id + "\t" + char + " " + v
+
+Reducer 2:
+
+prev_id = None
+city = None
+salary = None
+for line in sys.stdin:
+	id,v = line.strip().split("\t")
+	char,val = v[:1], v[2:]
+	if (prev_id and id != prev_id):
+		if (city and salary):
+			print city + "\t" + salary
+			city,salary = None,None
+	if (char == "c"):
+		city = val
+	else:
+		salary = val
+	prev_id = id
+if (city and salary):
+	print city + "\t" + salary
+
+Reducer 3:
+
+(last_key, sum, count) = (None, 0.0, 0)
+
+for line in sys.stdin:
+    (key, val) = line.split("\t")
+
+    if last_key and last_key != key:
+        print last_key + "\t" + str(sum/count)
+        sum = 0.0
+        count = 0
+
+    last_key = key
+    sum   += float(val)
+    count += 1
+
+print last_key + "\t" + str(sum/count)
+
+Output:
+Atlanta	45000.0
+Boston	43333.3333333
+Denver	80000.0
+Jersey City	76000.0
+New York	45000.0
+
+3.2 GB Runtime (summed over each MR step):
+> 1 hour

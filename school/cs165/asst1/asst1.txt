@@ -1,0 +1,183 @@
+Question 1:
+Both databases return the same set of values.
+One would expect to get the same data, regardless of the implementation.
+However, because hashing algorithms do not preserve order, the
+hash db does not return the pairs in the same order as the btree,
+which does sort the keys alphabetically.
+Question 2:
+The btree database has 250001 key/data pairs, and the hash database
+has 221000.
+I would predict iterating over the hash database will take less time than
+the btree.  The hash database would simply read all of the data serially
+from disk, which is very fast.  The btree may do a lot of random-access
+reading from the disk, which is much less efficient, even though the btree
+database has a much better fill factor than the hash database.
+Since the number of internal nodes in the btree database is very low, it 
+seems that they could easily be cached in memory.  This makes any given 
+lookup a lot faster, taking only one I/O (since there are no overflow pages).
+Over a third of the pages in the hash database are overflow pages, making those
+lookups each cost 2 I/Os, so the btree probably will run faster with random
+lookups.
+Question 3:
+4584681 microseconds per iteration
+
+259KB 348B	Total cache size
+1	Number of caches
+1	Maximum number of caches
+264KB	Pool individual cache size
+0	Maximum memory-mapped file size
+0	Maximum open file descriptors
+0	Maximum sequential buffer writes
+0	Sleep after writing maximum sequential buffers
+0	Requested pages mapped into the process' address space
+250003	Requested pages found in the cache (92%)
+19408	Requested pages not found in the cache
+0	Pages created in the cache
+19408	Pages read into the cache
+0	Pages written from the cache to the backing file
+19345	Clean pages forced from the cache
+0	Dirty pages forced from the cache
+0	Dirty pages written by trickle-sync thread
+63	Current total page count
+63	Current clean page count
+0	Current dirty page count
+37	Number of hash buckets used for page location
+4096	Assumed page size used
+288819	Total number of times hash chains searched for a page
+3	The longest hash chain searched for a page
+304994	Total number of hash chain entries checked for page
+0	The number of hash bucket locks that required waiting (0%)
+0	The maximum number of times any hash bucket lock was waited for (0%)
+0	The number of region locks that required waiting (0%)
+0	The number of buffers frozen
+0	The number of buffers thawed
+0	The number of frozen buffers freed
+19412	The number of page allocations
+44358	The number of hash buckets examined during allocations
+9	The maximum number of hash buckets examined for an allocation
+19345	The number of pages examined during allocations
+1	The max number of pages examined for an allocation
+0	Threads waited on page I/O
+0	The number of times a sync is interrupted
+Pool File: /home/c/s/cs165/data/btree.db
+4096	Page size
+0	Requested pages mapped into the process' address space
+250003	Requested pages found in the cache (92%)
+19408	Requested pages not found in the cache
+0	Pages created in the cache
+19408	Pages read into the cache
+0	Pages written from the cache to the backing file
+
+Question 4:
+4656627 microseconds per iteration
+
+259KB 348B	Total cache size
+1	Number of caches
+1	Maximum number of caches
+264KB	Pool individual cache size
+0	Maximum memory-mapped file size
+0	Maximum open file descriptors
+0	Maximum sequential buffer writes
+0	Sleep after writing maximum sequential buffers
+0	Requested pages mapped into the process' address space
+442001	Requested pages found in the cache (94%)
+28020	Requested pages not found in the cache
+0	Pages created in the cache
+28020	Pages read into the cache
+0	Pages written from the cache to the backing file
+28020	Clean pages forced from the cache
+0	Dirty pages forced from the cache
+0	Dirty pages written by trickle-sync thread
+63	Current total page count
+63	Current clean page count
+0	Current dirty page count
+37	Number of hash buckets used for page location
+0	Assumed page size used
+498041	Total number of times hash chains searched for a page
+8	The longest hash chain searched for a page
+953352	Total number of hash chain entries checked for page
+0	The number of hash bucket locks that required waiting (0%)
+0	The maximum number of times any hash bucket lock was waited for (0%)
+0	The number of region locks that required waiting (0%)
+0	The number of buffers frozen
+0	The number of buffers thawed
+0	The number of frozen buffers freed
+28024	The number of page allocations
+66289	The number of hash buckets examined during allocations
+11	The maximum number of hash buckets examined for an allocation
+28020	The number of pages examined during allocations
+1	The max number of pages examined for an allocation
+0	Threads waited on page I/O
+0	The number of times a sync is interrupted
+Pool File: /home/c/s/cs165/data/hash.db
+4096	Page size
+0	Requested pages mapped into the process' address space
+442001	Requested pages found in the cache (94%)
+28020	Requested pages not found in the cache
+0	Pages created in the cache
+28020	Pages read into the cache
+0	Pages written from the cache to the backing file
+
+Question 5:
+My hypothesis greatly underestimated BDB's cache.  Since both the hash and
+the btree databases had over 90% cache hits, the expense of making I/Os in both
+cases affected the runtime much less, and thus they both took about the
+same amount of time to iterate
+
+Question 6:
+For the first set of keys (adcjfiebhg to adcjfigbhe), the btree and hash iterate
+over 7 and 6 pairs, respectively (inclusive range).  The second set (adcjfiebhg
+to adcjfiegbh) results in 2 and 2, repectively. When running db_stat on the 
+two databases, I noticed they had a different number of pairs, so one of the
+pairs in the first range query for the btree must not exist in the hash db.
+
+Question 7:
+When running db_stat on the hash db, it shows over 55M of wasted space, as well
+as a fair bit of overflow buckets.  This indicates that the keys in this database
+are causing a lot of collisions in the hash function, and not spreading
+uniformly over the buckets.  Because of this, overflow buckets have to be used,
+which increases the number of I/Os needed to retrieve many of the pairs.
+
+Question 8:
+In order for a hash db to outperform a btree db, the cache needs to be small enough,
+or the databases large enough, that the internal nodes cannot fit into the cache.  Next,
+the get requests need to be truly random (exhibiting little locality), so that any
+benefit the btree could get from caching is negated. Using a cache of the smallest size,
+20KB, on a dataset of, say, a million, will make it essentially necessary to use I/Os
+for every random request, and will prevent all the internal nodes of the btree from
+being cached.
+
+Question 9:
+I created a hash db and a btree db, both with numerical keys from 1 to 1000000.  I
+also specified the cache for each to be the smallest possible, 20KB.  I then ran
+a procedure that requested 1000000 keys at random, and timed that procedure on
+each database.  The hash db performed significantly better, taking ~45-50 seconds
+to complete, while the btree took about ~60-65 seconds.
+See asst1.tcl for the associated code
+
+Question 10:
+See asst1.tcl
+
+Question 11:
+I will create two databases from the data, one based on the movie_to_id mapping,
+the other based on the rating_to_movie mapping.  The data is fairly small, so it
+should be most efficient to use btree indexing.  Also, I will need to use the -dup
+option, at least for the rating_to_movie mapping, since a single rating will map
+to multiple movies.  The first two queries would only need to do one get command
+to the rating_to_movie database, as it would return all the movies with duplicate
+rating, like PG or \N.  The movie_to_id database is required because when I first
+use a get on rating_to_movie for the third query, I still only have the movie name,
+so I need to get the id from that.
+
+Question 12:
+See asst1.tcl
+
+Question 13:
+See q13.script
+
+Question 14:
+Aside from the difficulties in using tclsh, executing the script was fairly easy.
+Something that would make it a lot easier, however, would be some sort of query
+language (like SQL) that could link the two databases together when I needed both
+for the last query, as well as return just the data I wanted, so I didn't have to
+parse through all of the lists to get just ids or just movie names.

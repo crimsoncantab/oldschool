@@ -1,0 +1,37 @@
+1.
+I would represent the IMDB with the following objects: Movie and Person.
+Movies have a set of actors (Person), a director(Person), a set of oscars,
+and other fields represented by primitive types.  Person would have a set of
+movies, a set of oscars, and primitives for name, dob, pob information. The two
+would refer to each other pointer-style (be stored separately).
+Oscars would be structs that sit inside the other objects,
+but with pointers to the movie and person involved.
+Executing queries would involve retrieving sets of Movie or Person objects, based
+on predicates about the object's properties.  If the underlying DBMS was relational,
+Movie and Person objects would be separate tables, with a many-to-many relationship.
+Everything else would be fields in these tables.
+For any object that references other objects, the OODBMS would use swizzling to
+dereference pointers, and use objects ac the caching unit.  Since the database
+is probably most often read from and not written to (and those writes may not need to 
+be seen transactionally), concurrency can be largely ignored.
+
+2.
+There are two considerations that I consider paramount to deciding upon
+the right approach:  how well does the data fits into the model, and performance.
+It seems that a graph structure is
+intuitive way to represent the actors and movies in IMDB, and writing and
+executing RDF queries seemed more straightforward than the other approaches.
+However, I noticed that executing jena on the 5 queries in this assignment
+ran much slower than executing all 10 queries on the relational database
+in assignment 3.  Considering the other approaches, XML and OO, it seems
+that the IMDB does not fit as well into the XML paradigm, since XML begs
+a hierarchial structure--that is, at least in this implementation, the movie
+element has actors and directors as children, but multiple movies can have
+the same children, so there is a lot of data duplication.  The OO approach
+does not work as well here either, since the best case usages for OO are when
+objects are standalone, i.e. without a large number of pointers to each other
+(so they could be stored contiguously and we need not worry about jumping
+around the disk for dereferencing).  The heavily relational structure of the
+data implies that objects would have lots of pointers to each other.  In short,
+both the RDF and relational representations were intuitive (and the RDF possibly
+more so), but relational wins out because of performance.

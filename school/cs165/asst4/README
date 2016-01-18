@@ -1,0 +1,58 @@
+We've provided some skeleton code and infrastructure to make
+part D of assignment 4 simpler -- it lets you focus on writing 
+recovery functions without having to learn intricacies of the
+Berkeley DB build environment.  We also provide must of the structure
+for your test program.
+
+Here is what is here:
+
+
+asst4.c	A C source file containing a driver loop, places to place your
+	add/del/mod functions and other goodies.  Read this over and look
+	at the comments!
+
+asst4.h	Include file for the application.  You can add things here to make
+	your life better.
+
+asst4.src
+	This file is mostly empty, but shows you where you can add
+	record types to automatically generate logging routines.
+
+auto_rebuild:
+	When it comes time to automatically generate your logging and
+	other routines, you can use this file.  Edit it and replace the
+	setting of the variable E to the directory in which you place
+	your work for this assignment.  Then you should be able to use
+	this script to automatically generate stuff.
+
+
+Makefile
+	Isn't it obvious?  This is designed for a UNIX enviroenmnt.
+	If you want to use Windows, you're kind of on your own.
+
+Advice:
+
+1. You will notice a bunch of #ifdef's in the code.  This is there so that
+you can compile for question D.2 without including the abort code and
+other things that require you to have implemented recovery.  Once you've
+got that done,  you can enable this code by adding
+	#define	NOTYET
+at the top of asst4.c.
+
+2. After you have run the auto_rebuild script, you'll see a file called
+asst4_template.  You can copy this into a new file called asst4_rec.c
+that will contain your recovery functions.  You'll see that the template
+contains a lot of stuff that is particular to Berkeley DB.  You should
+remove that, but you might want think about what it's doing and see if
+there are analagous operations you need to perform. For example, the templates
+include code to get a Berkeley DB dbp.  What would the analogy be for your
+access method?
+
+3. We have provided a skeleton of a dispatch function that you'll need to
+fill in so that Berkeley DB can call your recovery routines.  See the
+comments in the function asst4_dispatch; they should tell you how to modify
+it appropriately.
+
+4. After you add all your recovery functions and the automatically generated
+functions, you'll need to modify your Makefile and remove the comment
+symbols from the appropriate lines.

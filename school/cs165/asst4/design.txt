@@ -1,0 +1,30 @@
+I will plan on using record-level locking in my implementation.  Because the
+entire database is one page, using page level locking reduces transactions to
+running serially, and is not necessary, since the page will never need to be
+split and the records are not variable length, so I won't run into the problems
+presented in question B4. In the file a single record will have the following
+layout:
++-----------------------------------------------------------+
+|  exists   |    str    |    int    |    lsn    |    pad    |
++-----------------------------------------------------------+
+The exists is a 1-byte char that is non-zero if there is a record at this point.
+The str is 16 bytes, the int is another 4 bytes, and the lsn is the 8-byte log
+number of the last log to modify this record.  If the key is 0, the record is
+free, otherwise it is in use. I decided to pad the record with 3-bytes so that
+the records aligned nicely on 32-byte boundaries. the file will be
+able to hold 128 records, with no leftover bytes.  The ids then will be in the
+range 0 < id < 129.  The records will have the following layout in the file:
++-----------------------------------------------+
+|    id=1   |    id=2   |   empty   |    id=4   |
++-----------------------------------------------+
+|    id=5   |   empty   |    id=7   |    id=8   |
++----------------...----------------------------+
+|   empty   |    ...    |   empty   |   id=128  |
++----------------...----------------------------+
+Notice that there is no collection metadata.  I decided it was unnecessary
+because since I'm working with fixed length records, it should be easy to find
+all the data by calculating known offsets.  To find data item x, I simply go to
+byte (x-1)*32 in the file.
+
+Note: per Margo's recommendation in a Google Groups thread, I have not included
+the output.6a test.

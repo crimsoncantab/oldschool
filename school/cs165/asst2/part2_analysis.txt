@@ -1,0 +1,63 @@
+1. By far, the SQL approach was easier to implement.  Although
+many of the queries were of shorter length in the unix version,
+the lines of SQL were much more readable, and much more
+straightforward (as opposed to the esoteric-looking regular
+expressions required in the unix commands).
+
+2. Interactively, the unix approach was easier to use.  I could
+easily look at the intermediate results of commands before
+piping them to another command, while SQL hid much of the relational
+algebra away, and could only execute the command as a whole, unless
+I used nested queries.  Even then, I still had to log onto the server
+and authenticate to execute the sql, while using the flat file in my
+own directory was very convenient.
+
+3. Since there are many APIs available for MySQL and other implementations,
+I would assume programming with those would be much easier.  Even if a
+program was able to access and execute all of the UNIX commands, the
+output is still just in plain text, whereas the APIs would probably
+return the data in a more useful format to the program, like as a set of
+objects.
+
+4. Since the unix commands are essentially "built-in" to the OS, I'm 
+ignoring the amount of space used by them.  Thus, the relational database
+would take up more space, needing both extra metadata and heavyweight
+software to maintain the database.
+
+5. Although I noticed no difference in performance on this small dataset,
+asymtotically I would expect the relational database to perform better.
+It employs sophisticated indexing structures that help avoid iterating
+over every bit of data, whereas a flat file has nothing like
+that in place, and would have to be run through in its entirety by the
+unix commands every time.
+
+6. One class of queries that I noticed the relational database handled
+much better was grouping queries, such as the number of people in each city.
+The solution for these types of queries is fairly obvious in SQL, because
+it abstracts away a lot of the steps that are explicitly required by
+the flat file version.  However, the unix commands are much easier to
+use for queries that do not discriminate between fields, like the query
+to find tuples with at least 6 8's in them.  In this case, the data is
+much more useful in a flat format, since checking a line against a regular
+expression to find the 8's is easy to do with no notion of fields.
+
+7. I noticed that a disadvantage of the flat file version was in how 
+explicit my precision had to be.  When trying to match a predicate that
+applied to only one field, I had to be careful that the regular expression
+I used was explicit enough to avoid false positives (like the Boston/
+Nathan Boston example).  Also, flat files have problems with reliable data
+storage.  If the harddrive crashes, for example, the data would be lost.
+For a relational database, if the data is stored in the cloud, a local hard drive
+crash would not destroy the data, but losing one's connection to the
+internet would make the data unaccessible.  Relational databases also
+present a loss in flexibility in terms of what queries can be made.  With a
+flat file, I can search for anything indescriminantly, like the number of times
+the letter 'a' appears accross the dataset.  This is not impossible in SQL, but
+would result in much more complicated queries.
+
+8. I would say that, especially if the dataset was a lot larger, or stored address
+books for multiple people, the relational database approach would be more appropriate,
+given the kinds of queries that might be done.  However, if the dataset were generally
+small, like on a PDA, a flat file would be more appropriate, since running a relational
+database would consume too much of the PDAs resources, and the size of the dataset would
+make query performance much less of an issue.

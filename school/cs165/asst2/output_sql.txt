@@ -1,0 +1,50 @@
+lastname	firstname	home_phone	work_phone	address	city	state	zip	country
+Turing	Alan			2 Warrington Crescent	London		W9	England
+lastname	firstname	home_phone	work_phone	address	city	state	zip	country
+Ashworth	Victoria 			Fauntleroy Circus	London			UK
+Brown	Elizabeth 	1715559199		Berkeley Gardens 12  Brewery	London			UK
+Cooper	Charlotte 	1715552242		49 Gilbert St.	London		EC1 4SD	UK
+Crowther	Simon 	1715557733	1715552530	South House 300 Queensbridge	London			UK
+Devon	Ann 	1715550297	1715553373	35 King George	London			UK
+Hardy	Thomas 	1715557788	1715556750	120 Hanover Sq.	London			UK
+Kumar	Hari 	1715555646		90 Wadhurst Rd.	London			UK
+Turing	Alan			2 Warrington Crescent	London		W9	England
+sanfranciscans
+20
+lastname	firstname	home_phone	work_phone	address	city	state	zip	country
+Saldana	Jeffrey			9 7th St	Chicago	IL	49568	
+Singh	Albert			505 7th St	Chicago	IL		
+lastname	firstname
+Barman	Nancy
+Kirshy	Nick
+Petersen	Niels 
+Pugh	Nick
+lastname	firstname	city	state	zip
+Davis	Barney	Suffolk	VA	23433
+Valdes	Doug	Virginia Beach	VA	23468
+Wheelan	Myra	Hampton	VA	23668
+city	contacts
+Albany	27
+Boston	20
+Chicago	19
+Dallas	22
+Detroit	18
+Houston	31
+Las Vegas	30
+London	8
+Los Angeles	23
+Mexico D.F.	5
+New York	27
+Newton	20
+Portland	22
+Providence	22
+San Francisco	20
+Sao Paulo	5
+Seattle	23
+Somerville	17
+West Newton	12
+filled_in
+5
+lastname	firstname	home_phone
+Ferguson	Craig	7116443773
+Smothermon	Grant	3992014114

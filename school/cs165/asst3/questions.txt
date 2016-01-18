@@ -1,0 +1,74 @@
+1
+a
+actor_name Actor'.movie_id Movie'.movie_id movie_name year
+TC 2 1 A 2009
+TC 2 2 TG 1986
+TC 2 3 V 2008
+TC 3 1 A 2009
+TC 3 2 TG 1986
+TC 3 3 V 2008
+AJ 6 1 A 2009
+AJ 6 2 TG 1986
+AJ 6 3 V 2008
+
+b
+actor_name movie_id movie_name year
+TC 2 TG 1986
+TC 3 V 2008
+
+c
+actor_name movie_id movie_name year
+TC 2 2 TG 1986
+TC 3 3 V 2008
+AJ 6 NULL NULL NULL
+
+d
+actor_name movie_id movie_name year
+NULL NULL 1 A 2009
+TC 2 2 TG 1986
+TC 3 3 V 2008
+
+e
+actor_name movie_id movie_name year
+NULL NULL 1 A 2009
+TC 2 2 TG 1986
+TC 3 3 V 2008
+AJ 6 NULL NULL NULL
+
+
+2
+Calculating the Bacon number for every actor/actress in the database
+is doable, but might take a long time.  Essentially, it boils down
+to kind of a breadth-first search/shortest path algorithm.  To get
+every person with a BN-1, I would query people(is Bacon) join actors
+join movies to get all the movies that Kevin Bacon was in, then
+join the resulting relation back to actors and people to get everyone
+who was in any of those movies, and assign them BN-1.  Then, I would
+repeat the process, joining all the BN-1 people back to all the movies
+they were in, then getting all of the people in those movies,
+but this time only selecting those who have not been assigned a BN yet.
+I would repeat the process until I got an empty
+query.  There may be people who never linked to Bacon, in which case
+they would probably just have NULL as their BN-value.  This isn't
+too difficult to code; I might need some application logic to control
+repeating the process.  Where it might be difficult is in performance.
+I can possibly see the queries increasing in size very quickly, which
+would slow things down on a very large dataset.
+
+3
+a
+The names of the top 50 grossing movies.
+b
+The name of the movie (should only be one) that recieved the Best Picture Oscar in 1997
+c
+Each tuple is the names of two people with the same birthday.  This query
+would probably return each pair twice, one of those tuples
+with the names swapped.
+d
+The name of the youngest person to recieve an Oscar for Best Director.
+
+4
+a
+PROJECT[name]((SELECT[earnings_rank <= 50](Movie)) JOIN[movie_id=movie_id] (Director) JOIN[director_id=id] (Person))
+b
+PROJECT[name](PROJECT[person_id]((RENAME[ba] (SELECT[type=BEST-ACTOR](Oscar))) JOIN (RENAME[bsa] (SELECT[type=BEST-SUPPORTING-ACTOR](Oscar)))) JOIN[person_id=id] Person)

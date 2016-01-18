@@ -1,0 +1,36 @@
+openContainer imdb.dbxml
+
+# 0. Sample query: Find the titles of all movies directed by James Cameron
+
+#query 'for $m in collection("imdb.dbxml")/movie where $m/director/name = "James Cameron"
+#       return $m/title'
+#print
+
+
+# 1. Find the titles of all PG-13 movies.
+query 'for $m in collection("imdb.dbxml")/movie where $m/rating = "PG-13"
+	return $m/title'
+print
+
+# 2. Find the titles and directors of all movies that won the Best Picture oscar.
+query 'for $m in collection("imdb.dbxml")/movie where $m/oscar/best = "PICTURE"
+	return <result>{$m/title}{$m/director/name}</result>'
+print
+
+# 3. List the titles of all movies produced in 60's that have never won an oscar.
+query 'for $m in collection("imdb.dbxml")/movie where empty($m/oscar) and $m/year < 1970 and $m/year >= 1960
+	return $m/title'
+print
+
+# 4. For each year, return the number of PG movies.
+query 'for $y in
+	distinct-values(for $m in collection("imdb.dbxml")/movie order by $m/year
+	return $m/year)
+	return <result>
+	<year>{$y}</year>
+	<count>{count(for $m in collection("imdb.dbxml")/movie
+	where $m/rating="PG" and $m/year=$y return $m)}</count></result>'
+print
+
+exit
+

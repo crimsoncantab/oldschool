@@ -1,0 +1,33 @@
+
+# 0. Sample query: Find the titles of all movies directed by James Cameron
+
+#SELECT ?title
+#WHERE { ?movie <title> ?title .
+#        ?movie <director> ?director .
+#        ?director <name> "James Cameron" };
+
+
+# 1. Find the titles of movies that were produced in the 1970's.
+SELECT ?t
+WHERE { ?m <title> ?t . ?m <year> ?y . FILTER (?y < 1980 && ?y >= 1970) };
+
+# 2. List the names and years of every director that has won the Best Director award.
+#    If someone won that award more than once, list all the years in which they won it.
+SELECT ?n ?y
+WHERE {?d <name> ?n . ?d <oscar> ?o . ?o <type> "BEST-DIRECTOR" . ?o <year> ?y };
+
+# 3. List all movies that won both the Best Actor and Best Actress oscars.
+#    Your query result should include the movie title and the names of the best
+#    actor and actress.
+SELECT ?t ?m ?w
+WHERE { ?mv <title> ?t . ?mv <oscar> ?om . ?om <type> "BEST-ACTOR" . ?a1 <oscar> ?om . ?a1 <name> ?m . ?mv <oscar> ?ow . ?ow <type> "BEST-ACTRESS" . ?a2 <oscar> ?ow . ?a2 <name> ?w };
+
+# 4. Find all pairs of actors/actresses that acted together in three or more movies.
+SELECT DISTINCT ?n1 ?n2
+WHERE { ?m1 <actor> ?a1 . ?m1 <actor> ?a2 . ?m2 <actor> ?a1 . ?m2 <actor> ?a2 . ?m3 <actor> ?a1 . ?m3 <actor> ?a2 . ?a1 <name> ?n1 . ?a2 <name> ?n2 . FILTER(?m1 != ?m2 && ?m2 != ?m3 && ?m3 != ?m1 && ?n1 < ?n2) };
+
+# 5. Find all actors and actresses with Bacon number 2.
+#    Remember to eliminate people with Bacon number 1 from the result.
+SELECT DISTINCT ?n2
+WHERE { ?m1 <actor> ?a . ?a <name> "Kevin Bacon" . ?m1 <actor> ?a1 . ?m2 <actor> ?a1 . ?m2 <actor> ?a2 . ?a2 <name> ?n2 . OPTIONAL { ?m3 <actor> ?a2 . ?m3 <actor> ?a } . FILTER(!BOUND(?m3))};
+
