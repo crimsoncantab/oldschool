@@ -1,0 +1,26 @@
+#
+# Students' Makefile for the Malloc Lab
+#
+TEAM = bovik
+VERSION = 1
+HANDINDIR = /afs/cs.cmu.edu/academic/class/15213-f01/malloclab/handin
+
+CC = gcc
+CFLAGS = -Wall -g
+
+OBJS = my_test.o mm2.o memlib.o
+
+my_test: $(OBJS)
+	$(CC) $(CFLAGS) -o mdriver $(OBJS)
+
+my_test.o: my_test.c memlib.h mm.h
+memlib.o: memlib.c memlib.h
+mm.o: mm.c mm.h memlib.h
+
+handin:
+	cp mm.c $(HANDINDIR)/$(TEAM)-$(VERSION)-mm.c
+
+clean:
+	rm -f *~ *.o mdriver
+
+

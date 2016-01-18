@@ -1,0 +1,9 @@
+malloc "size" bytes, where size is the maximum heap size
+set prologue block, aligned to double word
+point heap_listp to prologue block
+point heap_brk_start to the beginning of the heap
+point heap_brk to heap_brk_start + initial heap size
+format epilogue block
+
+our implementation:
+
