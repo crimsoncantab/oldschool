@@ -1,0 +1,13 @@
+To build:
+    "make"
+
+To run part I with a varying number of samples and generate images:
+    "./run1.sh"
+
+To run part II with a varying number of samples and generate images:
+    "./run2.sh"
+
+All data files and images are found in data/.  The power output of every run is found
+in data/partX/power, and images are generated using ~7e-16 as the maximum power
+at a pixel.
+
